@@ -47,6 +47,17 @@ def log(*a):
     print(*a, flush=True)
 
 
+def gh_note(level, msg):
+    """Show a message on the GitHub Actions run page (level: notice, warning, error)."""
+    if os.environ.get("GITHUB_ACTIONS"):
+        print(f"::{level}::{msg}", flush=True)
+
+
+def stop(msg):
+    gh_note("error", msg)
+    sys.exit(msg)
+
+
 def current_season():
     """Season label as both APIs use it: the year the season starts (2026 for 2026/27)."""
     env = os.environ.get("SEASON")
@@ -384,12 +395,13 @@ def pick_provider(season, demo):
         except PlanError as e:
             log(f"API-Football can't serve season {season} on this plan: {e}")
             if want == "api-football" or not fdk:
-                sys.exit("Stopping. Add FOOTBALL_DATA_KEY to fall back to football-data.org.")
+                stop(f"API-Football refused season {season} ({e}). Add a FOOTBALL_DATA_KEY secret to fall back to football-data.org.")
+            gh_note("warning", f"API-Football refused season {season}: {e}. Using football-data.org instead.")
             log("Falling back to football-data.org (goals-based stats only).")
     if fdk:
         p = FootballData(fdk, season)
         return p, p.fixtures()
-    sys.exit("No API key found. Set APIFOOTBALL_KEY and/or FOOTBALL_DATA_KEY, or run with --demo.")
+    stop("No API key found. Add a repository secret named exactly APIFOOTBALL_KEY (or FOOTBALL_DATA_KEY).")
 
 
 def main():
@@ -479,7 +491,14 @@ def main():
         save_json(CACHE_FILE, cache, compact=True)
     calls = prov.http.calls if hasattr(prov, "http") else 0
     log(f"Wrote {len(out_matches)} matches to data/matches.json using {calls} API calls")
+    gh_note("notice", f"{prov.name}: {len(out_matches)} upcoming matches, {len(finished)} finished, "
+                      f"{pending} still waiting for shot stats, {calls} API calls used.")
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except SystemExit:
+        raise
+    except Exception as e:
+        stop(f"Update failed: {type(e).__name__}: {e}")
