@@ -402,7 +402,14 @@ def pick_provider(season, demo):
             log("Falling back to football-data.org (goals-based stats only).")
     if fdk:
         p = FootballData(fdk, season)
-        return p, p.fixtures()
+        try:
+            return p, p.fixtures()
+        except PlanError as e:
+            import re
+            hexlike = bool(re.fullmatch(r"[0-9a-fA-F]{32}", fdk))
+            stop(f"football-data.org rejected FOOTBALL_DATA_KEY ({e}). Key check, without revealing it: "
+                 f"{len(fdk)} characters; 32-character letters-and-digits format: {'yes' if hexlike else 'no'}; "
+                 f"same as APIFOOTBALL_KEY: {'yes' if afk and fdk == afk else 'no'}.")
     stop("No API key found. Add a repository secret named exactly APIFOOTBALL_KEY (or FOOTBALL_DATA_KEY).")
 
 
