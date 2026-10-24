@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Home and away stats, form and head-to-head for upcoming La Liga, Premier League, Serie A and Bundesliga matches.">
+<title>Matchday Insights</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: fixture rail on the left, match sheet on the right; stacks on phones. Home = blue, away = amber, like a split scoreboard. */
+:root{
+  --bg:#f3f5f8; --surface:#ffffff; --line:#dde2ea; --fg:#141a26; --muted:#5d6779;
+  --home:#2448c9; --home-soft:#e3e9fb; --away:#c96a12; --away-soft:#fbeedd;
+  --win:#1f8a4c; --draw:#8a8f99; --loss:#c23a3a;
+  --f-display:"Barlow Condensed","Arial Narrow",sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,sans-serif;
+  --f-data:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f131b; --surface:#171c26; --line:#2a3140; --fg:#e8ecf3; --muted:#97a1b3;
+  --home:#7b98ff; --home-soft:#1d2849; --away:#f0a24f; --away-soft:#3a2914;
+  --win:#4cc27e; --draw:#8d94a2; --loss:#ee6a6a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f131b; --surface:#171c26; --line:#2a3140; --fg:#e8ecf3; --muted:#97a1b3;
+  --home:#7b98ff; --home-soft:#1d2849; --away:#f0a24f; --away-soft:#3a2914;
+  --win:#4cc27e; --draw:#8d94a2; --loss:#ee6a6a; color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:20px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(34px,6vw,52px);line-height:.95;letter-spacing:.01em;margin:0;text-transform:uppercase}
+h1 span{color:var(--home)}h1 em{font-style:normal;color:var(--away)}
+.sub{color:var(--muted);margin:6px 0 0}
+.notice{font-size:13px;background:var(--away-soft);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px 12px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:600 13px var(--f-body);border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.chip:focus-visible,.fx:focus-visible,.seg button:focus-visible{outline:2px solid var(--home);outline-offset:2px}
+.main{display:grid;grid-template-columns:320px minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:860px){.main{grid-template-columns:1fr}}
+.rail{display:grid;gap:14px}
+.lg{font:700 13px var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.fxlist{display:grid;gap:6px}
+.fx{display:grid;grid-template-columns:1fr auto;gap:2px 10px;text-align:left;width:100%;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;color:var(--fg);font:inherit}
+.fx[aria-current="true"]{border-color:var(--home);box-shadow:inset 3px 0 0 var(--home)}
+.fx b{font-weight:600}.fx .t{font:500 12px var(--f-data);color:var(--muted);grid-row:span 2;align-self:center;text-align:right}
+.sheet{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;min-width:0}
+.score{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;padding:22px 20px;border-bottom:1px solid var(--line)}
+.team{display:grid;gap:4px}.team.a{text-align:right}
+.team .nm{font-family:var(--f-display);font-weight:700;font-size:clamp(24px,4.4vw,36px);line-height:1;text-transform:uppercase;text-wrap:balance}
+.team.h .nm{color:var(--home)}.team.a .nm{color:var(--away)}
+.tag{font:600 11px var(--f-body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.vs{text-align:center;font:500 12px var(--f-data);color:var(--muted)}
+.vs strong{display:block;font:800 22px var(--f-display);color:var(--fg)}
+.form{display:flex;gap:3px}.team.a .form{justify-content:flex-end}
+.f{width:20px;height:20px;border-radius:4px;display:grid;place-items:center;font:700 11px var(--f-body);color:#fff}
+.f.W{background:var(--win)}.f.D{background:var(--draw)}.f.L{background:var(--loss)}
+.sec{padding:18px 20px;border-bottom:1px solid var(--line);display:grid;gap:12px}
+.sec:last-child{border-bottom:0}
+.sechd{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px}
+h2{font:700 18px var(--f-display);letter-spacing:.06em;text-transform:uppercase;margin:0}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{font:600 12px var(--f-body);border:0;background:transparent;color:var(--muted);padding:6px 10px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+.rows{display:grid;gap:10px}
+.row{display:grid;grid-template-columns:56px 1fr 56px;align-items:center;gap:10px}
+.row .v{font:500 15px var(--f-data);font-variant-numeric:tabular-nums}.row .v.r{text-align:right}
+.row .v.best{font-weight:700}
+.row .v.h.best{color:var(--home)}.row .v.a.best{color:var(--away)}
+.mid{display:grid;gap:4px}
+.mid .lab{font-size:12.5px;color:var(--muted);text-align:center}
+.bar{display:flex;height:8px;border-radius:4px;overflow:hidden;background:var(--line);gap:2px}
+.bar i{display:block;height:100%}
+.bar .bh{background:var(--home)}.bar .ba{background:var(--away)}
+.pcts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.pct{border:1px solid var(--line);border-radius:10px;padding:12px;display:grid;gap:8px}
+.pct .k{font-size:12.5px;color:var(--muted)}
+.pct .pair{display:flex;justify-content:space-between;font:500 18px var(--f-data);font-variant-numeric:tabular-nums}
+.pct .pair .h{color:var(--home)}.pct .pair .a{color:var(--away)}
+.notes{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.notes li{display:grid;grid-template-columns:8px 1fr;gap:10px;align-items:baseline}
+.notes li::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--fg);transform:translateY(-1px)}
+.notes li.h::before{background:var(--home)}.notes li.a::before{background:var(--away)}
+.combo{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.combo div{background:var(--bg);border-radius:10px;padding:12px}
+.combo b{display:block;font:800 30px var(--f-display);line-height:1}
+.combo span{font-size:12.5px;color:var(--muted)}
+.h2h{width:100%;border-collapse:collapse;font-size:14px}
+.h2h td{padding:7px 4px;border-top:1px solid var(--line)}
+.h2h td.d{color:var(--muted);font:500 12px var(--f-data);white-space:nowrap}
+.h2h td.s{text-align:center;font:600 14px var(--f-data);white-space:nowrap}
+.tbl{overflow-x:auto}
+footer{font-size:12.5px;color:var(--muted)}
+.noticewrap{display:grid;gap:8px}.noticewrap:empty{display:none}
+.notice.soft{background:var(--home-soft)}
+footer{display:grid;gap:6px}footer p{margin:0;max-width:80ch}
+footer a,.sub a{color:var(--home)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1><span>Match</span><em>day</em> Insights</h1>
+      <p class="sub">Home form vs away form for the coming week's fixtures across Europe's top leagues.</p>
+    </div>
+    <div class="chips" id="leagues" role="group" aria-label="Filter by league"></div>
+  </header>
+  <div id="notices" class="noticewrap"></div>
+  <div class="main" id="main">
+    <nav class="rail" id="rail" aria-label="Fixtures"><p class="sub">Loading fixtures…</p></nav>
+    <article class="sheet" id="sheet" aria-live="polite"></article>
+  </div>
+  <footer>
+    <p>Stats per game this season. "At venue" compares the home side's home matches with the away side's away matches. <span id="meta"></span></p>
+    <p><strong>18+.</strong> These figures describe past matches. They don't predict results and aren't betting advice. If you bet, set limits and play responsibly. Help in Spain: <a href="https://www.jugarbien.es" target="_blank" rel="noopener">jugarbien.es</a>.</p>
+  </footer>
+</div>
+
+<script>
+let D=null;
+let state={lg:"all",sel:null,mode:"venue"};
+try{Object.assign(state,JSON.parse(localStorage.getItem("mdi")||"{}"))}catch(e){}
+const save=()=>{try{localStorage.setItem("mdi",JSON.stringify({lg:state.lg,mode:state.mode}))}catch(e){}};
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const r1=v=>v==null?null:Math.round(v*10)/10;
+const fmt=v=>v==null?"–":(Math.round(v*10)/10).toFixed(1);
+const has=v=>v!=null;
+const dayFmt=new Intl.DateTimeFormat(undefined,{weekday:"short",hour:"2-digit",minute:"2-digit"});
+const longFmt=new Intl.DateTimeFormat(undefined,{weekday:"long",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"});
+const ko=(iso,long)=>(long?longFmt:dayFmt).format(new Date(iso));
+
+function renderNotices(){
+  const n=[];
+  if(D.demo)n.push(`<div class="notice"><strong>Demo data.</strong> Teams and numbers are invented to test the page. Add an API key to load real stats.</div>`);
+  if(!D.hasMatchStats)n.push(`<div class="notice soft">Shots, corners, cards and xG aren't available from the current free data source (${esc(D.source)}), so only goal-based stats are shown.</div>`);
+  else if(D.statsBackfillPending>0)n.push(`<div class="notice soft">Shot and corner stats are still loading for ${D.statsBackfillPending} older matches. The free plan fetches them over the next few days, so those averages use fewer games for now.</div>`);
+  document.getElementById("notices").innerHTML=n.join("");
+  const up=new Date(D.updated);
+  document.getElementById("meta").textContent=`Season ${D.season}. Source: ${D.source}. Updated ${up.toLocaleString(undefined,{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}.`;
+}
+function visible(){return D.matches.filter(m=>state.lg==="all"||m.league===state.lg)}
+function renderChips(){
+  const used=new Set(D.matches.map(m=>m.league));
+  const opts=[["all","All leagues"],...Object.entries(D.leagues).filter(([k])=>used.has(k))];
+  if(state.lg!=="all"&&!used.has(state.lg))state.lg="all";
+  document.getElementById("leagues").innerHTML=opts.map(([k,v])=>`<button class="chip" id="lg-${k}" data-lg="${k}" aria-pressed="${state.lg===k}">${esc(v)}</button>`).join("");
+}
+function renderRail(){
+  const list=visible();
+  if(!list.some(m=>m.id===state.sel))state.sel=list[0]?.id??null;
+  const groups={};Object.keys(D.leagues).forEach(k=>{const ms=list.filter(m=>m.league===k);if(ms.length)groups[k]=ms});
+  document.getElementById("rail").innerHTML=Object.entries(groups).map(([lg,ms])=>`<div><p class="lg">${esc(D.leagues[lg])}</p><div class="fxlist">${ms.map(m=>`<button class="fx" id="fx-${esc(m.id)}" data-id="${esc(m.id)}" aria-current="${m.id===state.sel}"><b>${esc(m.home.name)}</b><span class="t">${ko(m.kickoff)}</span><span>${esc(m.away.name)}</span></button>`).join("")}</div></div>`).join("");
+}
+const formHTML=f=>f&&f.length?`<div class="form" aria-label="Last ${f.length}: ${f.join(" ")}">${f.map(x=>`<span class="f ${x}">${x}</span>`).join("")}</div>`:`<span class="tag">No form yet</span>`;
+function row(label,hv,av,lowerBetter){
+  if(!has(hv)||!has(av))return"";
+  const t=(hv+av)||1,hb=lowerBetter?hv<av:hv>av,ab=lowerBetter?av<hv:av>hv;
+  return`<div class="row"><span class="v h ${hb?"best":""}">${fmt(hv)}</span><div class="mid"><span class="lab">${label}</span><div class="bar"><i class="bh" style="width:${hv/t*100}%"></i><i class="ba" style="width:${av/t*100}%"></i></div></div><span class="v a r ${ab?"best":""}">${fmt(av)}</span></div>`;
+}
+function notes(m,H,A){
+  const h=esc(m.home.name),a=esc(m.away.name),n=[];
+  n.push({c:"",t:`Blending attack with the opponent's defence gives ${fmt((H.gf+A.ga)/2)} goals for ${h} and ${fmt((A.gf+H.ga)/2)} for ${a}.`});
+  if(H.gf-A.gf>.6)n.push({c:"h",t:`${h} score ${fmt(H.gf-A.gf)} more goals per game than ${a} in this split.`});
+  else if(A.gf-H.gf>.3)n.push({c:"a",t:`${a} outscore the hosts per game (${fmt(A.gf)} vs ${fmt(H.gf)}), unusual for an away side.`});
+  if(H.o25>=60&&A.o25>=60)n.push({c:"",t:`Both sides go over 2.5 goals in at least 60% of matches (${H.o25}% and ${A.o25}%).`});
+  if(H.btts>=55&&A.btts>=55)n.push({c:"",t:`Both teams scored in most of their matches: ${H.btts}% and ${A.btts}%.`});
+  if(H.cs>=40)n.push({c:"h",t:`${h} keep a clean sheet in ${H.cs}% of these matches.`});
+  if(A.fts>=30)n.push({c:"a",t:`${a} fail to score in ${A.fts}% of these matches.`});
+  const fw=f=>(f||[]).filter(x=>x==="W").length;
+  if(fw(m.home.form)>=4)n.push({c:"h",t:`${h} won ${fw(m.home.form)} of their last 5.`});
+  if(fw(m.away.form)>=4)n.push({c:"a",t:`${a} won ${fw(m.away.form)} of their last 5.`});
+  if(has(A.xg)&&A.xg>0&&A.gf/A.xg>1.25)n.push({c:"a",t:`${a} are scoring well above their xG (${fmt(A.gf)} vs ${fmt(A.xg)}), which often cools off.`});
+  if(has(H.xg)&&H.xg>0&&H.gf/H.xg<.75)n.push({c:"h",t:`${h} are scoring below their xG (${fmt(H.gf)} vs ${fmt(H.xg)}), so goals may pick up.`});
+  if(H.gp<3||A.gp<3)n.push({c:"",t:`Small sample: averages are based on ${H.gp} and ${A.gp} matches.`});
+  return n.slice(0,6).map(x=>`<li class="${x.c}">${x.t}</li>`).join("");
+}
+function renderSheet(){
+  const el=document.getElementById("sheet");
+  const m=D.matches.find(x=>x.id===state.sel);
+  if(!m){el.innerHTML=`<div class="sec"><h2>No fixtures</h2><p class="sub">There are no matches in the next 7 days for this filter.</p></div>`;return}
+  const venue=state.mode==="venue";
+  const H=venue?m.home.venue:m.home.overall,A=venue?m.away.venue:m.away.overall;
+  const hl=venue?"At home":"All matches",al=venue?"Away":"All matches";
+  const head=`<div class="score">
+    <div class="team h"><span class="tag">Home · ${hl}${H?`, ${H.gp} played`:""}</span><span class="nm">${esc(m.home.name)}</span>${formHTML(m.home.form)}</div>
+    <div class="vs"><strong>VS</strong>${ko(m.kickoff,true)}<br>${esc(D.leagues[m.league])}</div>
+    <div class="team a"><span class="tag">Away · ${al}${A?`, ${A.gp} played`:""}</span><span class="nm">${esc(m.away.name)}</span>${formHTML(m.away.form)}</div>
+  </div>`;
+  const seg=`<div class="seg" role="group" aria-label="Stat split"><button id="mode-venue" data-mode="venue" aria-pressed="${venue}">At venue</button><button id="mode-all" data-mode="all" aria-pressed="${!venue}">Overall</button></div>`;
+  if(!H||!A){el.innerHTML=head+`<section class="sec"><div class="sechd"><h2>Per game</h2>${seg}</div><p class="sub">Not enough matches played yet in this split. Try "Overall".</p></section>`;return}
+  const statRows=[row("Expected goals (xG)",H.xg,A.xg),row("xG against",H.xga,A.xga,true),row("Shots",H.shots,A.shots),row("Shots on target",H.sot,A.sot),row("Corners",H.corners,A.corners),row("Cards",H.cards,A.cards,true)].join("");
+  const combos=[[(H.gf+A.ga)/2,`${esc(m.home.name)} goals (avg of attack and opponent defence)`],[(A.gf+H.ga)/2,`${esc(m.away.name)} goals`],[(H.gf+A.ga+A.gf+H.ga)/2,"Total goals"]];
+  if(has(H.corners)&&has(A.corners))combos.push([H.corners+A.corners,"Total corners"]);
+  el.innerHTML=head+`
+  <section class="sec"><h2>Key insights</h2><ul class="notes">${notes(m,H,A)}</ul></section>
+  <section class="sec">
+    <div class="sechd"><h2>Per game</h2>${seg}</div>
+    <div class="rows">${row("Goals scored",H.gf,A.gf)}${row("Goals conceded",H.ga,A.ga,true)}${statRows}</div>
+  </section>
+  <section class="sec"><h2>Match outcomes</h2>
+    <div class="pcts">
+      ${[["Both teams scored","btts"],["Over 2.5 goals","o25"],["Clean sheet","cs"],["Failed to score","fts"]].map(([k,f])=>`<div class="pct"><span class="k">${k}</span><div class="pair"><span class="h">${H[f]}%</span><span class="a">${A[f]}%</span></div><div class="bar"><i class="bh" style="width:${H[f]}%"></i></div><div class="bar"><i class="ba" style="width:${A[f]}%"></i></div></div>`).join("")}
+    </div>
+  </section>
+  <section class="sec"><h2>Blended projection</h2>
+    <div class="combo">${combos.map(([v,l])=>`<div><b>${fmt(v)}</b><span>${l}</span></div>`).join("")}</div>
+  </section>
+  <section class="sec"><h2>Head to head</h2>
+    ${m.h2h&&m.h2h.length?`<div class="tbl"><table class="h2h"><tbody>${m.h2h.map(g=>`<tr><td class="d">${esc(g.date)}</td><td>${esc(g.home)}</td><td class="s">${g.hg}–${g.ag}</td><td style="text-align:right">${esc(g.away)}</td></tr>`).join("")}</tbody></table></div>`:`<p class="sub">No recent meetings loaded yet.</p>`}
+  </section>`;
+}
+function render(){renderChips();renderRail();renderSheet();save()}
+document.addEventListener("click",e=>{
+  if(!D)return;
+  const c=e.target.closest("[data-lg]");if(c){state.lg=c.dataset.lg;render();return}
+  const f=e.target.closest("[data-id]");if(f){state.sel=f.dataset.id;render();if(innerWidth<860)document.getElementById("sheet").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});return}
+  const s=e.target.closest("[data-mode]");if(s){state.mode=s.dataset.mode;render()}
+});
+function start(d){
+  D=d;D.matches.sort((a,b)=>a.kickoff.localeCompare(b.kickoff));renderNotices();render();
+}
+function fail(){
+  document.getElementById("rail").innerHTML=`<p class="sub">Couldn't find the match data. Make sure the <b>data</b> folder (with <b>matches.js</b> inside) sits next to this page, then reload.</p>`;
+}
+// matches.js works everywhere, including when the page is opened straight from a folder.
+// matches.json is the fallback for hosts where the .js file is missing.
+(function load(){
+  const s=document.createElement("script");
+  s.src="data/matches.js?t="+Date.now();
+  s.onload=()=>window.MATCHDAY_DATA?start(window.MATCHDAY_DATA):fail();
+  s.onerror=()=>fetch("data/matches.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(start).catch(fail);
+  document.head.appendChild(s);
+})();
+</script>
+</body>
+</html>
