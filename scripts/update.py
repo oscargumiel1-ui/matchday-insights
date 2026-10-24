@@ -100,7 +100,7 @@ class Http:
                     log("  rate limited, waiting 65s")
                     time.sleep(65)
                     continue
-                if e.code in (401, 403):
+                if e.code in (401, 403) or (e.code == 400 and "token" in body.lower()):
                     raise PlanError(f"HTTP {e.code}: {body}")
                 raise RuntimeError(f"HTTP {e.code} for {path}: {body}")
             except urllib.error.URLError as e:
@@ -387,7 +387,9 @@ def pick_provider(season, demo):
         p = Demo(season)
         return p, p.fixtures()
     want = os.environ.get("PROVIDER", "auto")
-    afk, fdk = os.environ.get("APIFOOTBALL_KEY"), os.environ.get("FOOTBALL_DATA_KEY")
+    # strip spaces, quotes and line breaks that often sneak in when pasting a key
+    clean = lambda v: (v or "").strip().strip('"').strip("'").strip() or None
+    afk, fdk = clean(os.environ.get("APIFOOTBALL_KEY")), clean(os.environ.get("FOOTBALL_DATA_KEY"))
     if want in ("auto", "api-football") and afk:
         p = ApiFootball(afk, season)
         try:
