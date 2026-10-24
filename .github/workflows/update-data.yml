@@ -1,0 +1,42 @@
+name: Update match data
+
+on:
+  schedule:
+    - cron: "17 5 * * *"   # every day at 05:17 UTC (07:17 in Spain in summer)
+  workflow_dispatch:        # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch fixtures and stats
+        env:
+          APIFOOTBALL_KEY: ${{ secrets.APIFOOTBALL_KEY }}
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+        run: python scripts/update.py
+
+      - name: Save new data to the repository
+        run: |
+          git config user.name "matchday-bot"
+          git config user.email "matchday-bot@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Update match data $(date -u +'%Y-%m-%d')"
+            git push
+          fi
