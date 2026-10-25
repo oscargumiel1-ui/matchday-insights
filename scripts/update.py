@@ -417,6 +417,26 @@ def team_stats(team, finished, stats_cache, venue):
     }
 
 
+def venue_tables(finished):
+    """Home-only and away-only league tables built from results: {league: {team_id: {"home": row, "away": row}}}."""
+    acc = {}
+    for m in finished:
+        for side, tid, f, a in (("home", m["hid"], m["hg"], m["ag"]), ("away", m["aid"], m["ag"], m["hg"])):
+            r = acc.setdefault(m["league"], {}).setdefault(side, {}).setdefault(
+                tid, {"p": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0})
+            r["p"] += 1; r["gf"] += f; r["ga"] += a
+            if f > a: r["w"] += 1; r["pts"] += 3
+            elif f == a: r["d"] += 1; r["pts"] += 1
+            else: r["l"] += 1
+    out = {}
+    for lg, sides in acc.items():
+        for side, rows in sides.items():
+            ranked = sorted(rows.items(), key=lambda kv: (-kv[1]["pts"], -(kv[1]["gf"] - kv[1]["ga"]), -kv[1]["gf"]))
+            for i, (tid, r) in enumerate(ranked, 1):
+                out.setdefault(lg, {}).setdefault(tid, {})[side] = dict(r, pos=i, size=len(ranked))
+    return out
+
+
 def form(team, finished):
     games = [m for m in finished if team in (m["home"], m["away"])]
     out = []
@@ -498,6 +518,16 @@ def main():
                 tables[code] = prov.standings(code)
             except Exception as e:
                 log(f"  standings failed for {LEAGUES[code][0]}: {e}")
+
+    # Home-only and away-only tables: use the API's when it sends them, otherwise build them from results
+    computed = venue_tables(finished)
+    for lg, teams in computed.items():
+        if lg not in tables and not getattr(prov, "has_standings", False):
+            continue
+        for tid, sides in teams.items():
+            row = tables.setdefault(lg, {}).setdefault(tid, {})
+            for side, r in sides.items():
+                row.setdefault(side, r)
 
     # 1) head-to-head for the next 3 days first, keeping a reserve for match stats
     soon = [m for m in upcoming if datetime.fromisoformat(m["date"].replace("Z", "+00:00")) <= NOW + timedelta(days=3)]
