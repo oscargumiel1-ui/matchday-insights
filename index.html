@@ -40,12 +40,27 @@ h1 span{color:var(--home)}h1 em{font-style:normal;color:var(--away)}
 .chip:focus-visible,.fx:focus-visible,.seg button:focus-visible{outline:2px solid var(--home);outline-offset:2px}
 .main{display:grid;grid-template-columns:320px minmax(0,1fr);gap:20px;align-items:start}
 @media (max-width:860px){.main{grid-template-columns:1fr}}
-.rail{display:grid;gap:14px}
-.lg{font:700 13px var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.rail{display:grid;gap:10px;align-content:start}
+@media (min-width:861px){.rail{position:sticky;top:16px;max-height:calc(100vh - 32px);overflow-y:auto;padding-right:4px;scrollbar-width:thin}}
+.day{display:grid;gap:6px}
+.day>summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;justify-content:space-between;gap:8px;padding:6px 2px;border-radius:6px}
+.day>summary::-webkit-details-marker{display:none}
+.day>summary:focus-visible{outline:2px solid var(--home);outline-offset:2px}
+.day .dn{font:700 15px var(--f-display);letter-spacing:.1em;text-transform:uppercase;color:var(--fg)}
+.day .dc{font:500 12px var(--f-data);color:var(--muted);display:flex;align-items:center;gap:8px}
+.day .dc::after{content:"";width:7px;height:7px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg) translate(-2px,-2px);transition:transform .15s}
+.day[open] .dc::after{transform:rotate(-135deg) translate(-2px,-2px)}
 .fxlist{display:grid;gap:6px}
-.fx{display:grid;grid-template-columns:1fr auto;gap:2px 10px;text-align:left;width:100%;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;color:var(--fg);font:inherit}
+.fx{display:grid;grid-template-columns:1fr auto;gap:1px 10px;text-align:left;width:100%;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:9px 12px;cursor:pointer;color:var(--fg);font:inherit}
 .fx[aria-current="true"]{border-color:var(--home);box-shadow:inset 3px 0 0 var(--home)}
-.fx b{font-weight:600}.fx .t{font:500 12px var(--f-data);color:var(--muted);grid-row:span 2;align-self:center;text-align:right}
+.fx .lgt{font:600 11px var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.fx .t{font:500 12px var(--f-data);color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+.fx .live{color:var(--loss);font-weight:600}
+.fx .tm{grid-column:1/-1;font-weight:600;line-height:1.35}
+.fx .tm span{font-weight:400;color:var(--muted)}
+.back{display:none;font:600 13px var(--f-body);color:var(--home);background:none;border:0;padding:12px 20px 0;cursor:pointer}
+@media (max-width:860px){.back{display:block}}
+@media (prefers-reduced-motion:reduce){.day .dc::after{transition:none}}
 .sheet{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;min-width:0}
 .score{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;padding:22px 20px;border-bottom:1px solid var(--line)}
 .team{display:grid;gap:4px}.team.a{text-align:right}
@@ -146,7 +161,19 @@ function renderNotices(){
   const up=new Date(D.updated);
   document.getElementById("meta").textContent=`Season ${D.season}. Source: ${D.source}. Updated ${up.toLocaleString(undefined,{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}.`;
 }
-function visible(){return D.matches.filter(m=>state.lg==="all"||m.league===state.lg)}
+// Hide matches that kicked off more than 2 hours ago: the data only refreshes once a day.
+const FINISHED_AFTER=2*3600e3;
+function visible(){const now=Date.now();return D.matches.filter(m=>(state.lg==="all"||m.league===state.lg)&&new Date(m.kickoff).getTime()+FINISHED_AFTER>now)}
+const dayKey=iso=>{const d=new Date(iso);return d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate()};
+function dayLabel(iso){
+  const d=new Date(iso),t=new Date();t.setHours(0,0,0,0);
+  const diff=Math.round((new Date(d.getFullYear(),d.getMonth(),d.getDate())-t)/864e5);
+  if(diff===0)return"Today";if(diff===1)return"Tomorrow";
+  return d.toLocaleDateString(undefined,{weekday:"long",day:"numeric",month:"short"});
+}
+const timeFmt=new Intl.DateTimeFormat(undefined,{hour:"2-digit",minute:"2-digit"});
+const isNarrow=()=>matchMedia("(max-width:860px)").matches;
+state.open=null;
 function renderChips(){
   const used=new Set(D.matches.map(m=>m.league));
   const opts=[["all","All leagues"],...Object.entries(D.leagues).filter(([k])=>used.has(k))];
@@ -154,10 +181,18 @@ function renderChips(){
   document.getElementById("leagues").innerHTML=opts.map(([k,v])=>`<button class="chip" id="lg-${k}" data-lg="${k}" aria-pressed="${state.lg===k}">${esc(v)}</button>`).join("");
 }
 function renderRail(){
-  const list=visible();
-  if(!list.some(m=>m.id===state.sel))state.sel=list[0]?.id??null;
-  const groups={};Object.keys(D.leagues).forEach(k=>{const ms=list.filter(m=>m.league===k);if(ms.length)groups[k]=ms});
-  document.getElementById("rail").innerHTML=Object.entries(groups).map(([lg,ms])=>`<div><p class="lg">${esc(D.leagues[lg])}</p><div class="fxlist">${ms.map(m=>`<button class="fx" id="fx-${esc(m.id)}" data-id="${esc(m.id)}" aria-current="${m.id===state.sel}"><b>${esc(m.home.name)}</b><span class="t">${ko(m.kickoff)}</span><span>${esc(m.away.name)}</span></button>`).join("")}</div></div>`).join("");
+  const list=visible(),now=Date.now();
+  if(!list.some(m=>m.id===state.sel))state.sel=(list.find(m=>new Date(m.kickoff)>now)||list[0])?.id??null;
+  const groups=new Map();list.forEach(m=>{const k=dayKey(m.kickoff);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(m)});
+  const keys=[...groups.keys()];
+  // Phones: only the first day starts open (plus the day of the selected match). Desktop: all open.
+  if(!state.open){const sel=list.find(m=>m.id===state.sel);state.open=new Set(isNarrow()?[keys[0],sel&&dayKey(sel.kickoff)]:keys)}
+  const rail=document.getElementById("rail");
+  if(!keys.length){rail.innerHTML=`<p class="sub">No upcoming matches for this filter in the next 7 days.</p>`;return}
+  rail.innerHTML=keys.map(k=>{const ms=groups.get(k);return`<details class="day" data-day="${k}" ${state.open.has(k)?"open":""}>
+    <summary><span class="dn">${dayLabel(ms[0].kickoff)}</span><span class="dc">${ms.length} ${ms.length===1?"match":"matches"}</span></summary>
+    <div class="fxlist">${ms.map(m=>{const st=new Date(m.kickoff)<=now;return`<button class="fx" id="fx-${esc(m.id)}" data-id="${esc(m.id)}" aria-current="${m.id===state.sel}"><span class="lgt">${esc(D.leagues[m.league])}</span><span class="t ${st?"live":""}">${st?"Started":timeFmt.format(new Date(m.kickoff))}</span><span class="tm">${esc(m.home.name)} <span>v</span> ${esc(m.away.name)}</span></button>`}).join("")}</div>
+  </details>`}).join("");
 }
 const formHTML=f=>f&&f.length?`<div class="form" aria-label="Last ${f.length}: ${f.join(" ")}">${f.map(x=>`<span class="f ${x}">${x}</span>`).join("")}</div>`:`<span class="tag">No form yet</span>`;
 function row(label,hv,av,lowerBetter){
@@ -190,7 +225,7 @@ function renderSheet(){
   const venue=state.mode==="venue";
   const H=venue?m.home.venue:m.home.overall,A=venue?m.away.venue:m.away.overall;
   const hl=venue?"At home":"All matches",al=venue?"Away":"All matches";
-  const head=`<div class="score">
+  const head=`<button class="back" id="back" data-back="1">↑ All fixtures</button><div class="score">
     <div class="team h"><span class="tag">Home · ${hl}${H?`, ${H.gp} played`:""}</span><span class="nm">${esc(m.home.name)}</span>${formHTML(m.home.form)}</div>
     <div class="vs"><strong>VS</strong>${ko(m.kickoff,true)}<br>${esc(D.leagues[m.league])}</div>
     <div class="team a"><span class="tag">Away · ${al}${A?`, ${A.gp} played`:""}</span><span class="nm">${esc(m.away.name)}</span>${formHTML(m.away.form)}</div>
@@ -226,11 +261,15 @@ function renderSheet(){
   </section>`;
 }
 function render(){renderChips();renderRail();renderSheet();save()}
+document.addEventListener("toggle",e=>{const d=e.target;if(!d.classList?.contains("day")||!state.open)return;d.open?state.open.add(d.dataset.day):state.open.delete(d.dataset.day)},true);
+// Drop matches from the list as they finish while the page stays open
+setInterval(()=>{if(D){const before=state.sel;renderRail();if(state.sel!==before)renderSheet()}},5*60e3);
 document.addEventListener("click",e=>{
   if(!D)return;
-  const c=e.target.closest("[data-lg]");if(c){state.lg=c.dataset.lg;render();return}
+  const c=e.target.closest("[data-lg]");if(c){state.lg=c.dataset.lg;state.open=null;state.sel=null;render();return}
   const f=e.target.closest("[data-id]");if(f){state.sel=f.dataset.id;render();if(innerWidth<860)document.getElementById("sheet").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});return}
-  const s=e.target.closest("[data-mode]");if(s){state.mode=s.dataset.mode;render()}
+  const s=e.target.closest("[data-mode]");if(s){state.mode=s.dataset.mode;render();return}
+  if(e.target.closest("[data-back]")){const a=document.querySelector(".fx[aria-current='true']")||document.getElementById("rail");a.scrollIntoView({block:"center",behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});a.focus?.({preventScroll:true})}
 });
 function start(d){
   D=d;D.matches.sort((a,b)=>a.kickoff.localeCompare(b.kickoff));renderNotices();render();
