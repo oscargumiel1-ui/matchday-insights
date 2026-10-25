@@ -34,7 +34,15 @@ LEAGUES = {
     "pl": ("Premier League", 39, "PL"),
     "sa": ("Serie A", 135, "SA"),
     "bl": ("Bundesliga", 78, "BL1"),
+    "l1": ("Ligue 1", 61, "FL1"),
+    "ed": ("Eredivisie", 88, "DED"),
+    "pp": ("Primeira Liga", 94, "PPL"),
+    "ch": ("Championship", 40, "ELC"),
+    "cl": ("Champions League", 2, "CL"),
+    "br": ("Brasileirão", 71, "BSA"),
 }
+# Leagues whose season runs within one calendar year (Feb-Dec) instead of Aug-May
+CALENDAR_YEAR_LEAGUES = {"br"}
 UPCOMING_DAYS = int(os.environ.get("UPCOMING_DAYS", "7"))
 APIF_DAILY_BUDGET = int(os.environ.get("APIF_DAILY_BUDGET", "95"))  # keep 5 spare of the 100
 CALL_GAP_SECONDS = float(os.environ.get("CALL_GAP_SECONDS", "6.5"))  # stays under 10 calls/minute
@@ -64,6 +72,10 @@ def current_season():
     if env:
         return int(env)
     return NOW.year if NOW.month >= 7 else NOW.year - 1
+
+
+def league_season(code, season):
+    return NOW.year if code in CALENDAR_YEAR_LEAGUES and not os.environ.get("SEASON") else season
 
 
 # ---------------------------------------------------------------- HTTP
@@ -161,11 +173,13 @@ class ApiFootball:
             raise RuntimeError(f"API-Football error on {path}: {text}")
         return data.get("response", [])
 
+    has_standings = False
+
     def fixtures(self):
         out = []
         for code, (_, lid, _) in LEAGUES.items():
             log(f"  fixtures: {LEAGUES[code][0]}")
-            for it in self._get("/fixtures", {"league": lid, "season": self.season}):
+            for it in self._get("/fixtures", {"league": lid, "season": league_season(code, self.season)}):
                 st = it["fixture"]["status"]["short"]
                 out.append({
                     "id": f"af{it['fixture']['id']}", "raw_id": it["fixture"]["id"], "league": code,
@@ -205,16 +219,26 @@ class ApiFootball:
 class FootballData:
     name = "football-data.org"
     has_stats = False
+    has_standings = True
 
     def __init__(self, key, season):
         self.http = Http("https://api.football-data.org/v4", {"X-Auth-Token": key})
         self.season = season
+        self.skipped = []
 
     def fixtures(self):
-        out = []
+        """Current season of every league. A league the plan doesn't cover is skipped, not fatal."""
+        out, ok, first_err = [], 0, None
         for code, (_, _, fd) in LEAGUES.items():
             log(f"  fixtures: {LEAGUES[code][0]}")
-            data = self.http.get(f"/competitions/{fd}/matches", {"season": self.season})
+            try:
+                data = self.http.get(f"/competitions/{fd}/matches")
+            except (PlanError, RuntimeError) as e:
+                first_err = first_err or e
+                self.skipped.append(LEAGUES[code][0])
+                log(f"  skipped {LEAGUES[code][0]}: {e}")
+                continue
+            ok += 1
             for it in data.get("matches", []):
                 st = it["status"]
                 ft = it["score"]["fullTime"]
@@ -226,6 +250,27 @@ class FootballData:
                     "hid": it["homeTeam"]["id"], "aid": it["awayTeam"]["id"],
                     "hg": ft["home"], "ag": ft["away"],
                 })
+        if not ok and first_err:
+            raise first_err
+        if self.skipped:
+            gh_note("warning", f"Skipped leagues the free plan didn't return: {', '.join(self.skipped)}")
+        return out
+
+    def standings(self, code):
+        """{team_id: {"total": row, "home": row, "away": row}} with row = pos, pts, p, w, d, l, gf, ga."""
+        data = self.http.get(f"/competitions/{LEAGUES[code][2]}/standings")
+        out = {}
+        for block in data.get("standings", []):
+            kind = (block.get("type") or "TOTAL").lower()
+            if kind not in ("total", "home", "away"):
+                continue
+            for r in block.get("table", []):
+                out.setdefault(r["team"]["id"], {})[kind] = {
+                    "pos": r["position"], "pts": r["points"], "p": r["playedGames"],
+                    "w": r["won"], "d": r["draw"], "l": r["lost"],
+                    "gf": r["goalsFor"], "ga": r["goalsAgainst"],
+                    "size": len(block.get("table", [])),
+                }
         return out
 
     def match_stats(self, m):
@@ -251,6 +296,7 @@ class Demo:
     """Invented data that runs through the same pipeline. For testing only."""
     name = "Demo data (invented)"
     has_stats = True
+    has_standings = False
     TEAMS = {
         "ll": ["Real Madrid", "Barcelona", "Atlético Madrid", "Villarreal", "Real Sociedad", "Sevilla"],
         "pl": ["Arsenal", "Liverpool", "Newcastle", "Aston Villa", "Brighton", "Brentford"],
@@ -444,6 +490,15 @@ def main():
             except Exception as e:
                 log(f"  h2h failed for {m['home']} v {m['away']}: {e}")
 
+    # 0) league tables (one call per league with upcoming matches)
+    tables = {}
+    if getattr(prov, "has_standings", False):
+        for code in sorted({m["league"] for m in upcoming}):
+            try:
+                tables[code] = prov.standings(code)
+            except Exception as e:
+                log(f"  standings failed for {LEAGUES[code][0]}: {e}")
+
     # 1) head-to-head for the next 3 days first, keeping a reserve for match stats
     soon = [m for m in upcoming if datetime.fromisoformat(m["date"].replace("Z", "+00:00")) <= NOW + timedelta(days=3)]
     fetch_h2h(soon, reserve=30 if prov.has_stats else 0)
@@ -477,9 +532,11 @@ def main():
         out_matches.append({
             "id": m["id"], "league": m["league"], "kickoff": m["date"],
             "home": {"name": m["home"], "venue": team_stats(m["home"], lg, stats_cache, "home"),
-                     "overall": team_stats(m["home"], lg, stats_cache, "all"), "form": form(m["home"], lg)},
+                     "overall": team_stats(m["home"], lg, stats_cache, "all"), "form": form(m["home"], lg),
+                     "table": tables.get(m["league"], {}).get(m["hid"])},
             "away": {"name": m["away"], "venue": team_stats(m["away"], lg, stats_cache, "away"),
-                     "overall": team_stats(m["away"], lg, stats_cache, "all"), "form": form(m["away"], lg)},
+                     "overall": team_stats(m["away"], lg, stats_cache, "all"), "form": form(m["away"], lg),
+                     "table": tables.get(m["league"], {}).get(m["aid"])},
             "h2h": cache["h2h"].get(key, {}).get("items", []),
         })
 
@@ -489,6 +546,7 @@ def main():
         "source": prov.name, "demo": demo,
         "season": f"{season}/{str(season + 1)[2:]}",
         "hasMatchStats": prov.has_stats, "statsBackfillPending": pending,
+        "hasStandings": bool(tables),
         "leagues": {k: v[0] for k, v in LEAGUES.items()},
         "matches": out_matches,
     }

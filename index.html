@@ -108,6 +108,17 @@ h2{font:700 18px var(--f-display);letter-spacing:.06em;text-transform:uppercase;
 .meter i{display:block;height:100%;background:var(--fg)}
 .howto{font-size:12.5px;color:var(--muted);margin:0}
 .h2h{width:100%;border-collapse:collapse;font-size:14px}
+.st{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+.st th{font:600 11px var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:right;padding:0 8px 8px;white-space:nowrap}
+.st th:first-child{text-align:left;padding-left:0}
+.st td{padding:9px 8px;border-top:1px solid var(--line);text-align:right;white-space:nowrap}
+.st td:first-child{text-align:left;padding-left:0;font-weight:600;white-space:normal}
+.st td.h{color:var(--home)}.st td:first-child.a{color:var(--away)}
+.st .pos{display:block;font:800 22px/1.1 var(--f-display)}
+.st .rec{display:block;font:500 11.5px var(--f-data);color:var(--muted);margin-top:2px}
+@media (max-width:480px){.st th,.st td{padding-left:4px;padding-right:4px}.st th{letter-spacing:.04em;font-size:10.5px}}
+.st td.key{background:var(--bg)}
+.st td.key.hk{box-shadow:inset 0 -2px 0 var(--home)}.st td.key.ak{box-shadow:inset 0 -2px 0 var(--away)}
 .h2h td{padding:7px 4px;border-top:1px solid var(--line)}
 .h2h td.d{color:var(--muted);font:500 12px var(--f-data);white-space:nowrap}
 .h2h td.s{text-align:center;font:600 14px var(--f-data);white-space:nowrap}
@@ -124,7 +135,7 @@ footer a,.sub a{color:var(--home)}
   <header>
     <div>
       <h1><span>Match</span><em>day</em> Insights</h1>
-      <p class="sub">Home form vs away form for the coming week's fixtures across Europe's top leagues.</p>
+      <p class="sub">Home form vs away form for the coming week's fixtures across Europe's top leagues, the Champions League and Brazil.</p>
     </div>
     <div class="chips" id="leagues" role="group" aria-label="Filter by league"></div>
   </header>
@@ -200,6 +211,27 @@ function row(label,hv,av,lowerBetter){
   const t=(hv+av)||1,hb=lowerBetter?hv<av:hv>av,ab=lowerBetter?av<hv:av>hv;
   return`<div class="row"><span class="v h ${hb?"best":""}">${fmt(hv)}</span><div class="mid"><span class="lab">${label}</span><div class="bar"><i class="bh" style="width:${hv/t*100}%"></i><i class="ba" style="width:${av/t*100}%"></i></div></div><span class="v a r ${ab?"best":""}">${fmt(av)}</span></div>`;
 }
+const ord=n=>{const s=["th","st","nd","rd"],v=n%100;return n+(s[(v-20)%10]||s[v]||s[0])};
+const rec=r=>`${r.w}W ${r.d}D ${r.l}L`;
+function tableNotes(m){
+  const out=[],ht=m.home.table,at=m.away.table,h=esc(m.home.name),a=esc(m.away.name);
+  if(ht&&ht.home){const r=ht.home;if(r.p>=3&&r.pos<=3)out.push({c:"h",t:`${h} are ${ord(r.pos)} in the home table (${rec(r)} at home).`});else if(r.p>=3&&r.pos>r.size-3)out.push({c:"h",t:`${h} are ${ord(r.pos)} of ${r.size} in the home table (${rec(r)} at home).`})}
+  if(at&&at.away){const r=at.away;if(r.p>=3&&r.pos<=3)out.push({c:"a",t:`${a} are ${ord(r.pos)} in the away table (${rec(r)} on the road).`});else if(r.p>=3&&r.pos>r.size-3)out.push({c:"a",t:`${a} are ${ord(r.pos)} of ${r.size} in the away table (${rec(r)} on the road).`})}
+  if(ht&&at&&ht.total&&at.total){const d=Math.abs(ht.total.pos-at.total.pos);if(d>=10)out.push({c:"",t:`${d} places separate them in the league table (${ord(ht.total.pos)} v ${ord(at.total.pos)}).`})}
+  return out;
+}
+function standingsHTML(m){
+  const ht=m.home.table,at=m.away.table;
+  if(!ht&&!at)return"";
+  const cell=(r,key,showPts)=>r?`<td class="${key||""}" title="${r.pts} pts, ${rec(r)}"><span class="pos">${ord(r.pos)}</span><span class="rec">${showPts?r.pts+" pts":rec(r)}</span></td>`:`<td>–</td>`;
+  const row=(name,t,cls,keyCol)=>`<tr><td class="${cls}">${esc(name)}</td>${cell(t&&t.total,"",true)}${cell(t&&t.home,keyCol==="home"?"key hk":"")}${cell(t&&t.away,keyCol==="away"?"key ak":"")}</tr>`;
+  return`<section class="sec"><h2>League table</h2>
+    <div class="tbl"><table class="st"><thead><tr><th>Team</th><th>Overall</th><th>Home</th><th>Away</th></tr></thead><tbody>
+    ${row(m.home.name,ht,"h","home")}${row(m.away.name,at,"a","away")}
+    </tbody></table></div>
+    <p class="howto">"Home" and "Away" rank teams on their home or away games only. Highlighted: the home side's home ranking and the away side's away ranking, the two that matter for this match.</p>
+  </section>`;
+}
 function notes(m,H,A){
   const h=esc(m.home.name),a=esc(m.away.name),n=[];
   const bb=Math.round((H.btts+A.btts)/2),bo=Math.round((H.o25+A.o25)/2);
@@ -216,6 +248,7 @@ function notes(m,H,A){
   if(has(A.xg)&&A.xg>0&&A.gf/A.xg>1.25)n.push({c:"a",t:`${a} are scoring well above their xG (${fmt(A.gf)} vs ${fmt(A.xg)}), which often cools off.`});
   if(has(H.xg)&&H.xg>0&&H.gf/H.xg<.75)n.push({c:"h",t:`${h} are scoring below their xG (${fmt(H.gf)} vs ${fmt(H.xg)}), so goals may pick up.`});
   if(H.gp<3||A.gp<3)n.push({c:"",t:`Small sample: averages are based on ${H.gp} and ${A.gp} matches.`});
+  n.splice(1,0,...tableNotes(m));
   return n.slice(0,6).map(x=>`<li class="${x.c}">${x.t}</li>`).join("");
 }
 function renderSheet(){
@@ -256,6 +289,7 @@ function renderSheet(){
     <div class="combo">${combos.map(([l,v,src])=>`<div><span class="lab">${l}</span><b>${Math.round(v)}%</b><div class="meter"><i style="width:${Math.round(v)}%"></i></div><span class="src">${src}</span></div>`).join("")}</div>
     <p class="howto">Each figure averages the two teams' rates from the split above. It's a summary of past matches, not a prediction.</p>
   </section>
+  ${standingsHTML(m)}
   <section class="sec"><h2>Head to head</h2>
     ${m.h2h&&m.h2h.length?`<div class="tbl"><table class="h2h"><tbody>${m.h2h.map(g=>`<tr><td class="d">${esc(g.date)}</td><td>${esc(g.home)}</td><td class="s">${g.hg}–${g.ag}</td><td style="text-align:right">${esc(g.away)}</td></tr>`).join("")}</tbody></table></div>`:`<p class="sub">No recent meetings loaded yet.</p>`}
   </section>`;

@@ -1,6 +1,6 @@
 # Matchday Insights
 
-A free website with home and away stats for upcoming La Liga, Premier League, Serie A and Bundesliga matches: goals, xG, shots, corners, cards, both-teams-to-score, over 2.5, form and head-to-head.
+A free website with home and away stats for upcoming matches in La Liga, the Premier League, Serie A, the Bundesliga, Ligue 1, the Eredivisie, the Primeira Liga, the Championship, the Champions League and Brazil's Série A: goals, both-teams-to-score, over 2.5, clean sheets, form, league tables (overall, home and away) and head-to-head. Shots, corners, cards and xG appear when the data source provides them.
 
 Everything runs for free on GitHub. Once a day, a script fetches the latest results from a football data API, works out the averages, and saves them to `data/matches.json`. The website just reads that file, so visitors never use up your API requests and your API key stays private.
 
@@ -55,7 +55,7 @@ From then on it updates by itself every morning.
 
 - **API-Football, 100 requests/day.** One request per league loads every fixture and result of the season (4 in total). Head-to-heads for the next 3 days come next, then shots and corners for finished matches, newest first, up to 95 requests a day. Downloaded stats are saved in `data/cache.json` and never fetched again.
   - On the first days the script is catching up on the whole season, so shot and corner averages are based on fewer matches. The page says so. With roughly 40 matches a week across the four leagues, it catches up within a few days and then stays current.
-- **football-data.org, 10 requests/minute.** The script waits 6.5 seconds between calls.
+- **football-data.org, 10 requests/minute.** The script waits 6.5 seconds between calls. One call per league for fixtures, one per league for tables, and one head-to-head per upcoming match (cached for a week). The first run with all ten leagues takes about 15 to 20 minutes; later runs are faster.
 
 ## Settings you can change
 
@@ -80,7 +80,7 @@ Opening `index.html` by double-clicking won't load the data, because browsers bl
 
 ## Adding a league
 
-Add a line to `LEAGUES` in `scripts/update.py` with a short code, the name, the API-Football league ID and the football-data.org code. For example Ligue 1: `"l1": ("Ligue 1", 61, "FL1")`.
+Add a line to `LEAGUES` in `scripts/update.py` with a short code, the name, the API-Football league ID and the football-data.org code. For example Serie B: `"sb": ("Serie B", 136, "SB")`. A league the free plan doesn't cover is skipped with a warning; the rest still update. If its season runs within one calendar year, add its code to `CALENDAR_YEAR_LEAGUES`.
 
 ## Responsible use
 
