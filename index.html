@@ -83,10 +83,15 @@ h2{font:700 18px var(--f-display);letter-spacing:.06em;text-transform:uppercase;
 .notes li{display:grid;grid-template-columns:8px 1fr;gap:10px;align-items:baseline}
 .notes li::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--fg);transform:translateY(-1px)}
 .notes li.h::before{background:var(--home)}.notes li.a::before{background:var(--away)}
-.combo{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
-.combo div{background:var(--bg);border-radius:10px;padding:12px}
-.combo b{display:block;font:800 30px var(--f-display);line-height:1}
-.combo span{font-size:12.5px;color:var(--muted)}
+.combo{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.combo>div{background:var(--bg);border-radius:10px;padding:12px;display:grid;gap:6px;align-content:start}
+.combo b{display:block;font:800 34px var(--f-display);line-height:1;font-variant-numeric:tabular-nums}
+.combo .lab{font-size:13px;font-weight:600;color:var(--fg)}
+.combo .src{font:500 11.5px/1.5 var(--f-data);color:var(--muted)}
+.combo .src .h{color:var(--home)}.combo .src .a{color:var(--away)}
+.meter{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+.meter i{display:block;height:100%;background:var(--fg)}
+.howto{font-size:12.5px;color:var(--muted);margin:0}
 .h2h{width:100%;border-collapse:collapse;font-size:14px}
 .h2h td{padding:7px 4px;border-top:1px solid var(--line)}
 .h2h td.d{color:var(--muted);font:500 12px var(--f-data);white-space:nowrap}
@@ -162,7 +167,8 @@ function row(label,hv,av,lowerBetter){
 }
 function notes(m,H,A){
   const h=esc(m.home.name),a=esc(m.away.name),n=[];
-  n.push({c:"",t:`Blending attack with the opponent's defence gives ${fmt((H.gf+A.ga)/2)} goals for ${h} and ${fmt((A.gf+H.ga)/2)} for ${a}.`});
+  const bb=Math.round((H.btts+A.btts)/2),bo=Math.round((H.o25+A.o25)/2);
+  n.push({c:"",t:`Combining both records: both teams scored in ${bb}% of their matches and ${bo}% went over 2.5 goals.`});
   if(H.gf-A.gf>.6)n.push({c:"h",t:`${h} score ${fmt(H.gf-A.gf)} more goals per game than ${a} in this split.`});
   else if(A.gf-H.gf>.3)n.push({c:"a",t:`${a} outscore the hosts per game (${fmt(A.gf)} vs ${fmt(H.gf)}), unusual for an away side.`});
   if(H.o25>=60&&A.o25>=60)n.push({c:"",t:`Both sides go over 2.5 goals in at least 60% of matches (${H.o25}% and ${A.o25}%).`});
@@ -192,8 +198,14 @@ function renderSheet(){
   const seg=`<div class="seg" role="group" aria-label="Stat split"><button id="mode-venue" data-mode="venue" aria-pressed="${venue}">At venue</button><button id="mode-all" data-mode="all" aria-pressed="${!venue}">Overall</button></div>`;
   if(!H||!A){el.innerHTML=head+`<section class="sec"><div class="sechd"><h2>Per game</h2>${seg}</div><p class="sub">Not enough matches played yet in this split. Try "Overall".</p></section>`;return}
   const statRows=[row("Expected goals (xG)",H.xg,A.xg),row("xG against",H.xga,A.xga,true),row("Shots",H.shots,A.shots),row("Shots on target",H.sot,A.sot),row("Corners",H.corners,A.corners),row("Cards",H.cards,A.cards,true)].join("");
-  const combos=[[(H.gf+A.ga)/2,`${esc(m.home.name)} goals (avg of attack and opponent defence)`],[(A.gf+H.ga)/2,`${esc(m.away.name)} goals`],[(H.gf+A.ga+A.gf+H.ga)/2,"Total goals"]];
-  if(has(H.corners)&&has(A.corners))combos.push([H.corners+A.corners,"Total corners"]);
+  // Each figure averages one rate from each side, e.g. home team scores = avg(home side's scoring rate, away side's rate of conceding)
+  const hs=100-H.fts,ac=100-A.cs,as=100-A.fts,hc=100-H.cs;
+  const combos=[
+    ["Both teams score",(H.btts+A.btts)/2,`<span class="h">${esc(m.home.name)} ${H.btts}%</span><br><span class="a">${esc(m.away.name)} ${A.btts}%</span>`],
+    ["Over 2.5 goals",(H.o25+A.o25)/2,`<span class="h">${esc(m.home.name)} ${H.o25}%</span><br><span class="a">${esc(m.away.name)} ${A.o25}%</span>`],
+    [`${esc(m.home.name)} score`,(hs+ac)/2,`<span class="h">Scored in ${hs}%</span><br><span class="a">Opp. conceded in ${ac}%</span>`],
+    [`${esc(m.away.name)} score`,(as+hc)/2,`<span class="a">Scored in ${as}%</span><br><span class="h">Opp. conceded in ${hc}%</span>`]
+  ];
   el.innerHTML=head+`
   <section class="sec"><h2>Key insights</h2><ul class="notes">${notes(m,H,A)}</ul></section>
   <section class="sec">
@@ -205,8 +217,9 @@ function renderSheet(){
       ${[["Both teams scored","btts"],["Over 2.5 goals","o25"],["Clean sheet","cs"],["Failed to score","fts"]].map(([k,f])=>`<div class="pct"><span class="k">${k}</span><div class="pair"><span class="h">${H[f]}%</span><span class="a">${A[f]}%</span></div><div class="bar"><i class="bh" style="width:${H[f]}%"></i></div><div class="bar"><i class="ba" style="width:${A[f]}%"></i></div></div>`).join("")}
     </div>
   </section>
-  <section class="sec"><h2>Blended projection</h2>
-    <div class="combo">${combos.map(([v,l])=>`<div><b>${fmt(v)}</b><span>${l}</span></div>`).join("")}</div>
+  <section class="sec"><h2>Combined chances</h2>
+    <div class="combo">${combos.map(([l,v,src])=>`<div><span class="lab">${l}</span><b>${Math.round(v)}%</b><div class="meter"><i style="width:${Math.round(v)}%"></i></div><span class="src">${src}</span></div>`).join("")}</div>
+    <p class="howto">Each figure averages the two teams' rates from the split above. It's a summary of past matches, not a prediction.</p>
   </section>
   <section class="sec"><h2>Head to head</h2>
     ${m.h2h&&m.h2h.length?`<div class="tbl"><table class="h2h"><tbody>${m.h2h.map(g=>`<tr><td class="d">${esc(g.date)}</td><td>${esc(g.home)}</td><td class="s">${g.hg}–${g.ag}</td><td style="text-align:right">${esc(g.away)}</td></tr>`).join("")}</tbody></table></div>`:`<p class="sub">No recent meetings loaded yet.</p>`}
