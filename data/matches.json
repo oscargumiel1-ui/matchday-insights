@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T05:47+00:00",
+ "updated": "2026-10-27T05:44+00:00",
  "source": "football-data.org",
  "demo": false,
  "season": "2026/27",
@@ -19,958 +19,6 @@
   "br": "Brasileirão"
  },
  "matches": [
-  {
-   "id": "fd567331",
-   "league": "pp",
-   "kickoff": "2026-10-26T18:45:00Z",
-   "home": {
-    "name": "Santa Clara",
-    "venue": {
-     "gp": 4,
-     "gf": 1.75,
-     "ga": 0.5,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 25,
-     "o25": 50,
-     "cs": 75,
-     "fts": 25
-    },
-    "overall": {
-     "gp": 8,
-     "gf": 1.5,
-     "ga": 0.5,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 38,
-     "o25": 38,
-     "cs": 62,
-     "fts": 12
-    },
-    "form": [
-     "D",
-     "W",
-     "W",
-     "D",
-     "W"
-    ],
-    "table": {
-     "total": {
-      "pos": 4,
-      "pts": 18,
-      "p": 8,
-      "w": 5,
-      "d": 3,
-      "l": 0,
-      "gf": 12,
-      "ga": 4,
-      "size": 18
-     },
-     "home": {
-      "p": 4,
-      "w": 2,
-      "d": 2,
-      "l": 0,
-      "gf": 7,
-      "ga": 2,
-      "pts": 8,
-      "pos": 6,
-      "size": 18
-     },
-     "away": {
-      "p": 4,
-      "w": 3,
-      "d": 1,
-      "l": 0,
-      "gf": 5,
-      "ga": 2,
-      "pts": 10,
-      "pos": 2,
-      "size": 18
-     }
-    }
-   },
-   "away": {
-    "name": "SL Benfica",
-    "venue": {
-     "gp": 4,
-     "gf": 3.75,
-     "ga": 0.75,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 25,
-     "o25": 100,
-     "cs": 75,
-     "fts": 0
-    },
-    "overall": {
-     "gp": 8,
-     "gf": 3.0,
-     "ga": 0.88,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 50,
-     "o25": 88,
-     "cs": 50,
-     "fts": 0
-    },
-    "form": [
-     "W",
-     "W",
-     "W",
-     "L",
-     "W"
-    ],
-    "table": {
-     "total": {
-      "pos": 2,
-      "pts": 19,
-      "p": 8,
-      "w": 6,
-      "d": 1,
-      "l": 1,
-      "gf": 24,
-      "ga": 7,
-      "size": 18
-     },
-     "home": {
-      "p": 4,
-      "w": 3,
-      "d": 1,
-      "l": 0,
-      "gf": 9,
-      "ga": 4,
-      "pts": 10,
-      "pos": 3,
-      "size": 18
-     },
-     "away": {
-      "p": 4,
-      "w": 3,
-      "d": 0,
-      "l": 1,
-      "gf": 15,
-      "ga": 3,
-      "pts": 9,
-      "pos": 3,
-      "size": 18
-     }
-    }
-   },
-   "h2h": [
-    {
-     "date": "2026-02-13",
-     "home": "Santa Clara",
-     "away": "SL Benfica",
-     "hg": 1,
-     "ag": 2
-    },
-    {
-     "date": "2025-09-12",
-     "home": "SL Benfica",
-     "away": "Santa Clara",
-     "hg": 1,
-     "ag": 1
-    },
-    {
-     "date": "2025-02-15",
-     "home": "Santa Clara",
-     "away": "SL Benfica",
-     "hg": 0,
-     "ag": 1
-    },
-    {
-     "date": "2024-09-14",
-     "home": "SL Benfica",
-     "away": "Santa Clara",
-     "hg": 4,
-     "ag": 1
-    }
-   ]
-  },
-  {
-   "id": "fd559648",
-   "league": "l1",
-   "kickoff": "2026-10-26T19:30:00Z",
-   "home": {
-    "name": "PSG",
-    "venue": {
-     "gp": 2,
-     "gf": 2.0,
-     "ga": 1.5,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 100,
-     "o25": 100,
-     "cs": 0,
-     "fts": 0
-    },
-    "overall": {
-     "gp": 7,
-     "gf": 2.0,
-     "ga": 1.29,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 86,
-     "o25": 86,
-     "cs": 14,
-     "fts": 0
-    },
-    "form": [
-     "L",
-     "W",
-     "W",
-     "W",
-     "W"
-    ],
-    "table": {
-     "total": {
-      "pos": 5,
-      "pts": 14,
-      "p": 7,
-      "w": 4,
-      "d": 2,
-      "l": 1,
-      "gf": 14,
-      "ga": 9,
-      "size": 18
-     },
-     "home": {
-      "p": 2,
-      "w": 1,
-      "d": 0,
-      "l": 1,
-      "gf": 4,
-      "ga": 3,
-      "pts": 3,
-      "pos": 14,
-      "size": 18
-     },
-     "away": {
-      "p": 5,
-      "w": 3,
-      "d": 2,
-      "l": 0,
-      "gf": 10,
-      "ga": 6,
-      "pts": 11,
-      "pos": 1,
-      "size": 18
-     }
-    }
-   },
-   "away": {
-    "name": "Olympique Lyon",
-    "venue": {
-     "gp": 3,
-     "gf": 1.0,
-     "ga": 0.67,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 33,
-     "o25": 33,
-     "cs": 67,
-     "fts": 33
-    },
-    "overall": {
-     "gp": 7,
-     "gf": 1.86,
-     "ga": 0.71,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 57,
-     "o25": 57,
-     "cs": 43,
-     "fts": 14
-    },
-    "form": [
-     "W",
-     "D",
-     "W",
-     "L",
-     "W"
-    ],
-    "table": {
-     "total": {
-      "pos": 4,
-      "pts": 14,
-      "p": 7,
-      "w": 4,
-      "d": 2,
-      "l": 1,
-      "gf": 13,
-      "ga": 5,
-      "size": 18
-     },
-     "home": {
-      "p": 4,
-      "w": 3,
-      "d": 1,
-      "l": 0,
-      "gf": 10,
-      "ga": 3,
-      "pts": 10,
-      "pos": 1,
-      "size": 18
-     },
-     "away": {
-      "p": 3,
-      "w": 1,
-      "d": 1,
-      "l": 1,
-      "gf": 3,
-      "ga": 2,
-      "pts": 4,
-      "pos": 7,
-      "size": 18
-     }
-    }
-   },
-   "h2h": [
-    {
-     "date": "2026-04-19",
-     "home": "PSG",
-     "away": "Olympique Lyon",
-     "hg": 1,
-     "ag": 2
-    },
-    {
-     "date": "2025-11-09",
-     "home": "Olympique Lyon",
-     "away": "PSG",
-     "hg": 2,
-     "ag": 3
-    },
-    {
-     "date": "2025-02-23",
-     "home": "Olympique Lyon",
-     "away": "PSG",
-     "hg": 2,
-     "ag": 3
-    },
-    {
-     "date": "2024-12-15",
-     "home": "PSG",
-     "away": "Olympique Lyon",
-     "hg": 3,
-     "ag": 1
-    }
-   ]
-  },
-  {
-   "id": "fd564721",
-   "league": "ll",
-   "kickoff": "2026-10-26T20:00:00Z",
-   "home": {
-    "name": "Sevilla FC",
-    "venue": {
-     "gp": 4,
-     "gf": 1.25,
-     "ga": 1.75,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 75,
-     "o25": 75,
-     "cs": 25,
-     "fts": 0
-    },
-    "overall": {
-     "gp": 9,
-     "gf": 1.56,
-     "ga": 1.78,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 78,
-     "o25": 67,
-     "cs": 22,
-     "fts": 0
-    },
-    "form": [
-     "W",
-     "W",
-     "L",
-     "D",
-     "L"
-    ],
-    "table": {
-     "total": {
-      "pos": 6,
-      "pts": 14,
-      "p": 9,
-      "w": 4,
-      "d": 2,
-      "l": 3,
-      "gf": 14,
-      "ga": 16,
-      "size": 20
-     },
-     "home": {
-      "p": 4,
-      "w": 2,
-      "d": 0,
-      "l": 2,
-      "gf": 5,
-      "ga": 7,
-      "pts": 6,
-      "pos": 14,
-      "size": 20
-     },
-     "away": {
-      "p": 5,
-      "w": 2,
-      "d": 2,
-      "l": 1,
-      "gf": 9,
-      "ga": 9,
-      "pts": 8,
-      "pos": 6,
-      "size": 20
-     }
-    }
-   },
-   "away": {
-    "name": "Osasuna",
-    "venue": {
-     "gp": 4,
-     "gf": 1.5,
-     "ga": 3.75,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 75,
-     "o25": 100,
-     "cs": 0,
-     "fts": 25
-    },
-    "overall": {
-     "gp": 9,
-     "gf": 1.11,
-     "ga": 2.0,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 44,
-     "o25": 44,
-     "cs": 33,
-     "fts": 33
-    },
-    "form": [
-     "L",
-     "L",
-     "D",
-     "L",
-     "W"
-    ],
-    "table": {
-     "total": {
-      "pos": 12,
-      "pts": 11,
-      "p": 9,
-      "w": 3,
-      "d": 2,
-      "l": 4,
-      "gf": 10,
-      "ga": 18,
-      "size": 20
-     },
-     "home": {
-      "p": 5,
-      "w": 2,
-      "d": 2,
-      "l": 1,
-      "gf": 4,
-      "ga": 3,
-      "pts": 8,
-      "pos": 8,
-      "size": 20
-     },
-     "away": {
-      "p": 4,
-      "w": 1,
-      "d": 0,
-      "l": 3,
-      "gf": 6,
-      "ga": 15,
-      "pts": 3,
-      "pos": 15,
-      "size": 20
-     }
-    }
-   },
-   "h2h": [
-    {
-     "date": "2026-04-26",
-     "home": "Osasuna",
-     "away": "Sevilla FC",
-     "hg": 2,
-     "ag": 1
-    },
-    {
-     "date": "2025-11-08",
-     "home": "Sevilla FC",
-     "away": "Osasuna",
-     "hg": 1,
-     "ag": 0
-    },
-    {
-     "date": "2025-04-24",
-     "home": "Osasuna",
-     "away": "Sevilla FC",
-     "hg": 1,
-     "ag": 0
-    },
-    {
-     "date": "2024-12-02",
-     "home": "Sevilla FC",
-     "away": "Osasuna",
-     "hg": 1,
-     "ag": 1
-    },
-    {
-     "date": "2024-01-28",
-     "home": "Sevilla FC",
-     "away": "Osasuna",
-     "hg": 1,
-     "ag": 1
-    }
-   ]
-  },
-  {
-   "id": "fd555051",
-   "league": "br",
-   "kickoff": "2026-10-26T22:30:00Z",
-   "home": {
-    "name": "Coritiba",
-    "venue": {
-     "gp": 15,
-     "gf": 1.33,
-     "ga": 1.33,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 67,
-     "o25": 47,
-     "cs": 13,
-     "fts": 20
-    },
-    "overall": {
-     "gp": 31,
-     "gf": 1.23,
-     "ga": 1.58,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 52,
-     "o25": 52,
-     "cs": 19,
-     "fts": 32
-    },
-    "form": [
-     "D",
-     "L",
-     "L",
-     "D",
-     "L"
-    ],
-    "table": {
-     "total": {
-      "pos": 12,
-      "pts": 39,
-      "p": 31,
-      "w": 10,
-      "d": 9,
-      "l": 12,
-      "gf": 38,
-      "ga": 49,
-      "size": 20
-     },
-     "home": {
-      "p": 15,
-      "w": 5,
-      "d": 5,
-      "l": 5,
-      "gf": 20,
-      "ga": 20,
-      "pts": 20,
-      "pos": 17,
-      "size": 20
-     },
-     "away": {
-      "p": 16,
-      "w": 5,
-      "d": 4,
-      "l": 7,
-      "gf": 18,
-      "ga": 29,
-      "pts": 19,
-      "pos": 7,
-      "size": 20
-     }
-    }
-   },
-   "away": {
-    "name": "Grêmio",
-    "venue": {
-     "gp": 15,
-     "gf": 0.6,
-     "ga": 1.53,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 53,
-     "o25": 40,
-     "cs": 13,
-     "fts": 47
-    },
-    "overall": {
-     "gp": 31,
-     "gf": 1.1,
-     "ga": 1.42,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 61,
-     "o25": 45,
-     "cs": 19,
-     "fts": 32
-    },
-    "form": [
-     "L",
-     "D",
-     "D",
-     "D",
-     "L"
-    ],
-    "table": {
-     "total": {
-      "pos": 18,
-      "pts": 31,
-      "p": 31,
-      "w": 7,
-      "d": 10,
-      "l": 14,
-      "gf": 34,
-      "ga": 44,
-      "size": 20
-     },
-     "home": {
-      "p": 16,
-      "w": 7,
-      "d": 5,
-      "l": 4,
-      "gf": 25,
-      "ga": 21,
-      "pts": 26,
-      "pos": 12,
-      "size": 20
-     },
-     "away": {
-      "p": 15,
-      "w": 0,
-      "d": 5,
-      "l": 10,
-      "gf": 9,
-      "ga": 23,
-      "pts": 5,
-      "pos": 20,
-      "size": 20
-     }
-    }
-   },
-   "h2h": [
-    {
-     "date": "2026-04-26",
-     "home": "Grêmio",
-     "away": "Coritiba",
-     "hg": 1,
-     "ag": 0
-    },
-    {
-     "date": "2023-11-01",
-     "home": "Coritiba",
-     "away": "Grêmio",
-     "hg": 1,
-     "ag": 2
-    },
-    {
-     "date": "2023-06-25",
-     "home": "Grêmio",
-     "away": "Coritiba",
-     "hg": 5,
-     "ag": 1
-    },
-    {
-     "date": "2021-01-31",
-     "home": "Coritiba",
-     "away": "Grêmio",
-     "hg": 1,
-     "ag": 1
-    },
-    {
-     "date": "2020-10-07",
-     "home": "Grêmio",
-     "away": "Coritiba",
-     "hg": 2,
-     "ag": 1
-    }
-   ]
-  },
-  {
-   "id": "fd555053",
-   "league": "br",
-   "kickoff": "2026-10-26T23:00:00Z",
-   "home": {
-    "name": "Flamengo",
-    "venue": {
-     "gp": 15,
-     "gf": 1.93,
-     "ga": 0.67,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 40,
-     "o25": 53,
-     "cs": 53,
-     "fts": 7
-    },
-    "overall": {
-     "gp": 31,
-     "gf": 1.97,
-     "ga": 0.81,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 48,
-     "o25": 61,
-     "cs": 45,
-     "fts": 6
-    },
-    "form": [
-     "W",
-     "W",
-     "D",
-     "W",
-     "W"
-    ],
-    "table": {
-     "total": {
-      "pos": 2,
-      "pts": 67,
-      "p": 31,
-      "w": 20,
-      "d": 7,
-      "l": 4,
-      "gf": 61,
-      "ga": 25,
-      "size": 20
-     },
-     "home": {
-      "p": 15,
-      "w": 11,
-      "d": 3,
-      "l": 1,
-      "gf": 29,
-      "ga": 10,
-      "pts": 36,
-      "pos": 2,
-      "size": 20
-     },
-     "away": {
-      "p": 16,
-      "w": 9,
-      "d": 4,
-      "l": 3,
-      "gf": 32,
-      "ga": 15,
-      "pts": 31,
-      "pos": 1,
-      "size": 20
-     }
-    }
-   },
-   "away": {
-    "name": "Mineiro",
-    "venue": {
-     "gp": 15,
-     "gf": 1.0,
-     "ga": 1.2,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 33,
-     "o25": 40,
-     "cs": 20,
-     "fts": 53
-    },
-    "overall": {
-     "gp": 31,
-     "gf": 1.35,
-     "ga": 1.13,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 48,
-     "o25": 48,
-     "cs": 26,
-     "fts": 29
-    },
-    "form": [
-     "D",
-     "W",
-     "D",
-     "W",
-     "W"
-    ],
-    "table": {
-     "total": {
-      "pos": 6,
-      "pts": 50,
-      "p": 31,
-      "w": 14,
-      "d": 8,
-      "l": 9,
-      "gf": 42,
-      "ga": 35,
-      "size": 20
-     },
-     "home": {
-      "p": 16,
-      "w": 10,
-      "d": 5,
-      "l": 1,
-      "gf": 27,
-      "ga": 17,
-      "pts": 35,
-      "pos": 4,
-      "size": 20
-     },
-     "away": {
-      "p": 15,
-      "w": 4,
-      "d": 3,
-      "l": 8,
-      "gf": 15,
-      "ga": 18,
-      "pts": 15,
-      "pos": 10,
-      "size": 20
-     }
-    }
-   },
-   "h2h": [
-    {
-     "date": "2026-04-26",
-     "home": "Mineiro",
-     "away": "Flamengo",
-     "hg": 0,
-     "ag": 4
-    },
-    {
-     "date": "2025-11-26",
-     "home": "Mineiro",
-     "away": "Flamengo",
-     "hg": 1,
-     "ag": 1
-    },
-    {
-     "date": "2025-07-27",
-     "home": "Flamengo",
-     "away": "Mineiro",
-     "hg": 1,
-     "ag": 0
-    }
-   ]
-  },
   {
    "id": "fd558556",
    "league": "sa",
@@ -1243,7 +291,7 @@
       "gf": 9,
       "ga": 3,
       "pts": 8,
-      "pos": 4,
+      "pos": 5,
       "size": 20
      }
     }
@@ -1309,7 +357,7 @@
       "gf": 2,
       "ga": 4,
       "pts": 4,
-      "pos": 13,
+      "pos": 14,
       "size": 20
      },
      "away": {
@@ -1320,7 +368,7 @@
       "gf": 4,
       "ga": 5,
       "pts": 9,
-      "pos": 3,
+      "pos": 4,
       "size": 20
      }
     }
@@ -1428,7 +476,7 @@
       "gf": 6,
       "ga": 7,
       "pts": 6,
-      "pos": 12,
+      "pos": 13,
       "size": 20
      },
      "away": {
@@ -1439,7 +487,7 @@
       "gf": 7,
       "ga": 4,
       "pts": 7,
-      "pos": 5,
+      "pos": 6,
       "size": 20
      }
     }
@@ -1575,9 +623,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 7,
+     "gp": 8,
      "gf": 2.0,
-     "ga": 1.0,
+     "ga": 0.88,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -1585,16 +633,16 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 71,
-     "o25": 57,
-     "cs": 29,
+     "btts": 62,
+     "o25": 50,
+     "cs": 38,
      "fts": 0
     },
     "form": [
      "D",
-     "D",
      "W",
      "D",
+     "W",
      "W"
     ],
     "table": {
@@ -1617,18 +665,18 @@
       "gf": 8,
       "ga": 2,
       "pts": 9,
-      "pos": 4,
+      "pos": 5,
       "size": 20
      },
      "away": {
-      "p": 4,
-      "w": 1,
+      "p": 5,
+      "w": 2,
       "d": 3,
       "l": 0,
-      "gf": 6,
+      "gf": 8,
       "ga": 5,
-      "pts": 6,
-      "pos": 7,
+      "pts": 9,
+      "pos": 3,
       "size": 20
      }
     }
@@ -1705,7 +753,7 @@
       "gf": 4,
       "ga": 3,
       "pts": 6,
-      "pos": 9,
+      "pos": 10,
       "size": 20
      }
     }
@@ -1764,9 +812,9 @@
      "fts": 50
     },
     "overall": {
-     "gp": 7,
-     "gf": 0.86,
-     "ga": 2.29,
+     "gp": 8,
+     "gf": 0.75,
+     "ga": 2.12,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -1774,17 +822,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 43,
-     "o25": 43,
-     "cs": 14,
-     "fts": 43
+     "btts": 38,
+     "o25": 38,
+     "cs": 12,
+     "fts": 50
     },
     "form": [
      "L",
      "L",
      "L",
-     "L",
-     "W"
+     "W",
+     "L"
     ],
     "table": {
      "total": {
@@ -1806,16 +854,16 @@
       "gf": 3,
       "ga": 8,
       "pts": 3,
-      "pos": 17,
+      "pos": 16,
       "size": 20
      },
      "away": {
-      "p": 3,
+      "p": 4,
       "w": 0,
       "d": 0,
-      "l": 3,
+      "l": 4,
       "gf": 3,
-      "ga": 8,
+      "ga": 9,
       "pts": 0,
       "pos": 19,
       "size": 20
@@ -1841,9 +889,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 7,
-     "gf": 3.0,
-     "ga": 1.29,
+     "gp": 8,
+     "gf": 2.88,
+     "ga": 1.25,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -1851,15 +899,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 71,
-     "o25": 86,
-     "cs": 29,
+     "btts": 75,
+     "o25": 88,
+     "cs": 25,
      "fts": 0
     },
     "form": [
      "W",
-     "W",
      "D",
+     "W",
      "W",
      "W"
     ],
@@ -1876,13 +924,13 @@
       "size": 20
      },
      "home": {
-      "p": 4,
-      "w": 4,
+      "p": 5,
+      "w": 5,
       "d": 0,
       "l": 0,
-      "gf": 15,
-      "ga": 6,
-      "pts": 12,
+      "gf": 17,
+      "ga": 7,
+      "pts": 15,
       "pos": 1,
       "size": 20
      },
@@ -1894,7 +942,7 @@
       "gf": 6,
       "ga": 3,
       "pts": 7,
-      "pos": 6,
+      "pos": 7,
       "size": 20
      }
     }
@@ -1995,7 +1043,7 @@
       "gf": 3,
       "ga": 6,
       "pts": 4,
-      "pos": 14,
+      "pos": 15,
       "size": 20
      },
      "away": {
@@ -2030,9 +1078,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.29,
-     "ga": 2.29,
+     "gp": 8,
+     "gf": 1.12,
+     "ga": 2.25,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -2040,10 +1088,10 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 71,
-     "o25": 71,
+     "btts": 62,
+     "o25": 62,
      "cs": 0,
-     "fts": 29
+     "fts": 38
     },
     "form": [
      "L",
@@ -2065,14 +1113,14 @@
       "size": 20
      },
      "home": {
-      "p": 4,
+      "p": 5,
       "w": 0,
       "d": 1,
-      "l": 3,
+      "l": 4,
       "gf": 2,
-      "ga": 7,
+      "ga": 9,
       "pts": 1,
-      "pos": 19,
+      "pos": 20,
       "size": 20
      },
      "away": {
@@ -2133,9 +1181,9 @@
    "home": {
     "name": "Genoa",
     "venue": {
-     "gp": 4,
+     "gp": 5,
      "gf": 1.0,
-     "ga": 2.0,
+     "ga": 1.6,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -2143,15 +1191,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 75,
-     "o25": 50,
-     "cs": 0,
-     "fts": 25
+     "btts": 60,
+     "o25": 40,
+     "cs": 20,
+     "fts": 20
     },
     "overall": {
-     "gp": 7,
-     "gf": 0.71,
-     "ga": 1.86,
+     "gp": 8,
+     "gf": 0.75,
+     "ga": 1.62,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -2159,17 +1207,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 57,
-     "o25": 43,
-     "cs": 0,
-     "fts": 43
+     "btts": 50,
+     "o25": 38,
+     "cs": 12,
+     "fts": 38
     },
     "form": [
-     "L",
      "D",
      "L",
      "W",
-     "L"
+     "L",
+     "W"
     ],
     "table": {
      "total": {
@@ -2184,14 +1232,14 @@
       "size": 20
      },
      "home": {
-      "p": 4,
-      "w": 1,
+      "p": 5,
+      "w": 2,
       "d": 1,
       "l": 2,
-      "gf": 4,
+      "gf": 5,
       "ga": 8,
-      "pts": 4,
-      "pos": 15,
+      "pts": 7,
+      "pos": 11,
       "size": 20
      },
      "away": {
@@ -2210,9 +1258,9 @@
    "away": {
     "name": "Juventus",
     "venue": {
-     "gp": 3,
-     "gf": 1.33,
-     "ga": 1.33,
+     "gp": 4,
+     "gf": 1.5,
+     "ga": 1.0,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -2220,15 +1268,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 67,
-     "o25": 33,
-     "cs": 33,
+     "btts": 50,
+     "o25": 25,
+     "cs": 50,
      "fts": 0
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.29,
-     "ga": 1.14,
+     "gp": 8,
+     "gf": 1.38,
+     "ga": 1.0,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -2236,17 +1284,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 43,
-     "o25": 29,
-     "cs": 43,
-     "fts": 14
+     "btts": 38,
+     "o25": 25,
+     "cs": 50,
+     "fts": 12
     },
     "form": [
-     "D",
      "L",
      "W",
      "D",
-     "L"
+     "L",
+     "W"
     ],
     "table": {
      "total": {
@@ -2272,14 +1320,14 @@
       "size": 20
      },
      "away": {
-      "p": 3,
-      "w": 1,
+      "p": 4,
+      "w": 2,
       "d": 1,
       "l": 1,
-      "gf": 4,
+      "gf": 6,
       "ga": 4,
-      "pts": 4,
-      "pos": 11,
+      "pts": 7,
+      "pos": 8,
       "size": 20
      }
     }
@@ -2387,7 +1435,7 @@
       "gf": 8,
       "ga": 4,
       "pts": 6,
-      "pos": 11,
+      "pos": 12,
       "size": 20
      },
      "away": {
@@ -2475,7 +1523,7 @@
       "gf": 5,
       "ga": 5,
       "pts": 4,
-      "pos": 10,
+      "pos": 12,
       "size": 20
      }
     }
@@ -2618,9 +1666,9 @@
      "fts": 44
     },
     "overall": {
-     "gp": 30,
-     "gf": 1.0,
-     "ga": 2.07,
+     "gp": 31,
+     "gf": 1.03,
+     "ga": 2.03,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -2628,17 +1676,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 63,
-     "o25": 57,
-     "cs": 7,
-     "fts": 33
+     "btts": 65,
+     "o25": 58,
+     "cs": 6,
+     "fts": 32
     },
     "form": [
-     "L",
      "D",
      "L",
      "L",
-     "L"
+     "L",
+     "W"
     ],
     "table": {
      "total": {
@@ -2653,13 +1701,13 @@
       "size": 20
      },
      "home": {
-      "p": 14,
-      "w": 2,
+      "p": 15,
+      "w": 3,
       "d": 5,
       "l": 7,
-      "gf": 19,
-      "ga": 33,
-      "pts": 11,
+      "gf": 21,
+      "ga": 34,
+      "pts": 14,
       "pos": 20,
       "size": 20
      },
@@ -2671,7 +1719,7 @@
       "gf": 11,
       "ga": 29,
       "pts": 7,
-      "pos": 18,
+      "pos": 19,
       "size": 20
      }
     }
@@ -2723,9 +1771,9 @@
      "fts": 6
     },
     "overall": {
-     "gp": 31,
-     "gf": 1.58,
-     "ga": 1.26,
+     "gp": 32,
+     "gf": 1.56,
+     "ga": 1.28,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -2733,15 +1781,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 71,
-     "o25": 55,
+     "btts": 72,
+     "o25": 56,
      "cs": 19,
-     "fts": 13
+     "fts": 12
     },
     "form": [
+     "W",
+     "W",
      "L",
-     "W",
-     "W",
      "L",
      "L"
     ],
@@ -2769,12 +1817,12 @@
       "size": 20
      },
      "away": {
-      "p": 15,
+      "p": 16,
       "w": 3,
       "d": 6,
-      "l": 6,
-      "gf": 20,
-      "ga": 23,
+      "l": 7,
+      "gf": 21,
+      "ga": 25,
       "pts": 15,
       "pos": 9,
       "size": 20
@@ -2889,9 +1937,9 @@
    "home": {
     "name": "Santos",
     "venue": {
-     "gp": 15,
-     "gf": 1.47,
-     "ga": 1.33,
+     "gp": 16,
+     "gf": 1.44,
+     "ga": 1.31,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -2899,15 +1947,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 67,
-     "o25": 53,
-     "cs": 20,
-     "fts": 13
+     "btts": 69,
+     "o25": 50,
+     "cs": 19,
+     "fts": 12
     },
     "overall": {
-     "gp": 31,
-     "gf": 1.55,
-     "ga": 1.48,
+     "gp": 32,
+     "gf": 1.53,
+     "ga": 1.47,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -2915,17 +1963,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 74,
-     "o25": 68,
+     "btts": 75,
+     "o25": 66,
      "cs": 19,
-     "fts": 10
+     "fts": 9
     },
     "form": [
      "W",
-     "W",
      "D",
      "L",
-     "W"
+     "W",
+     "D"
     ],
     "table": {
      "total": {
@@ -2940,13 +1988,13 @@
       "size": 20
      },
      "home": {
-      "p": 15,
+      "p": 16,
       "w": 6,
-      "d": 5,
+      "d": 6,
       "l": 4,
-      "gf": 22,
-      "ga": 20,
-      "pts": 23,
+      "gf": 23,
+      "ga": 21,
+      "pts": 24,
       "pos": 15,
       "size": 20
      },
@@ -2958,7 +2006,7 @@
       "gf": 26,
       "ga": 26,
       "pts": 22,
-      "pos": 4,
+      "pos": 5,
       "size": 20
      }
     }
@@ -3006,7 +2054,7 @@
     ],
     "table": {
      "total": {
-      "pos": 1,
+      "pos": 2,
       "pts": 69,
       "p": 32,
       "w": 20,
@@ -3024,7 +2072,7 @@
       "gf": 30,
       "ga": 10,
       "pts": 39,
-      "pos": 1,
+      "pos": 2,
       "size": 20
      },
      "away": {
@@ -3087,9 +2135,9 @@
      "fts": 12
     },
     "overall": {
-     "gp": 31,
-     "gf": 1.42,
-     "ga": 1.26,
+     "gp": 32,
+     "gf": 1.41,
+     "ga": 1.25,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -3097,17 +2145,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 61,
-     "o25": 52,
-     "cs": 29,
+     "btts": 62,
+     "o25": 50,
+     "cs": 28,
      "fts": 16
     },
     "form": [
-     "W",
      "L",
      "L",
      "W",
-     "L"
+     "L",
+     "D"
     ],
     "table": {
      "total": {
@@ -3133,14 +2181,14 @@
       "size": 20
      },
      "away": {
-      "p": 15,
+      "p": 16,
       "w": 6,
-      "d": 4,
+      "d": 5,
       "l": 5,
-      "gf": 21,
-      "ga": 22,
-      "pts": 22,
-      "pos": 6,
+      "gf": 22,
+      "ga": 23,
+      "pts": 23,
+      "pos": 3,
       "size": 20
      }
     }
@@ -3451,9 +2499,9 @@
      "fts": 25
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.86,
-     "ga": 1.29,
+     "gp": 8,
+     "gf": 2.12,
+     "ga": 1.62,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -3461,17 +2509,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 43,
-     "o25": 57,
-     "cs": 29,
-     "fts": 29
+     "btts": 50,
+     "o25": 62,
+     "cs": 25,
+     "fts": 25
     },
     "form": [
-     "W",
      "D",
      "W",
      "L",
-     "W"
+     "W",
+     "D"
     ],
     "table": {
      "total": {
@@ -3493,18 +2541,18 @@
       "gf": 9,
       "ga": 5,
       "pts": 9,
-      "pos": 5,
+      "pos": 6,
       "size": 20
      },
      "away": {
-      "p": 3,
+      "p": 4,
       "w": 1,
-      "d": 1,
+      "d": 2,
       "l": 1,
-      "gf": 4,
-      "ga": 4,
-      "pts": 4,
-      "pos": 12,
+      "gf": 8,
+      "ga": 8,
+      "pts": 5,
+      "pos": 11,
       "size": 20
      }
     }
@@ -3528,9 +2576,9 @@
      "fts": 50
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.29,
-     "ga": 1.71,
+     "gp": 8,
+     "gf": 1.12,
+     "ga": 1.75,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -3538,17 +2586,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 29,
-     "o25": 71,
-     "cs": 29,
-     "fts": 43
+     "btts": 25,
+     "o25": 62,
+     "cs": 25,
+     "fts": 50
     },
     "form": [
-     "L",
      "W",
      "L",
      "L",
-     "W"
+     "W",
+     "L"
     ],
     "table": {
      "total": {
@@ -3563,14 +2611,14 @@
       "size": 20
      },
      "home": {
-      "p": 3,
+      "p": 4,
       "w": 1,
       "d": 0,
-      "l": 2,
+      "l": 3,
       "gf": 4,
-      "ga": 8,
+      "ga": 10,
       "pts": 3,
-      "pos": 16,
+      "pos": 17,
       "size": 20
      },
      "away": {
@@ -3581,7 +2629,7 @@
       "gf": 5,
       "ga": 4,
       "pts": 6,
-      "pos": 8,
+      "pos": 9,
       "size": 20
      }
     }
@@ -3626,9 +2674,9 @@
      "fts": 25
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.14,
-     "ga": 2.43,
+     "gp": 8,
+     "gf": 1.12,
+     "ga": 2.38,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -3636,15 +2684,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 71,
-     "o25": 86,
+     "btts": 75,
+     "o25": 88,
      "cs": 0,
-     "fts": 29
+     "fts": 25
     },
     "form": [
-     "L",
      "W",
      "D",
+     "L",
      "L",
      "L"
     ],
@@ -3668,16 +2716,16 @@
       "gf": 3,
       "ga": 9,
       "pts": 1,
-      "pos": 20,
+      "pos": 19,
       "size": 20
      },
      "away": {
-      "p": 3,
+      "p": 4,
       "w": 1,
       "d": 0,
-      "l": 2,
-      "gf": 5,
-      "ga": 8,
+      "l": 3,
+      "gf": 6,
+      "ga": 10,
       "pts": 3,
       "pos": 14,
       "size": 20
@@ -3703,9 +2751,9 @@
      "fts": 33
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.43,
-     "ga": 1.57,
+     "gp": 8,
+     "gf": 1.75,
+     "ga": 1.88,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -3713,17 +2761,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 71,
-     "o25": 71,
-     "cs": 14,
-     "fts": 14
+     "btts": 75,
+     "o25": 75,
+     "cs": 12,
+     "fts": 12
     },
     "form": [
      "L",
      "L",
-     "L",
      "W",
-     "L"
+     "L",
+     "D"
     ],
     "table": {
      "total": {
@@ -3738,14 +2786,14 @@
       "size": 20
      },
      "home": {
-      "p": 4,
+      "p": 5,
       "w": 3,
-      "d": 0,
+      "d": 1,
       "l": 1,
-      "gf": 7,
-      "ga": 4,
-      "pts": 9,
-      "pos": 6,
+      "gf": 11,
+      "ga": 8,
+      "pts": 10,
+      "pos": 4,
       "size": 20
      },
      "away": {
@@ -3822,9 +2870,9 @@
      "fts": 6
     },
     "overall": {
-     "gp": 31,
-     "gf": 1.35,
-     "ga": 1.13,
+     "gp": 32,
+     "gf": 1.38,
+     "ga": 1.19,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -3832,28 +2880,28 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 48,
-     "o25": 48,
-     "cs": 26,
-     "fts": 29
+     "btts": 50,
+     "o25": 50,
+     "cs": 25,
+     "fts": 28
     },
     "form": [
-     "D",
      "W",
      "D",
      "W",
-     "W"
+     "W",
+     "L"
     ],
     "table": {
      "total": {
       "pos": 6,
       "pts": 50,
-      "p": 31,
+      "p": 32,
       "w": 14,
       "d": 8,
-      "l": 9,
-      "gf": 42,
-      "ga": 35,
+      "l": 10,
+      "gf": 44,
+      "ga": 38,
       "size": 20
      },
      "home": {
@@ -3868,12 +2916,12 @@
       "size": 20
      },
      "away": {
-      "p": 15,
+      "p": 16,
       "w": 4,
       "d": 3,
-      "l": 8,
-      "gf": 15,
-      "ga": 18,
+      "l": 9,
+      "gf": 17,
+      "ga": 21,
       "pts": 15,
       "pos": 10,
       "size": 20
@@ -3952,7 +3000,7 @@
       "gf": 24,
       "ga": 30,
       "pts": 23,
-      "pos": 3,
+      "pos": 4,
       "size": 20
      }
     }
@@ -4074,9 +3122,9 @@
      "fts": 6
     },
     "overall": {
-     "gp": 31,
-     "gf": 1.97,
-     "ga": 0.81,
+     "gp": 32,
+     "gf": 2.0,
+     "ga": 0.84,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -4084,39 +3132,39 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 48,
-     "o25": 61,
-     "cs": 45,
+     "btts": 50,
+     "o25": 62,
+     "cs": 44,
      "fts": 6
     },
     "form": [
      "W",
-     "W",
      "D",
+     "W",
      "W",
      "W"
     ],
     "table": {
      "total": {
-      "pos": 2,
-      "pts": 67,
-      "p": 31,
-      "w": 20,
+      "pos": 1,
+      "pts": 70,
+      "p": 32,
+      "w": 21,
       "d": 7,
       "l": 4,
-      "gf": 61,
-      "ga": 25,
+      "gf": 64,
+      "ga": 27,
       "size": 20
      },
      "home": {
-      "p": 15,
-      "w": 11,
+      "p": 16,
+      "w": 12,
       "d": 3,
       "l": 1,
-      "gf": 29,
-      "ga": 10,
-      "pts": 36,
-      "pos": 2,
+      "gf": 32,
+      "ga": 12,
+      "pts": 39,
+      "pos": 1,
       "size": 20
      },
      "away": {
@@ -4193,9 +3241,9 @@
      "fts": 19
     },
     "overall": {
-     "gp": 31,
-     "gf": 1.1,
-     "ga": 1.42,
+     "gp": 32,
+     "gf": 1.09,
+     "ga": 1.38,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -4203,27 +3251,27 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 61,
-     "o25": 45,
-     "cs": 19,
-     "fts": 32
+     "btts": 59,
+     "o25": 44,
+     "cs": 22,
+     "fts": 31
     },
     "form": [
+     "D",
+     "D",
+     "D",
      "L",
-     "D",
-     "D",
-     "D",
-     "L"
+     "W"
     ],
     "table": {
      "total": {
-      "pos": 18,
-      "pts": 31,
-      "p": 31,
-      "w": 7,
+      "pos": 17,
+      "pts": 34,
+      "p": 32,
+      "w": 8,
       "d": 10,
       "l": 14,
-      "gf": 34,
+      "gf": 35,
       "ga": 44,
       "size": 20
      },
@@ -4239,14 +3287,14 @@
       "size": 20
      },
      "away": {
-      "p": 15,
-      "w": 0,
+      "p": 16,
+      "w": 1,
       "d": 5,
       "l": 10,
-      "gf": 9,
+      "gf": 10,
       "ga": 23,
-      "pts": 5,
-      "pos": 20,
+      "pts": 8,
+      "pos": 18,
       "size": 20
      }
     }
@@ -4323,7 +3371,7 @@
       "gf": 23,
       "ga": 23,
       "pts": 22,
-      "pos": 5,
+      "pos": 6,
       "size": 20
      }
     }
@@ -4389,9 +3437,9 @@
      "fts": 50
     },
     "overall": {
-     "gp": 7,
-     "gf": 0.71,
-     "ga": 1.57,
+     "gp": 8,
+     "gf": 1.0,
+     "ga": 1.88,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -4399,14 +3447,14 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 57,
-     "o25": 43,
-     "cs": 14,
-     "fts": 43
+     "btts": 62,
+     "o25": 50,
+     "cs": 12,
+     "fts": 38
     },
     "form": [
-     "L",
      "D",
+     "L",
      "L",
      "L",
      "L"
@@ -4435,14 +3483,14 @@
       "size": 18
      },
      "away": {
-      "p": 3,
+      "p": 4,
       "w": 0,
       "d": 1,
-      "l": 2,
-      "gf": 3,
-      "ga": 5,
+      "l": 3,
+      "gf": 6,
+      "ga": 9,
       "pts": 1,
-      "pos": 17,
+      "pos": 18,
       "size": 18
      }
     }
@@ -4466,9 +3514,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 7,
+     "gp": 8,
      "gf": 2.0,
-     "ga": 1.29,
+     "ga": 1.12,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -4476,13 +3524,13 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 86,
-     "o25": 86,
-     "cs": 14,
+     "btts": 75,
+     "o25": 75,
+     "cs": 25,
      "fts": 0
     },
     "form": [
-     "L",
+     "W",
      "W",
      "W",
      "W",
@@ -4490,25 +3538,25 @@
     ],
     "table": {
      "total": {
-      "pos": 5,
-      "pts": 14,
-      "p": 7,
-      "w": 4,
+      "pos": 1,
+      "pts": 17,
+      "p": 8,
+      "w": 5,
       "d": 2,
       "l": 1,
-      "gf": 14,
+      "gf": 16,
       "ga": 9,
       "size": 18
      },
      "home": {
-      "p": 2,
-      "w": 1,
+      "p": 3,
+      "w": 2,
       "d": 0,
       "l": 1,
-      "gf": 4,
+      "gf": 6,
       "ga": 3,
-      "pts": 3,
-      "pos": 14,
+      "pts": 6,
+      "pos": 11,
       "size": 18
      },
      "away": {
@@ -4627,7 +3675,7 @@
       "gf": 8,
       "ga": 7,
       "pts": 6,
-      "pos": 9,
+      "pos": 10,
       "size": 18
      },
      "away": {
@@ -4798,7 +3846,7 @@
       "gf": 9,
       "ga": 8,
       "pts": 8,
-      "pos": 5,
+      "pos": 6,
       "size": 20
      }
     }
@@ -5116,9 +4164,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.43,
-     "ga": 0.71,
+     "gp": 8,
+     "gf": 1.38,
+     "ga": 0.75,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -5126,21 +4174,21 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 43,
-     "o25": 29,
-     "cs": 57,
+     "btts": 50,
+     "o25": 25,
+     "cs": 50,
      "fts": 0
     },
     "form": [
      "W",
-     "W",
      "L",
      "W",
+     "D",
      "D"
     ],
     "table": {
      "total": {
-      "pos": 2,
+      "pos": 3,
       "pts": 15,
       "p": 8,
       "w": 4,
@@ -5158,18 +4206,18 @@
       "gf": 6,
       "ga": 3,
       "pts": 8,
-      "pos": 5,
+      "pos": 6,
       "size": 18
      },
      "away": {
-      "p": 3,
+      "p": 4,
       "w": 2,
-      "d": 0,
+      "d": 1,
       "l": 1,
-      "gf": 4,
-      "ga": 2,
-      "pts": 6,
-      "pos": 5,
+      "gf": 5,
+      "ga": 3,
+      "pts": 7,
+      "pos": 2,
       "size": 18
      }
     }
@@ -5365,7 +4413,7 @@
       "gf": 4,
       "ga": 4,
       "pts": 7,
-      "pos": 7,
+      "pos": 8,
       "size": 18
      }
     }
@@ -5389,9 +4437,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 8,
-     "gf": 2.5,
-     "ga": 1.12,
+     "gp": 9,
+     "gf": 2.33,
+     "ga": 1.22,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -5399,17 +4447,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 75,
-     "o25": 75,
-     "cs": 25,
+     "btts": 78,
+     "o25": 78,
+     "cs": 22,
      "fts": 0
     },
     "form": [
      "W",
+     "D",
+     "D",
      "W",
-     "D",
-     "D",
-     "W"
+     "L"
     ],
     "table": {
      "total": {
@@ -5424,14 +4472,14 @@
       "size": 18
      },
      "home": {
-      "p": 4,
+      "p": 5,
       "w": 3,
       "d": 1,
-      "l": 0,
-      "gf": 10,
-      "ga": 5,
+      "l": 1,
+      "gf": 11,
+      "ga": 7,
       "pts": 10,
-      "pos": 2,
+      "pos": 3,
       "size": 18
      },
      "away": {
@@ -5442,7 +4490,7 @@
       "gf": 10,
       "ga": 4,
       "pts": 8,
-      "pos": 4,
+      "pos": 6,
       "size": 18
      }
     }
@@ -5532,7 +4580,7 @@
     ],
     "table": {
      "total": {
-      "pos": 17,
+      "pos": 18,
       "pts": 33,
       "p": 32,
       "w": 8,
@@ -5767,9 +4815,9 @@
      "fts": 25
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.43,
-     "ga": 1.43,
+     "gp": 8,
+     "gf": 1.25,
+     "ga": 1.62,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -5777,17 +4825,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 71,
-     "o25": 29,
+     "btts": 62,
+     "o25": 38,
      "cs": 0,
-     "fts": 29
+     "fts": 38
     },
     "form": [
-     "D",
      "L",
      "D",
      "D",
-     "D"
+     "D",
+     "L"
     ],
     "table": {
      "total": {
@@ -5802,14 +4850,14 @@
       "size": 20
      },
      "home": {
-      "p": 3,
+      "p": 4,
       "w": 1,
       "d": 1,
-      "l": 1,
+      "l": 2,
       "gf": 6,
-      "ga": 4,
+      "ga": 7,
       "pts": 4,
-      "pos": 12,
+      "pos": 14,
       "size": 20
      },
      "away": {
@@ -5820,7 +4868,7 @@
       "gf": 4,
       "ga": 6,
       "pts": 3,
-      "pos": 14,
+      "pos": 16,
       "size": 20
      }
     }
@@ -6431,9 +5479,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 9,
-     "gf": 1.67,
-     "ga": 1.89,
+     "gp": 10,
+     "gf": 1.6,
+     "ga": 1.9,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -6441,17 +5489,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 67,
-     "o25": 67,
-     "cs": 22,
-     "fts": 33
+     "btts": 70,
+     "o25": 70,
+     "cs": 20,
+     "fts": 30
     },
     "form": [
      "L",
-     "L",
      "D",
      "D",
-     "W"
+     "W",
+     "L"
     ],
     "table": {
      "total": {
@@ -6473,16 +5521,16 @@
       "gf": 13,
       "ga": 10,
       "pts": 7,
-      "pos": 9,
+      "pos": 13,
       "size": 20
      },
      "away": {
-      "p": 5,
+      "p": 6,
       "w": 0,
       "d": 3,
-      "l": 2,
-      "gf": 2,
-      "ga": 7,
+      "l": 3,
+      "gf": 3,
+      "ga": 9,
       "pts": 3,
       "pos": 14,
       "size": 20
@@ -6673,7 +5721,7 @@
       "gf": 4,
       "ga": 3,
       "pts": 6,
-      "pos": 9,
+      "pos": 10,
       "size": 20
      }
     }
@@ -6739,7 +5787,7 @@
       "gf": 8,
       "ga": 4,
       "pts": 6,
-      "pos": 11,
+      "pos": 12,
       "size": 20
      },
      "away": {
@@ -6928,7 +5976,7 @@
       "gf": 4,
       "ga": 4,
       "pts": 6,
-      "pos": 10,
+      "pos": 11,
       "size": 18
      },
      "away": {
@@ -7030,7 +6078,7 @@
       "gf": 4,
       "ga": 6,
       "pts": 4,
-      "pos": 7,
+      "pos": 6,
       "size": 18
      }
     }
@@ -7250,9 +6298,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 6,
-     "gf": 2.5,
-     "ga": 1.0,
+     "gp": 7,
+     "gf": 2.29,
+     "ga": 1.29,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -7260,16 +6308,16 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 67,
-     "o25": 83,
-     "cs": 33,
+     "btts": 71,
+     "o25": 86,
+     "cs": 29,
      "fts": 0
     },
     "form": [
      "W",
-     "W",
      "D",
      "W",
+     "L",
      "L"
     ],
     "table": {
@@ -7285,12 +6333,12 @@
       "size": 18
      },
      "home": {
-      "p": 3,
+      "p": 4,
       "w": 3,
       "d": 0,
-      "l": 0,
-      "gf": 11,
-      "ga": 2,
+      "l": 1,
+      "gf": 12,
+      "ga": 5,
       "pts": 9,
       "pos": 4,
       "size": 18
@@ -7303,7 +6351,7 @@
       "gf": 4,
       "ga": 4,
       "pts": 4,
-      "pos": 6,
+      "pos": 5,
       "size": 18
      }
     }
@@ -7446,9 +6494,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 6,
-     "gf": 1.83,
-     "ga": 2.33,
+     "gp": 7,
+     "gf": 2.0,
+     "ga": 2.0,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -7456,16 +6504,16 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 100,
+     "btts": 86,
      "o25": 100,
-     "cs": 0,
+     "cs": 14,
      "fts": 0
     },
     "form": [
-     "L",
      "W",
      "L",
      "L",
+     "W",
      "W"
     ],
     "table": {
@@ -7481,14 +6529,14 @@
       "size": 18
      },
      "home": {
-      "p": 3,
-      "w": 1,
+      "p": 4,
+      "w": 2,
       "d": 0,
       "l": 2,
-      "gf": 6,
+      "gf": 9,
       "ga": 7,
-      "pts": 3,
-      "pos": 15,
+      "pts": 6,
+      "pos": 9,
       "size": 18
      },
      "away": {
@@ -7565,9 +6613,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 6,
-     "gf": 2.67,
-     "ga": 1.5,
+     "gp": 7,
+     "gf": 2.29,
+     "ga": 1.71,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -7575,17 +6623,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 67,
-     "o25": 83,
-     "cs": 33,
-     "fts": 0
+     "btts": 57,
+     "o25": 86,
+     "cs": 29,
+     "fts": 14
     },
     "form": [
-     "W",
      "D",
      "W",
      "W",
-     "W"
+     "W",
+     "L"
     ],
     "table": {
      "total": {
@@ -7611,14 +6659,14 @@
       "size": 18
      },
      "away": {
-      "p": 3,
+      "p": 4,
       "w": 1,
       "d": 1,
-      "l": 1,
+      "l": 2,
       "gf": 8,
-      "ga": 8,
+      "ga": 11,
       "pts": 4,
-      "pos": 5,
+      "pos": 7,
       "size": 18
      }
     }
@@ -7684,7 +6732,7 @@
       "gf": 6,
       "ga": 5,
       "pts": 3,
-      "pos": 14,
+      "pos": 15,
       "size": 18
      },
      "away": {
@@ -7815,9 +6863,9 @@
    "away": {
     "name": "Brighton Hove",
     "venue": {
-     "gp": 3,
-     "gf": 3.33,
-     "ga": 1.33,
+     "gp": 4,
+     "gf": 2.5,
+     "ga": 1.5,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -7825,15 +6873,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 33,
-     "o25": 67,
-     "cs": 67,
-     "fts": 0
+     "btts": 25,
+     "o25": 50,
+     "cs": 50,
+     "fts": 25
     },
     "overall": {
-     "gp": 7,
-     "gf": 3.29,
-     "ga": 0.71,
+     "gp": 8,
+     "gf": 2.88,
+     "ga": 0.88,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -7841,17 +6889,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 29,
-     "o25": 71,
-     "cs": 71,
-     "fts": 0
+     "btts": 25,
+     "o25": 62,
+     "cs": 62,
+     "fts": 12
     },
     "form": [
-     "D",
      "W",
      "W",
      "W",
-     "W"
+     "W",
+     "L"
     ],
     "table": {
      "total": {
@@ -7877,12 +6925,12 @@
       "size": 20
      },
      "away": {
-      "p": 3,
+      "p": 4,
       "w": 2,
       "d": 0,
-      "l": 1,
+      "l": 2,
       "gf": 10,
-      "ga": 4,
+      "ga": 6,
       "pts": 6,
       "pos": 5,
       "size": 20
@@ -7950,9 +6998,9 @@
      "fts": 25
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.29,
-     "ga": 1.86,
+     "gp": 8,
+     "gf": 1.5,
+     "ga": 1.62,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -7960,16 +7008,16 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 71,
-     "o25": 57,
-     "cs": 14,
-     "fts": 14
+     "btts": 62,
+     "o25": 62,
+     "cs": 25,
+     "fts": 12
     },
     "form": [
      "D",
-     "D",
      "L",
      "L",
+     "W",
      "W"
     ],
     "table": {
@@ -7996,14 +7044,14 @@
       "size": 20
      },
      "away": {
-      "p": 3,
-      "w": 0,
+      "p": 4,
+      "w": 1,
       "d": 1,
       "l": 2,
-      "gf": 4,
+      "gf": 7,
       "ga": 9,
-      "pts": 1,
-      "pos": 20,
+      "pts": 4,
+      "pos": 14,
       "size": 20
      }
     }
@@ -8011,9 +7059,9 @@
    "away": {
     "name": "Leeds United",
     "venue": {
-     "gp": 3,
-     "gf": 1.0,
-     "ga": 1.0,
+     "gp": 4,
+     "gf": 0.75,
+     "ga": 0.75,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -8021,15 +7069,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 67,
-     "o25": 33,
-     "cs": 33,
-     "fts": 0
+     "btts": 50,
+     "o25": 25,
+     "cs": 50,
+     "fts": 25
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.29,
-     "ga": 0.86,
+     "gp": 8,
+     "gf": 1.12,
+     "ga": 0.75,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -8037,16 +7085,16 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 71,
-     "o25": 29,
-     "cs": 29,
-     "fts": 14
+     "btts": 62,
+     "o25": 25,
+     "cs": 38,
+     "fts": 25
     },
     "form": [
-     "D",
      "W",
      "D",
      "L",
+     "D",
      "D"
     ],
     "table": {
@@ -8073,14 +7121,14 @@
       "size": 20
      },
      "away": {
-      "p": 3,
+      "p": 4,
       "w": 1,
-      "d": 1,
+      "d": 2,
       "l": 1,
       "gf": 3,
       "ga": 3,
-      "pts": 4,
-      "pos": 9,
+      "pts": 5,
+      "pos": 8,
       "size": 20
      }
     }
@@ -8181,7 +7229,7 @@
       "gf": 4,
       "ga": 8,
       "pts": 3,
-      "pos": 18,
+      "pos": 19,
       "size": 20
      },
      "away": {
@@ -8192,7 +7240,7 @@
       "gf": 2,
       "ga": 7,
       "pts": 3,
-      "pos": 18,
+      "pos": 19,
       "size": 20
      }
     }
@@ -8216,9 +7264,9 @@
      "fts": 25
     },
     "overall": {
-     "gp": 7,
-     "gf": 0.86,
-     "ga": 2.0,
+     "gp": 8,
+     "gf": 0.75,
+     "ga": 1.75,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -8226,17 +7274,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 43,
-     "o25": 29,
-     "cs": 14,
-     "fts": 43
+     "btts": 38,
+     "o25": 25,
+     "cs": 25,
+     "fts": 50
     },
     "form": [
-     "D",
      "L",
      "L",
      "L",
-     "L"
+     "L",
+     "D"
     ],
     "table": {
      "total": {
@@ -8251,13 +7299,13 @@
       "size": 20
      },
      "home": {
-      "p": 3,
+      "p": 4,
       "w": 1,
-      "d": 0,
+      "d": 1,
       "l": 2,
       "gf": 1,
       "ga": 4,
-      "pts": 3,
+      "pts": 4,
       "pos": 17,
       "size": 20
      },
@@ -8269,7 +7317,7 @@
       "gf": 5,
       "ga": 10,
       "pts": 1,
-      "pos": 19,
+      "pos": 20,
       "size": 20
      }
     }
@@ -8319,9 +7367,9 @@
    "home": {
     "name": "Hull City",
     "venue": {
-     "gp": 3,
-     "gf": 1.33,
-     "ga": 0.67,
+     "gp": 4,
+     "gf": 1.25,
+     "ga": 0.75,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -8329,14 +7377,14 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 33,
-     "o25": 33,
-     "cs": 67,
-     "fts": 33
+     "btts": 50,
+     "o25": 25,
+     "cs": 50,
+     "fts": 25
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.14,
+     "gp": 8,
+     "gf": 1.12,
      "ga": 1.0,
      "xg": null,
      "xga": null,
@@ -8345,17 +7393,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 43,
-     "o25": 43,
-     "cs": 43,
-     "fts": 29
+     "btts": 50,
+     "o25": 38,
+     "cs": 38,
+     "fts": 25
     },
     "form": [
      "D",
-     "D",
      "L",
      "D",
-     "L"
+     "L",
+     "D"
     ],
     "table": {
      "total": {
@@ -8370,13 +7418,13 @@
       "size": 20
      },
      "home": {
-      "p": 3,
+      "p": 4,
       "w": 1,
-      "d": 2,
+      "d": 3,
       "l": 0,
-      "gf": 4,
-      "ga": 2,
-      "pts": 5,
+      "gf": 5,
+      "ga": 3,
+      "pts": 6,
       "pos": 9,
       "size": 20
      },
@@ -8388,7 +7436,7 @@
       "gf": 4,
       "ga": 5,
       "pts": 4,
-      "pos": 10,
+      "pos": 12,
       "size": 20
      }
     }
@@ -8465,7 +7513,7 @@
       "gf": 7,
       "ga": 11,
       "pts": 3,
-      "pos": 16,
+      "pos": 18,
       "size": 20
      }
     }
@@ -8524,9 +7572,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.86,
-     "ga": 1.14,
+     "gp": 8,
+     "gf": 1.75,
+     "ga": 1.12,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -8534,17 +7582,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 71,
-     "o25": 71,
-     "cs": 29,
+     "btts": 75,
+     "o25": 62,
+     "cs": 25,
      "fts": 0
     },
     "form": [
      "D",
-     "D",
      "W",
      "D",
-     "L"
+     "L",
+     "D"
     ],
     "table": {
      "total": {
@@ -8570,14 +7618,14 @@
       "size": 20
      },
      "away": {
-      "p": 3,
+      "p": 4,
       "w": 0,
-      "d": 3,
+      "d": 4,
       "l": 0,
-      "gf": 5,
-      "ga": 5,
-      "pts": 3,
-      "pos": 13,
+      "gf": 6,
+      "ga": 6,
+      "pts": 4,
+      "pos": 11,
       "size": 20
      }
     }
@@ -8654,7 +7702,7 @@
       "gf": 6,
       "ga": 7,
       "pts": 5,
-      "pos": 7,
+      "pos": 9,
       "size": 20
      }
     }
@@ -10195,7 +9243,7 @@
       "gf": 6,
       "ga": 7,
       "pts": 7,
-      "pos": 11,
+      "pos": 14,
       "size": 20
      },
      "away": {
@@ -10230,9 +9278,9 @@
      "fts": 75
     },
     "overall": {
-     "gp": 9,
-     "gf": 1.11,
-     "ga": 0.78,
+     "gp": 10,
+     "gf": 1.0,
+     "ga": 0.7,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -10240,17 +9288,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 44,
-     "o25": 33,
-     "cs": 44,
-     "fts": 44
+     "btts": 40,
+     "o25": 30,
+     "cs": 50,
+     "fts": 50
     },
     "form": [
      "D",
-     "D",
      "W",
      "D",
-     "W"
+     "W",
+     "D"
     ],
     "table": {
      "total": {
@@ -10265,14 +9313,14 @@
       "size": 20
      },
      "home": {
-      "p": 5,
+      "p": 6,
       "w": 2,
-      "d": 1,
+      "d": 2,
       "l": 2,
       "gf": 9,
       "ga": 6,
-      "pts": 7,
-      "pos": 10,
+      "pts": 8,
+      "pos": 11,
       "size": 20
      },
      "away": {
@@ -10349,9 +9397,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 9,
-     "gf": 3.44,
-     "ga": 1.11,
+     "gp": 10,
+     "gf": 3.2,
+     "ga": 1.1,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -10359,9 +9407,9 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 56,
-     "o25": 78,
-     "cs": 44,
+     "btts": 60,
+     "o25": 70,
+     "cs": 40,
      "fts": 0
     },
     "form": [
@@ -10369,7 +9417,7 @@
      "W",
      "W",
      "W",
-     "W"
+     "D"
     ],
     "table": {
      "total": {
@@ -10395,13 +9443,13 @@
       "size": 18
      },
      "away": {
-      "p": 5,
+      "p": 6,
       "w": 5,
-      "d": 0,
+      "d": 1,
       "l": 0,
-      "gf": 20,
-      "ga": 6,
-      "pts": 15,
+      "gf": 21,
+      "ga": 7,
+      "pts": 16,
       "pos": 1,
       "size": 18
      }
@@ -10426,9 +9474,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 9,
-     "gf": 1.78,
-     "ga": 1.89,
+     "gp": 10,
+     "gf": 1.7,
+     "ga": 1.7,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -10436,17 +9484,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 78,
-     "o25": 67,
-     "cs": 11,
-     "fts": 11
+     "btts": 70,
+     "o25": 60,
+     "cs": 20,
+     "fts": 10
     },
     "form": [
-     "W",
      "L",
      "W",
      "D",
-     "D"
+     "D",
+     "W"
     ],
     "table": {
      "total": {
@@ -10461,14 +9509,14 @@
       "size": 18
      },
      "home": {
-      "p": 4,
-      "w": 1,
+      "p": 5,
+      "w": 2,
       "d": 1,
       "l": 2,
-      "gf": 5,
+      "gf": 6,
       "ga": 9,
-      "pts": 4,
-      "pos": 12,
+      "pts": 7,
+      "pos": 8,
       "size": 18
      },
      "away": {
@@ -10545,9 +9593,9 @@
      "fts": 50
     },
     "overall": {
-     "gp": 8,
-     "gf": 1.0,
-     "ga": 1.88,
+     "gp": 9,
+     "gf": 1.22,
+     "ga": 1.78,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -10555,17 +9603,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 50,
-     "o25": 62,
-     "cs": 12,
-     "fts": 38
+     "btts": 56,
+     "o25": 67,
+     "cs": 11,
+     "fts": 33
     },
     "form": [
      "L",
-     "L",
      "W",
      "D",
-     "L"
+     "L",
+     "W"
     ],
     "table": {
      "total": {
@@ -10587,18 +9635,18 @@
       "gf": 5,
       "ga": 8,
       "pts": 4,
-      "pos": 12,
+      "pos": 13,
       "size": 18
      },
      "away": {
-      "p": 4,
-      "w": 1,
+      "p": 5,
+      "w": 2,
       "d": 1,
       "l": 2,
-      "gf": 3,
-      "ga": 7,
-      "pts": 4,
-      "pos": 13,
+      "gf": 6,
+      "ga": 8,
+      "pts": 7,
+      "pos": 10,
       "size": 18
      }
     }
@@ -10664,7 +9712,7 @@
       "gf": 6,
       "ga": 9,
       "pts": 5,
-      "pos": 11,
+      "pos": 12,
       "size": 18
      },
      "away": {
@@ -10675,7 +9723,7 @@
       "gf": 8,
       "ga": 8,
       "pts": 5,
-      "pos": 11,
+      "pos": 12,
       "size": 18
      }
     }
@@ -10783,7 +9831,7 @@
       "gf": 5,
       "ga": 3,
       "pts": 8,
-      "pos": 6,
+      "pos": 7,
       "size": 18
      },
      "away": {
@@ -10794,7 +9842,7 @@
       "gf": 3,
       "ga": 7,
       "pts": 3,
-      "pos": 15,
+      "pos": 14,
       "size": 18
      }
     }
@@ -10818,9 +9866,9 @@
      "fts": 33
     },
     "overall": {
-     "gp": 7,
-     "gf": 2.14,
-     "ga": 2.0,
+     "gp": 8,
+     "gf": 2.25,
+     "ga": 1.75,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -10828,21 +9876,21 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 71,
-     "o25": 86,
-     "cs": 14,
-     "fts": 14
+     "btts": 62,
+     "o25": 88,
+     "cs": 25,
+     "fts": 12
     },
     "form": [
      "W",
-     "W",
      "L",
      "W",
-     "L"
+     "L",
+     "W"
     ],
     "table": {
      "total": {
-      "pos": 1,
+      "pos": 2,
       "pts": 16,
       "p": 8,
       "w": 5,
@@ -10853,14 +9901,14 @@
       "size": 18
      },
      "home": {
-      "p": 4,
-      "w": 3,
+      "p": 5,
+      "w": 4,
       "d": 1,
       "l": 0,
-      "gf": 10,
+      "gf": 13,
       "ga": 5,
-      "pts": 10,
-      "pos": 2,
+      "pts": 13,
+      "pos": 1,
       "size": 18
      },
      "away": {
@@ -10871,7 +9919,7 @@
       "gf": 5,
       "ga": 9,
       "pts": 3,
-      "pos": 14,
+      "pos": 13,
       "size": 18
      }
     }
@@ -10921,9 +9969,9 @@
    "home": {
     "name": "Udinese",
     "venue": {
-     "gp": 4,
-     "gf": 0.5,
-     "ga": 1.75,
+     "gp": 5,
+     "gf": 0.4,
+     "ga": 1.8,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -10931,15 +9979,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 50,
-     "o25": 50,
+     "btts": 40,
+     "o25": 40,
      "cs": 0,
-     "fts": 50
+     "fts": 60
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.29,
-     "ga": 2.29,
+     "gp": 8,
+     "gf": 1.12,
+     "ga": 2.25,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -10947,10 +9995,10 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 71,
-     "o25": 71,
+     "btts": 62,
+     "o25": 62,
      "cs": 0,
-     "fts": 29
+     "fts": 38
     },
     "form": [
      "L",
@@ -10972,14 +10020,14 @@
       "size": 20
      },
      "home": {
-      "p": 4,
+      "p": 5,
       "w": 0,
       "d": 1,
-      "l": 3,
+      "l": 4,
       "gf": 2,
-      "ga": 7,
+      "ga": 9,
       "pts": 1,
-      "pos": 19,
+      "pos": 20,
       "size": 20
      },
      "away": {
@@ -11067,7 +10115,7 @@
       "gf": 9,
       "ga": 3,
       "pts": 8,
-      "pos": 4,
+      "pos": 5,
       "size": 20
      }
     }
@@ -11133,9 +10181,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 9,
-     "gf": 1.78,
-     "ga": 1.56,
+     "gp": 10,
+     "gf": 1.6,
+     "ga": 1.4,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -11143,17 +10191,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 56,
-     "o25": 44,
-     "cs": 44,
-     "fts": 0
+     "btts": 50,
+     "o25": 40,
+     "cs": 50,
+     "fts": 10
     },
     "form": [
      "W",
-     "W",
      "D",
      "W",
-     "L"
+     "L",
+     "D"
     ],
     "table": {
      "total": {
@@ -11179,14 +10227,14 @@
       "size": 20
      },
      "away": {
-      "p": 4,
+      "p": 5,
       "w": 2,
-      "d": 1,
+      "d": 2,
       "l": 1,
       "gf": 6,
       "ga": 7,
-      "pts": 7,
-      "pos": 7,
+      "pts": 8,
+      "pos": 8,
       "size": 20
      }
     }
@@ -11335,7 +10383,7 @@
       "gf": 5,
       "ga": 6,
       "pts": 4,
-      "pos": 14,
+      "pos": 15,
       "size": 20
      },
      "away": {
@@ -11346,7 +10394,7 @@
       "gf": 3,
       "ga": 4,
       "pts": 5,
-      "pos": 8,
+      "pos": 10,
       "size": 20
      }
     }
@@ -11370,9 +10418,9 @@
      "fts": 75
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.29,
-     "ga": 2.43,
+     "gp": 8,
+     "gf": 1.12,
+     "ga": 2.38,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -11380,16 +10428,16 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 57,
-     "o25": 71,
-     "cs": 14,
-     "fts": 43
+     "btts": 50,
+     "o25": 62,
+     "cs": 12,
+     "fts": 50
     },
     "form": [
-     "W",
      "L",
      "D",
      "W",
+     "L",
      "L"
     ],
     "table": {
@@ -11405,14 +10453,14 @@
       "size": 20
      },
      "home": {
-      "p": 3,
+      "p": 4,
       "w": 1,
       "d": 0,
-      "l": 2,
+      "l": 3,
       "gf": 6,
-      "ga": 8,
+      "ga": 10,
       "pts": 3,
-      "pos": 16,
+      "pos": 18,
       "size": 20
      },
      "away": {
@@ -11423,7 +10471,7 @@
       "gf": 3,
       "ga": 9,
       "pts": 4,
-      "pos": 12,
+      "pos": 15,
       "size": 20
      }
     }
@@ -11489,9 +10537,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 6,
-     "gf": 3.67,
-     "ga": 0.83,
+     "gp": 7,
+     "gf": 3.57,
+     "ga": 0.86,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -11499,16 +10547,16 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 67,
-     "o25": 83,
-     "cs": 33,
-     "fts": 17
+     "btts": 71,
+     "o25": 86,
+     "cs": 29,
+     "fts": 14
     },
     "form": [
-     "D",
      "W",
      "W",
      "D",
+     "W",
      "W"
     ],
     "table": {
@@ -11535,14 +10583,14 @@
       "size": 18
      },
      "away": {
-      "p": 3,
-      "w": 1,
+      "p": 4,
+      "w": 2,
       "d": 2,
       "l": 0,
-      "gf": 4,
-      "ga": 3,
-      "pts": 5,
-      "pos": 3,
+      "gf": 7,
+      "ga": 4,
+      "pts": 8,
+      "pos": 2,
       "size": 18
      }
     }
@@ -11619,7 +10667,7 @@
       "gf": 4,
       "ga": 2,
       "pts": 7,
-      "pos": 2,
+      "pos": 3,
       "size": 18
      }
     }
@@ -11731,7 +10779,7 @@
       "gf": 11,
       "ga": 8,
       "pts": 8,
-      "pos": 8,
+      "pos": 9,
       "size": 18
      }
     }
@@ -11755,9 +10803,9 @@
      "fts": 25
     },
     "overall": {
-     "gp": 9,
-     "gf": 1.67,
-     "ga": 1.78,
+     "gp": 10,
+     "gf": 1.7,
+     "ga": 1.8,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -11765,14 +10813,14 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 89,
-     "o25": 78,
+     "btts": 90,
+     "o25": 80,
      "cs": 0,
-     "fts": 11
+     "fts": 10
     },
     "form": [
-     "D",
      "L",
+     "D",
      "D",
      "D",
      "D"
@@ -11790,14 +10838,14 @@
       "size": 18
      },
      "home": {
-      "p": 5,
+      "p": 6,
       "w": 0,
-      "d": 3,
+      "d": 4,
       "l": 2,
-      "gf": 7,
-      "ga": 10,
-      "pts": 3,
-      "pos": 14,
+      "gf": 9,
+      "ga": 12,
+      "pts": 4,
+      "pos": 12,
       "size": 18
      },
      "away": {
@@ -11808,7 +10856,7 @@
       "gf": 8,
       "ga": 6,
       "pts": 7,
-      "pos": 10,
+      "pos": 11,
       "size": 18
      }
     }
@@ -11858,8 +10906,8 @@
    "home": {
     "name": "PSV",
     "venue": {
-     "gp": 4,
-     "gf": 3.25,
+     "gp": 5,
+     "gf": 2.8,
      "ga": 1.0,
      "xg": null,
      "xga": null,
@@ -11868,15 +10916,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 75,
-     "o25": 75,
-     "cs": 25,
+     "btts": 80,
+     "o25": 60,
+     "cs": 20,
      "fts": 0
     },
     "overall": {
-     "gp": 9,
-     "gf": 3.0,
-     "ga": 1.33,
+     "gp": 10,
+     "gf": 2.8,
+     "ga": 1.3,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -11884,17 +10932,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 89,
-     "o25": 89,
-     "cs": 11,
+     "btts": 90,
+     "o25": 80,
+     "cs": 10,
      "fts": 0
     },
     "form": [
      "W",
-     "W",
      "L",
      "W",
-     "L"
+     "L",
+     "D"
     ],
     "table": {
      "total": {
@@ -11909,14 +10957,14 @@
       "size": 18
      },
      "home": {
-      "p": 4,
+      "p": 5,
       "w": 3,
-      "d": 1,
+      "d": 2,
       "l": 0,
-      "gf": 13,
-      "ga": 4,
-      "pts": 10,
-      "pos": 3,
+      "gf": 14,
+      "ga": 5,
+      "pts": 11,
+      "pos": 2,
       "size": 18
      },
      "away": {
@@ -12054,9 +11102,9 @@
    "home": {
     "name": "Coritiba",
     "venue": {
-     "gp": 15,
-     "gf": 1.33,
-     "ga": 1.33,
+     "gp": 16,
+     "gf": 1.25,
+     "ga": 1.31,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -12064,15 +11112,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 67,
-     "o25": 47,
-     "cs": 13,
-     "fts": 20
+     "btts": 62,
+     "o25": 44,
+     "cs": 12,
+     "fts": 25
     },
     "overall": {
-     "gp": 31,
-     "gf": 1.23,
-     "ga": 1.58,
+     "gp": 32,
+     "gf": 1.19,
+     "ga": 1.56,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -12080,37 +11128,37 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 52,
-     "o25": 52,
+     "btts": 50,
+     "o25": 50,
      "cs": 19,
-     "fts": 32
+     "fts": 34
     },
     "form": [
-     "D",
      "L",
      "L",
      "D",
+     "L",
      "L"
     ],
     "table": {
      "total": {
       "pos": 12,
       "pts": 39,
-      "p": 31,
+      "p": 32,
       "w": 10,
       "d": 9,
-      "l": 12,
+      "l": 13,
       "gf": 38,
-      "ga": 49,
+      "ga": 50,
       "size": 20
      },
      "home": {
-      "p": 15,
+      "p": 16,
       "w": 5,
       "d": 5,
-      "l": 5,
+      "l": 6,
       "gf": 20,
-      "ga": 20,
+      "ga": 21,
       "pts": 20,
       "pos": 17,
       "size": 20
@@ -12200,7 +11248,7 @@
       "gf": 12,
       "ga": 33,
       "pts": 6,
-      "pos": 19,
+      "pos": 20,
       "size": 20
      }
     }
@@ -12238,9 +11286,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 7,
+     "gp": 8,
      "gf": 2.0,
-     "ga": 1.0,
+     "ga": 0.88,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -12248,16 +11296,16 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 71,
-     "o25": 57,
-     "cs": 29,
+     "btts": 62,
+     "o25": 50,
+     "cs": 38,
      "fts": 0
     },
     "form": [
      "D",
-     "D",
      "W",
      "D",
+     "W",
      "W"
     ],
     "table": {
@@ -12280,18 +11328,18 @@
       "gf": 8,
       "ga": 2,
       "pts": 9,
-      "pos": 4,
+      "pos": 5,
       "size": 20
      },
      "away": {
-      "p": 4,
-      "w": 1,
+      "p": 5,
+      "w": 2,
       "d": 3,
       "l": 0,
-      "gf": 6,
+      "gf": 8,
       "ga": 5,
-      "pts": 6,
-      "pos": 7,
+      "pts": 9,
+      "pos": 3,
       "size": 20
      }
     }
@@ -12315,9 +11363,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 7,
-     "gf": 3.0,
-     "ga": 1.29,
+     "gp": 8,
+     "gf": 2.88,
+     "ga": 1.25,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -12325,15 +11373,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 71,
-     "o25": 86,
-     "cs": 29,
+     "btts": 75,
+     "o25": 88,
+     "cs": 25,
      "fts": 0
     },
     "form": [
      "W",
-     "W",
      "D",
+     "W",
      "W",
      "W"
     ],
@@ -12350,13 +11398,13 @@
       "size": 20
      },
      "home": {
-      "p": 4,
-      "w": 4,
+      "p": 5,
+      "w": 5,
       "d": 0,
       "l": 0,
-      "gf": 15,
-      "ga": 6,
-      "pts": 12,
+      "gf": 17,
+      "ga": 7,
+      "pts": 15,
       "pos": 1,
       "size": 20
      },
@@ -12368,7 +11416,7 @@
       "gf": 6,
       "ga": 3,
       "pts": 7,
-      "pos": 6,
+      "pos": 7,
       "size": 20
      }
     }
@@ -12420,9 +11468,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.86,
-     "ga": 0.71,
+     "gp": 8,
+     "gf": 1.62,
+     "ga": 0.88,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -12430,28 +11478,28 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 57,
-     "o25": 57,
-     "cs": 43,
-     "fts": 14
+     "btts": 50,
+     "o25": 50,
+     "cs": 38,
+     "fts": 25
     },
     "form": [
-     "W",
      "D",
      "W",
      "L",
-     "W"
+     "W",
+     "L"
     ],
     "table": {
      "total": {
-      "pos": 4,
+      "pos": 5,
       "pts": 14,
-      "p": 7,
+      "p": 8,
       "w": 4,
       "d": 2,
-      "l": 1,
+      "l": 2,
       "gf": 13,
-      "ga": 5,
+      "ga": 7,
       "size": 18
      },
      "home": {
@@ -12462,18 +11510,18 @@
       "gf": 10,
       "ga": 3,
       "pts": 10,
-      "pos": 1,
+      "pos": 2,
       "size": 18
      },
      "away": {
-      "p": 3,
+      "p": 4,
       "w": 1,
       "d": 1,
-      "l": 1,
+      "l": 2,
       "gf": 3,
-      "ga": 2,
+      "ga": 4,
       "pts": 4,
-      "pos": 7,
+      "pos": 10,
       "size": 18
      }
     }
@@ -12497,9 +11545,9 @@
      "fts": 33
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.29,
-     "ga": 2.14,
+     "gp": 8,
+     "gf": 1.12,
+     "ga": 1.88,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -12507,17 +11555,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 57,
-     "o25": 57,
-     "cs": 29,
-     "fts": 29
+     "btts": 50,
+     "o25": 50,
+     "cs": 38,
+     "fts": 38
     },
     "form": [
-     "L",
      "D",
      "W",
      "L",
-     "L"
+     "L",
+     "D"
     ],
     "table": {
      "total": {
@@ -12532,13 +11580,13 @@
       "size": 18
      },
      "home": {
-      "p": 4,
+      "p": 5,
       "w": 1,
-      "d": 0,
+      "d": 1,
       "l": 3,
       "gf": 5,
       "ga": 9,
-      "pts": 3,
+      "pts": 4,
       "pos": 16,
       "size": 18
      },
@@ -12616,9 +11664,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.0,
-     "ga": 0.86,
+     "gp": 8,
+     "gf": 0.88,
+     "ga": 0.75,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -12626,17 +11674,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 43,
-     "o25": 43,
-     "cs": 57,
-     "fts": 14
+     "btts": 38,
+     "o25": 38,
+     "cs": 62,
+     "fts": 25
     },
     "form": [
-     "W",
      "D",
      "L",
      "W",
-     "W"
+     "W",
+     "D"
     ],
     "table": {
      "total": {
@@ -12662,14 +11710,14 @@
       "size": 18
      },
      "away": {
-      "p": 3,
+      "p": 4,
       "w": 1,
-      "d": 1,
+      "d": 2,
       "l": 1,
       "gf": 2,
       "ga": 2,
-      "pts": 4,
-      "pos": 9,
+      "pts": 5,
+      "pos": 7,
       "size": 18
      }
     }
@@ -12735,7 +11783,7 @@
       "gf": 8,
       "ga": 6,
       "pts": 4,
-      "pos": 11,
+      "pos": 13,
       "size": 18
      },
      "away": {
@@ -12805,9 +11853,9 @@
      "fts": 50
     },
     "overall": {
-     "gp": 7,
-     "gf": 0.71,
-     "ga": 2.29,
+     "gp": 8,
+     "gf": 0.62,
+     "ga": 2.0,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -12815,17 +11863,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 43,
-     "o25": 43,
-     "cs": 14,
-     "fts": 57
+     "btts": 38,
+     "o25": 38,
+     "cs": 25,
+     "fts": 62
     },
     "form": [
      "L",
      "L",
      "L",
      "L",
-     "L"
+     "D"
     ],
     "table": {
      "total": {
@@ -12851,14 +11899,14 @@
       "size": 18
      },
      "away": {
-      "p": 3,
+      "p": 4,
       "w": 1,
-      "d": 0,
+      "d": 1,
       "l": 2,
       "gf": 2,
       "ga": 5,
-      "pts": 3,
-      "pos": 13,
+      "pts": 4,
+      "pos": 12,
       "size": 18
      }
     }
@@ -12866,9 +11914,9 @@
    "away": {
     "name": "Le Mans",
     "venue": {
-     "gp": 3,
-     "gf": 1.33,
-     "ga": 2.33,
+     "gp": 4,
+     "gf": 1.25,
+     "ga": 2.0,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -12877,14 +11925,14 @@
      "cards": null,
      "statsGp": 0,
      "btts": 100,
-     "o25": 67,
+     "o25": 50,
      "cs": 0,
      "fts": 0
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.43,
-     "ga": 2.14,
+     "gp": 8,
+     "gf": 1.38,
+     "ga": 2.0,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -12892,17 +11940,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 86,
-     "o25": 86,
+     "btts": 88,
+     "o25": 75,
      "cs": 0,
-     "fts": 14
+     "fts": 12
     },
     "form": [
      "D",
-     "D",
      "W",
      "L",
-     "L"
+     "L",
+     "D"
     ],
     "table": {
      "total": {
@@ -12924,18 +11972,18 @@
       "gf": 6,
       "ga": 8,
       "pts": 5,
-      "pos": 10,
+      "pos": 12,
       "size": 18
      },
      "away": {
-      "p": 3,
+      "p": 4,
       "w": 0,
-      "d": 1,
+      "d": 2,
       "l": 2,
-      "gf": 4,
-      "ga": 7,
-      "pts": 1,
-      "pos": 18,
+      "gf": 5,
+      "ga": 8,
+      "pts": 2,
+      "pos": 17,
       "size": 18
      }
     }
@@ -12949,9 +11997,9 @@
    "home": {
     "name": "Barça",
     "venue": {
-     "gp": 4,
-     "gf": 4.25,
-     "ga": 1.0,
+     "gp": 5,
+     "gf": 3.6,
+     "ga": 1.2,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -12959,15 +12007,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 50,
-     "o25": 75,
-     "cs": 50,
+     "btts": 60,
+     "o25": 80,
+     "cs": 40,
      "fts": 0
     },
     "overall": {
-     "gp": 9,
-     "gf": 4.33,
-     "ga": 1.0,
+     "gp": 10,
+     "gf": 4.0,
+     "ga": 1.1,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -12975,9 +12023,9 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 56,
-     "o25": 89,
-     "cs": 44,
+     "btts": 60,
+     "o25": 90,
+     "cs": 40,
      "fts": 0
     },
     "form": [
@@ -12985,7 +12033,7 @@
      "W",
      "W",
      "W",
-     "W"
+     "L"
     ],
     "table": {
      "total": {
@@ -13000,12 +12048,12 @@
       "size": 20
      },
      "home": {
-      "p": 4,
+      "p": 5,
       "w": 4,
       "d": 0,
-      "l": 0,
-      "gf": 17,
-      "ga": 4,
+      "l": 1,
+      "gf": 18,
+      "ga": 6,
       "pts": 12,
       "pos": 3,
       "size": 20
@@ -13203,7 +12251,7 @@
       "gf": 5,
       "ga": 6,
       "pts": 4,
-      "pos": 15,
+      "pos": 16,
       "size": 20
      },
      "away": {
@@ -13291,7 +12339,7 @@
       "gf": 2,
       "ga": 3,
       "pts": 4,
-      "pos": 11,
+      "pos": 13,
       "size": 20
      }
     }
@@ -13399,7 +12447,7 @@
       "gf": 8,
       "ga": 15,
       "pts": 4,
-      "pos": 13,
+      "pos": 14,
       "size": 18
      },
      "away": {
@@ -13476,7 +12524,7 @@
       "gf": 14,
       "ga": 8,
       "pts": 11,
-      "pos": 2,
+      "pos": 3,
       "size": 18
      },
      "away": {
@@ -13546,9 +12594,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 9,
-     "gf": 3.0,
-     "ga": 1.33,
+     "gp": 10,
+     "gf": 2.9,
+     "ga": 1.3,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -13556,16 +12604,16 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 78,
-     "o25": 78,
-     "cs": 22,
+     "btts": 80,
+     "o25": 80,
+     "cs": 20,
      "fts": 0
     },
     "form": [
      "W",
+     "D",
+     "D",
      "W",
-     "D",
-     "D",
      "W"
     ],
     "table": {
@@ -13588,17 +12636,17 @@
       "gf": 11,
       "ga": 9,
       "pts": 6,
-      "pos": 8,
+      "pos": 9,
       "size": 18
      },
      "away": {
-      "p": 4,
-      "w": 4,
+      "p": 5,
+      "w": 5,
       "d": 0,
       "l": 0,
-      "gf": 16,
-      "ga": 3,
-      "pts": 12,
+      "gf": 18,
+      "ga": 4,
+      "pts": 15,
       "pos": 2,
       "size": 18
      }
@@ -13623,9 +12671,9 @@
      "fts": 20
     },
     "overall": {
-     "gp": 9,
-     "gf": 2.22,
-     "ga": 1.11,
+     "gp": 10,
+     "gf": 2.0,
+     "ga": 1.2,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -13633,17 +12681,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 56,
-     "o25": 44,
-     "cs": 33,
-     "fts": 11
+     "btts": 50,
+     "o25": 40,
+     "cs": 30,
+     "fts": 20
     },
     "form": [
-     "W",
      "D",
      "W",
      "L",
-     "D"
+     "D",
+     "L"
     ],
     "table": {
      "total": {
@@ -13658,12 +12706,12 @@
       "size": 18
      },
      "home": {
-      "p": 4,
+      "p": 5,
       "w": 3,
       "d": 1,
-      "l": 0,
+      "l": 1,
       "gf": 9,
-      "ga": 3,
+      "ga": 5,
       "pts": 10,
       "pos": 4,
       "size": 18
@@ -13805,9 +12853,9 @@
      "fts": 50
     },
     "overall": {
-     "gp": 8,
-     "gf": 0.5,
-     "ga": 1.5,
+     "gp": 9,
+     "gf": 0.56,
+     "ga": 1.67,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -13815,14 +12863,14 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 50,
-     "o25": 38,
-     "cs": 12,
-     "fts": 50
+     "btts": 56,
+     "o25": 44,
+     "cs": 11,
+     "fts": 44
     },
     "form": [
-     "L",
      "D",
+     "L",
      "L",
      "L",
      "L"
@@ -13840,14 +12888,14 @@
       "size": 18
      },
      "home": {
-      "p": 4,
+      "p": 5,
       "w": 0,
       "d": 2,
-      "l": 2,
-      "gf": 2,
-      "ga": 5,
+      "l": 3,
+      "gf": 3,
+      "ga": 8,
       "pts": 2,
-      "pos": 16,
+      "pos": 17,
       "size": 18
      },
      "away": {
@@ -14043,7 +13091,7 @@
       "gf": 8,
       "ga": 12,
       "pts": 4,
-      "pos": 11,
+      "pos": 13,
       "size": 18
      },
      "away": {
@@ -14160,9 +13208,9 @@
    "away": {
     "name": "Venezia FC",
     "venue": {
-     "gp": 3,
-     "gf": 1.0,
-     "ga": 2.67,
+     "gp": 4,
+     "gf": 0.75,
+     "ga": 2.25,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -14170,15 +13218,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 67,
-     "o25": 67,
+     "btts": 50,
+     "o25": 50,
      "cs": 0,
-     "fts": 33
+     "fts": 50
     },
     "overall": {
-     "gp": 7,
-     "gf": 0.86,
-     "ga": 2.29,
+     "gp": 8,
+     "gf": 0.75,
+     "ga": 2.12,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -14186,17 +13234,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 43,
-     "o25": 43,
-     "cs": 14,
-     "fts": 43
+     "btts": 38,
+     "o25": 38,
+     "cs": 12,
+     "fts": 50
     },
     "form": [
      "L",
      "L",
      "L",
-     "L",
-     "W"
+     "W",
+     "L"
     ],
     "table": {
      "total": {
@@ -14218,16 +13266,16 @@
       "gf": 3,
       "ga": 8,
       "pts": 3,
-      "pos": 17,
+      "pos": 16,
       "size": 20
      },
      "away": {
-      "p": 3,
+      "p": 4,
       "w": 0,
       "d": 0,
-      "l": 3,
+      "l": 4,
       "gf": 3,
-      "ga": 8,
+      "ga": 9,
       "pts": 0,
       "pos": 19,
       "size": 20
@@ -14274,9 +13322,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 9,
-     "gf": 0.56,
-     "ga": 1.22,
+     "gp": 10,
+     "gf": 0.5,
+     "ga": 1.5,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -14284,17 +13332,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 33,
-     "o25": 22,
-     "cs": 22,
-     "fts": 44
+     "btts": 30,
+     "o25": 30,
+     "cs": 20,
+     "fts": 50
     },
     "form": [
-     "D",
      "L",
      "W",
      "L",
-     "D"
+     "D",
+     "L"
     ],
     "table": {
      "total": {
@@ -14316,16 +13364,16 @@
       "gf": 5,
       "ga": 3,
       "pts": 9,
-      "pos": 7,
+      "pos": 8,
       "size": 20
      },
      "away": {
-      "p": 4,
+      "p": 5,
       "w": 0,
       "d": 0,
-      "l": 4,
+      "l": 5,
       "gf": 0,
-      "ga": 8,
+      "ga": 12,
       "pts": 0,
       "pos": 19,
       "size": 20
@@ -14351,9 +13399,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 9,
-     "gf": 1.56,
-     "ga": 1.78,
+     "gp": 10,
+     "gf": 1.6,
+     "ga": 1.6,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -14361,39 +13409,39 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 78,
-     "o25": 67,
-     "cs": 22,
+     "btts": 70,
+     "o25": 60,
+     "cs": 30,
      "fts": 0
     },
     "form": [
      "W",
-     "W",
      "L",
      "D",
-     "L"
+     "L",
+     "W"
     ],
     "table": {
      "total": {
       "pos": 6,
-      "pts": 14,
-      "p": 9,
-      "w": 4,
+      "pts": 17,
+      "p": 10,
+      "w": 5,
       "d": 2,
       "l": 3,
-      "gf": 14,
+      "gf": 16,
       "ga": 16,
       "size": 20
      },
      "home": {
-      "p": 4,
-      "w": 2,
+      "p": 5,
+      "w": 3,
       "d": 0,
       "l": 2,
-      "gf": 5,
+      "gf": 7,
       "ga": 7,
-      "pts": 6,
-      "pos": 14,
+      "pts": 9,
+      "pos": 9,
       "size": 20
      },
      "away": {
@@ -14404,7 +13452,7 @@
       "gf": 9,
       "ga": 9,
       "pts": 8,
-      "pos": 6,
+      "pos": 7,
       "size": 20
      }
     }
@@ -14589,7 +13637,7 @@
       "gf": 9,
       "ga": 15,
       "pts": 5,
-      "pos": 10,
+      "pos": 11,
       "size": 18
      },
      "away": {
@@ -14600,7 +13648,7 @@
       "gf": 8,
       "ga": 12,
       "pts": 7,
-      "pos": 11,
+      "pos": 12,
       "size": 18
      }
     }
@@ -14645,9 +13693,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 9,
-     "gf": 1.78,
-     "ga": 2.0,
+     "gp": 10,
+     "gf": 1.6,
+     "ga": 1.9,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -14655,15 +13703,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 67,
-     "o25": 100,
-     "cs": 22,
-     "fts": 11
+     "btts": 60,
+     "o25": 90,
+     "cs": 20,
+     "fts": 20
     },
     "form": [
-     "D",
      "L",
      "D",
+     "L",
      "L",
      "L"
     ],
@@ -14691,14 +13739,14 @@
       "size": 18
      },
      "away": {
-      "p": 5,
+      "p": 6,
       "w": 2,
       "d": 2,
-      "l": 1,
+      "l": 2,
       "gf": 11,
-      "ga": 8,
+      "ga": 9,
       "pts": 8,
-      "pos": 7,
+      "pos": 10,
       "size": 18
      }
     }
@@ -14706,9 +13754,9 @@
    "away": {
     "name": "Twente",
     "venue": {
-     "gp": 4,
-     "gf": 1.75,
-     "ga": 1.25,
+     "gp": 5,
+     "gf": 1.8,
+     "ga": 1.0,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -14716,15 +13764,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 75,
-     "o25": 50,
-     "cs": 0,
-     "fts": 25
+     "btts": 60,
+     "o25": 40,
+     "cs": 20,
+     "fts": 20
     },
     "overall": {
-     "gp": 9,
-     "gf": 1.89,
-     "ga": 1.11,
+     "gp": 10,
+     "gf": 1.9,
+     "ga": 1.0,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -14732,17 +13780,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 67,
-     "o25": 56,
-     "cs": 22,
-     "fts": 11
+     "btts": 60,
+     "o25": 50,
+     "cs": 30,
+     "fts": 10
     },
     "form": [
      "W",
      "W",
-     "W",
      "D",
-     "L"
+     "L",
+     "W"
     ],
     "table": {
      "total": {
@@ -14768,14 +13816,14 @@
       "size": 18
      },
      "away": {
-      "p": 4,
-      "w": 1,
+      "p": 5,
+      "w": 2,
       "d": 2,
       "l": 1,
-      "gf": 7,
+      "gf": 9,
       "ga": 5,
-      "pts": 5,
-      "pos": 12,
+      "pts": 8,
+      "pos": 7,
       "size": 18
      }
     }
@@ -14841,9 +13889,9 @@
      "fts": 25
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.86,
-     "ga": 1.29,
+     "gp": 8,
+     "gf": 2.12,
+     "ga": 1.62,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -14851,17 +13899,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 43,
-     "o25": 57,
-     "cs": 29,
-     "fts": 29
+     "btts": 50,
+     "o25": 62,
+     "cs": 25,
+     "fts": 25
     },
     "form": [
-     "W",
      "D",
      "W",
      "L",
-     "W"
+     "W",
+     "D"
     ],
     "table": {
      "total": {
@@ -14883,18 +13931,18 @@
       "gf": 9,
       "ga": 5,
       "pts": 9,
-      "pos": 5,
+      "pos": 6,
       "size": 20
      },
      "away": {
-      "p": 3,
+      "p": 4,
       "w": 1,
-      "d": 1,
+      "d": 2,
       "l": 1,
-      "gf": 4,
-      "ga": 4,
-      "pts": 4,
-      "pos": 12,
+      "gf": 8,
+      "ga": 8,
+      "pts": 5,
+      "pos": 11,
       "size": 20
      }
     }
@@ -14960,7 +14008,7 @@
       "gf": 6,
       "ga": 7,
       "pts": 6,
-      "pos": 12,
+      "pos": 13,
       "size": 20
      },
      "away": {
@@ -14971,7 +14019,7 @@
       "gf": 7,
       "ga": 4,
       "pts": 7,
-      "pos": 5,
+      "pos": 6,
       "size": 20
      }
     }
@@ -15135,7 +14183,7 @@
       "gf": 2,
       "ga": 4,
       "pts": 4,
-      "pos": 13,
+      "pos": 14,
       "size": 20
      },
      "away": {
@@ -15146,7 +14194,7 @@
       "gf": 4,
       "ga": 5,
       "pts": 9,
-      "pos": 3,
+      "pos": 4,
       "size": 20
      }
     }
@@ -15212,9 +14260,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.71,
-     "ga": 2.14,
+     "gp": 8,
+     "gf": 1.5,
+     "ga": 2.25,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -15222,14 +14270,14 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 86,
-     "o25": 86,
+     "btts": 75,
+     "o25": 88,
      "cs": 0,
-     "fts": 14
+     "fts": 25
     },
     "form": [
-     "W",
      "D",
+     "L",
      "L",
      "L",
      "L"
@@ -15254,18 +14302,18 @@
       "gf": 4,
       "ga": 5,
       "pts": 4,
-      "pos": 12,
+      "pos": 14,
       "size": 18
      },
      "away": {
-      "p": 4,
+      "p": 5,
       "w": 1,
       "d": 0,
-      "l": 3,
+      "l": 4,
       "gf": 8,
-      "ga": 10,
+      "ga": 13,
       "pts": 3,
-      "pos": 12,
+      "pos": 15,
       "size": 18
      }
     }
@@ -15289,9 +14337,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.57,
-     "ga": 2.43,
+     "gp": 8,
+     "gf": 1.5,
+     "ga": 2.25,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -15299,17 +14347,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 86,
-     "o25": 86,
-     "cs": 14,
+     "btts": 88,
+     "o25": 75,
+     "cs": 12,
      "fts": 0
     },
     "form": [
-     "L",
      "W",
      "W",
      "L",
-     "W"
+     "W",
+     "D"
     ],
     "table": {
      "total": {
@@ -15324,13 +14372,13 @@
       "size": 18
      },
      "home": {
-      "p": 3,
+      "p": 4,
       "w": 2,
-      "d": 0,
+      "d": 1,
       "l": 1,
-      "gf": 4,
-      "ga": 4,
-      "pts": 6,
+      "gf": 5,
+      "ga": 5,
+      "pts": 7,
       "pos": 9,
       "size": 18
      },
@@ -15450,7 +14498,7 @@
       "gf": 5,
       "ga": 6,
       "pts": 5,
-      "pos": 12,
+      "pos": 13,
       "size": 18
      },
      "away": {
@@ -15665,9 +14713,9 @@
    "away": {
     "name": "Real Madrid",
     "venue": {
-     "gp": 4,
-     "gf": 1.5,
-     "ga": 1.5,
+     "gp": 5,
+     "gf": 1.6,
+     "ga": 1.4,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -15675,14 +14723,14 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 75,
-     "o25": 75,
+     "btts": 80,
+     "o25": 80,
      "cs": 0,
-     "fts": 25
+     "fts": 20
     },
     "overall": {
-     "gp": 9,
-     "gf": 2.56,
+     "gp": 10,
+     "gf": 2.5,
      "ga": 1.0,
      "xg": null,
      "xga": null,
@@ -15691,15 +14739,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 67,
-     "o25": 78,
-     "cs": 22,
-     "fts": 11
+     "btts": 70,
+     "o25": 80,
+     "cs": 20,
+     "fts": 10
     },
     "form": [
      "W",
-     "W",
      "L",
+     "W",
      "W",
      "W"
     ],
@@ -15727,14 +14775,14 @@
       "size": 20
      },
      "away": {
-      "p": 4,
-      "w": 2,
+      "p": 5,
+      "w": 3,
       "d": 0,
       "l": 2,
-      "gf": 6,
-      "ga": 6,
-      "pts": 6,
-      "pos": 8,
+      "gf": 8,
+      "ga": 7,
+      "pts": 9,
+      "pos": 5,
       "size": 20
      }
     }
@@ -15817,7 +14865,7 @@
       "gf": 4,
       "ga": 4,
       "pts": 8,
-      "pos": 6,
+      "pos": 7,
       "size": 18
      }
     }
@@ -15841,9 +14889,9 @@
      "fts": 50
     },
     "overall": {
-     "gp": 8,
-     "gf": 1.12,
-     "ga": 2.25,
+     "gp": 9,
+     "gf": 1.11,
+     "ga": 2.0,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -15851,17 +14899,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 50,
-     "o25": 62,
-     "cs": 12,
-     "fts": 38
+     "btts": 44,
+     "o25": 56,
+     "cs": 22,
+     "fts": 33
     },
     "form": [
      "L",
      "L",
      "L",
      "L",
-     "L"
+     "W"
     ],
     "table": {
      "total": {
@@ -15876,14 +14924,14 @@
       "size": 18
      },
      "home": {
-      "p": 4,
-      "w": 1,
+      "p": 5,
+      "w": 2,
       "d": 0,
       "l": 3,
-      "gf": 5,
+      "gf": 6,
       "ga": 10,
-      "pts": 3,
-      "pos": 15,
+      "pts": 6,
+      "pos": 10,
       "size": 18
      },
      "away": {
@@ -15953,9 +15001,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 9,
-     "gf": 2.44,
-     "ga": 2.11,
+     "gp": 10,
+     "gf": 2.4,
+     "ga": 2.1,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -15963,17 +15011,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 89,
-     "o25": 89,
-     "cs": 11,
+     "btts": 90,
+     "o25": 90,
+     "cs": 10,
      "fts": 0
     },
     "form": [
      "D",
-     "D",
      "W",
      "W",
-     "L"
+     "L",
+     "D"
     ],
     "table": {
      "total": {
@@ -15999,14 +15047,14 @@
       "size": 18
      },
      "away": {
-      "p": 4,
+      "p": 5,
       "w": 2,
-      "d": 1,
+      "d": 2,
       "l": 1,
-      "gf": 11,
-      "ga": 8,
-      "pts": 7,
-      "pos": 9,
+      "gf": 13,
+      "ga": 10,
+      "pts": 8,
+      "pos": 8,
       "size": 18
      }
     }
@@ -16030,9 +15078,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 9,
-     "gf": 1.78,
-     "ga": 2.44,
+     "gp": 10,
+     "gf": 1.7,
+     "ga": 2.4,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -16040,17 +15088,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 78,
-     "o25": 89,
+     "btts": 80,
+     "o25": 90,
      "cs": 0,
-     "fts": 22
+     "fts": 20
     },
     "form": [
-     "D",
      "L",
      "L",
      "D",
-     "W"
+     "W",
+     "L"
     ],
     "table": {
      "total": {
@@ -16065,14 +15113,14 @@
       "size": 18
      },
      "home": {
-      "p": 5,
+      "p": 6,
       "w": 1,
       "d": 2,
-      "l": 2,
-      "gf": 8,
-      "ga": 12,
+      "l": 3,
+      "gf": 9,
+      "ga": 14,
       "pts": 5,
-      "pos": 9,
+      "pos": 10,
       "size": 18
      },
      "away": {
@@ -16195,7 +15243,7 @@
       "gf": 4,
       "ga": 5,
       "pts": 4,
-      "pos": 10,
+      "pos": 9,
       "size": 18
      }
     }
@@ -16219,9 +15267,9 @@
      "fts": 25
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.43,
-     "ga": 0.86,
+     "gp": 8,
+     "gf": 1.38,
+     "ga": 0.88,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -16229,21 +15277,21 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 57,
-     "o25": 43,
-     "cs": 29,
-     "fts": 14
+     "btts": 62,
+     "o25": 38,
+     "cs": 25,
+     "fts": 12
     },
     "form": [
-     "W",
      "D",
      "W",
      "D",
-     "L"
+     "L",
+     "D"
     ],
     "table": {
      "total": {
-      "pos": 3,
+      "pos": 4,
       "pts": 15,
       "p": 8,
       "w": 4,
@@ -16254,14 +15302,14 @@
       "size": 18
      },
      "home": {
-      "p": 3,
+      "p": 4,
       "w": 2,
-      "d": 1,
+      "d": 2,
       "l": 0,
-      "gf": 6,
-      "ga": 3,
-      "pts": 7,
-      "pos": 7,
+      "gf": 7,
+      "ga": 4,
+      "pts": 8,
+      "pos": 5,
       "size": 18
      },
      "away": {
@@ -16272,7 +15320,7 @@
       "gf": 4,
       "ga": 3,
       "pts": 7,
-      "pos": 2,
+      "pos": 3,
       "size": 18
      }
     }
@@ -16301,9 +15349,9 @@
    "home": {
     "name": "Liverpool",
     "venue": {
-     "gp": 3,
-     "gf": 0.67,
-     "ga": 1.67,
+     "gp": 4,
+     "gf": 1.0,
+     "ga": 1.25,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -16311,15 +15359,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 33,
-     "o25": 67,
-     "cs": 33,
-     "fts": 67
+     "btts": 25,
+     "o25": 50,
+     "cs": 50,
+     "fts": 50
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.29,
-     "ga": 1.14,
+     "gp": 8,
+     "gf": 1.38,
+     "ga": 1.0,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -16327,16 +15375,16 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 43,
-     "o25": 57,
-     "cs": 43,
-     "fts": 29
+     "btts": 38,
+     "o25": 50,
+     "cs": 50,
+     "fts": 25
     },
     "form": [
-     "W",
      "D",
      "W",
      "L",
+     "W",
      "W"
     ],
     "table": {
@@ -16352,14 +15400,14 @@
       "size": 20
      },
      "home": {
-      "p": 3,
-      "w": 0,
+      "p": 4,
+      "w": 1,
       "d": 2,
       "l": 1,
-      "gf": 2,
+      "gf": 4,
       "ga": 5,
-      "pts": 2,
-      "pos": 19,
+      "pts": 5,
+      "pos": 12,
       "size": 20
      },
      "away": {
@@ -16548,7 +15596,7 @@
       "gf": 4,
       "ga": 6,
       "pts": 4,
-      "pos": 13,
+      "pos": 14,
       "size": 18
      },
      "away": {
@@ -16625,7 +15673,7 @@
       "gf": 3,
       "ga": 6,
       "pts": 6,
-      "pos": 11,
+      "pos": 12,
       "size": 18
      },
      "away": {
@@ -16665,9 +15713,9 @@
    "home": {
     "name": "Lecce",
     "venue": {
-     "gp": 3,
-     "gf": 1.33,
-     "ga": 2.67,
+     "gp": 4,
+     "gf": 1.0,
+     "ga": 2.5,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -16675,15 +15723,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 67,
-     "o25": 100,
+     "btts": 50,
+     "o25": 75,
      "cs": 0,
-     "fts": 33
+     "fts": 50
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.29,
-     "ga": 1.71,
+     "gp": 8,
+     "gf": 1.12,
+     "ga": 1.75,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -16691,17 +15739,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 29,
-     "o25": 71,
-     "cs": 29,
-     "fts": 43
+     "btts": 25,
+     "o25": 62,
+     "cs": 25,
+     "fts": 50
     },
     "form": [
-     "L",
      "W",
      "L",
      "L",
-     "W"
+     "W",
+     "L"
     ],
     "table": {
      "total": {
@@ -16716,14 +15764,14 @@
       "size": 20
      },
      "home": {
-      "p": 3,
+      "p": 4,
       "w": 1,
       "d": 0,
-      "l": 2,
+      "l": 3,
       "gf": 4,
-      "ga": 8,
+      "ga": 10,
       "pts": 3,
-      "pos": 16,
+      "pos": 17,
       "size": 20
      },
      "away": {
@@ -16734,7 +15782,7 @@
       "gf": 5,
       "ga": 4,
       "pts": 6,
-      "pos": 8,
+      "pos": 9,
       "size": 20
      }
     }
@@ -16758,9 +15806,9 @@
      "fts": 67
     },
     "overall": {
-     "gp": 7,
-     "gf": 0.71,
-     "ga": 1.86,
+     "gp": 8,
+     "gf": 0.75,
+     "ga": 1.62,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -16768,17 +15816,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 57,
-     "o25": 43,
-     "cs": 0,
-     "fts": 43
+     "btts": 50,
+     "o25": 38,
+     "cs": 12,
+     "fts": 38
     },
     "form": [
-     "L",
      "D",
      "L",
      "W",
-     "L"
+     "L",
+     "W"
     ],
     "table": {
      "total": {
@@ -16793,14 +15841,14 @@
       "size": 20
      },
      "home": {
-      "p": 4,
-      "w": 1,
+      "p": 5,
+      "w": 2,
       "d": 1,
       "l": 2,
-      "gf": 4,
+      "gf": 5,
       "ga": 8,
-      "pts": 4,
-      "pos": 15,
+      "pts": 7,
+      "pos": 11,
       "size": 20
      },
      "away": {
@@ -17115,7 +16163,7 @@
       "gf": 4,
       "ga": 7,
       "pts": 4,
-      "pos": 13,
+      "pos": 14,
       "size": 18
      },
      "away": {
@@ -17150,9 +16198,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 8,
-     "gf": 1.5,
-     "ga": 0.5,
+     "gp": 9,
+     "gf": 1.44,
+     "ga": 0.67,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -17160,37 +16208,37 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 38,
-     "o25": 38,
-     "cs": 62,
-     "fts": 12
+     "btts": 44,
+     "o25": 44,
+     "cs": 56,
+     "fts": 11
     },
     "form": [
-     "D",
      "W",
      "W",
      "D",
-     "W"
+     "W",
+     "L"
     ],
     "table": {
      "total": {
       "pos": 4,
       "pts": 18,
-      "p": 8,
+      "p": 9,
       "w": 5,
       "d": 3,
-      "l": 0,
-      "gf": 12,
-      "ga": 4,
+      "l": 1,
+      "gf": 13,
+      "ga": 6,
       "size": 18
      },
      "home": {
-      "p": 4,
+      "p": 5,
       "w": 2,
       "d": 2,
-      "l": 0,
-      "gf": 7,
-      "ga": 2,
+      "l": 1,
+      "gf": 8,
+      "ga": 4,
       "pts": 8,
       "pos": 6,
       "size": 18
@@ -17203,7 +16251,7 @@
       "gf": 5,
       "ga": 2,
       "pts": 10,
-      "pos": 2,
+      "pos": 4,
       "size": 18
      }
     }
@@ -17255,9 +16303,9 @@
      "fts": 50
     },
     "overall": {
-     "gp": 8,
-     "gf": 1.38,
-     "ga": 1.25,
+     "gp": 9,
+     "gf": 1.44,
+     "ga": 1.22,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -17265,13 +16313,13 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 50,
-     "o25": 62,
-     "cs": 25,
-     "fts": 25
+     "btts": 56,
+     "o25": 67,
+     "cs": 22,
+     "fts": 22
     },
     "form": [
-     "L",
+     "W",
      "W",
      "W",
      "W",
@@ -17301,14 +16349,14 @@
       "size": 18
      },
      "away": {
-      "p": 4,
-      "w": 2,
+      "p": 5,
+      "w": 3,
       "d": 2,
       "l": 0,
-      "gf": 7,
-      "ga": 4,
-      "pts": 8,
-      "pos": 5,
+      "gf": 9,
+      "ga": 5,
+      "pts": 11,
+      "pos": 3,
       "size": 18
      }
     }
@@ -17332,9 +16380,9 @@
      "fts": 75
     },
     "overall": {
-     "gp": 8,
-     "gf": 1.0,
-     "ga": 2.12,
+     "gp": 9,
+     "gf": 0.89,
+     "ga": 2.33,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -17342,17 +16390,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 25,
-     "o25": 50,
-     "cs": 12,
-     "fts": 62
+     "btts": 22,
+     "o25": 56,
+     "cs": 11,
+     "fts": 67
     },
     "form": [
      "L",
-     "L",
      "D",
      "L",
-     "W"
+     "W",
+     "L"
     ],
     "table": {
      "total": {
@@ -17367,14 +16415,14 @@
       "size": 18
      },
      "home": {
-      "p": 4,
+      "p": 5,
       "w": 1,
       "d": 1,
-      "l": 2,
+      "l": 3,
       "gf": 6,
-      "ga": 11,
+      "ga": 15,
       "pts": 4,
-      "pos": 14,
+      "pos": 15,
       "size": 18
      },
      "away": {
@@ -17415,9 +16463,9 @@
      "fts": 25
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.29,
-     "ga": 1.14,
+     "gp": 8,
+     "gf": 1.38,
+     "ga": 1.0,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -17425,17 +16473,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 43,
-     "o25": 29,
-     "cs": 43,
-     "fts": 14
+     "btts": 38,
+     "o25": 25,
+     "cs": 50,
+     "fts": 12
     },
     "form": [
-     "D",
      "L",
      "W",
      "D",
-     "L"
+     "L",
+     "W"
     ],
     "table": {
      "total": {
@@ -17461,14 +16509,14 @@
       "size": 20
      },
      "away": {
-      "p": 3,
-      "w": 1,
+      "p": 4,
+      "w": 2,
       "d": 1,
       "l": 1,
-      "gf": 4,
+      "gf": 6,
       "ga": 4,
-      "pts": 4,
-      "pos": 11,
+      "pts": 7,
+      "pos": 8,
       "size": 20
      }
     }
@@ -17545,7 +16593,7 @@
       "gf": 5,
       "ga": 5,
       "pts": 4,
-      "pos": 10,
+      "pos": 12,
       "size": 20
      }
     }
@@ -17595,9 +16643,9 @@
    "home": {
     "name": "Marseille",
     "venue": {
-     "gp": 3,
-     "gf": 2.33,
-     "ga": 1.67,
+     "gp": 4,
+     "gf": 2.75,
+     "ga": 2.0,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -17605,15 +16653,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 67,
+     "btts": 75,
      "o25": 100,
-     "cs": 33,
+     "cs": 25,
      "fts": 0
     },
     "overall": {
-     "gp": 7,
-     "gf": 2.0,
-     "ga": 1.43,
+     "gp": 8,
+     "gf": 2.25,
+     "ga": 1.62,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -17621,15 +16669,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 43,
-     "o25": 57,
-     "cs": 29,
-     "fts": 29
+     "btts": 50,
+     "o25": 62,
+     "cs": 25,
+     "fts": 25
     },
     "form": [
      "L",
      "L",
-     "L",
+     "W",
      "W",
      "W"
     ],
@@ -17646,14 +16694,14 @@
       "size": 18
      },
      "home": {
-      "p": 3,
-      "w": 1,
+      "p": 4,
+      "w": 2,
       "d": 0,
       "l": 2,
-      "gf": 7,
-      "ga": 5,
-      "pts": 3,
-      "pos": 13,
+      "gf": 11,
+      "ga": 8,
+      "pts": 6,
+      "pos": 10,
       "size": 18
      },
      "away": {
@@ -17664,7 +16712,7 @@
       "gf": 7,
       "ga": 5,
       "pts": 6,
-      "pos": 4,
+      "pos": 5,
       "size": 18
      }
     }
@@ -17688,9 +16736,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 7,
-     "gf": 1.71,
-     "ga": 1.57,
+     "gp": 8,
+     "gf": 1.5,
+     "ga": 1.38,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -17698,17 +16746,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 57,
-     "o25": 71,
-     "cs": 14,
-     "fts": 29
+     "btts": 50,
+     "o25": 62,
+     "cs": 25,
+     "fts": 38
     },
     "form": [
-     "L",
      "D",
      "W",
      "D",
-     "W"
+     "W",
+     "D"
     ],
     "table": {
      "total": {
@@ -17723,13 +16771,13 @@
       "size": 18
      },
      "home": {
-      "p": 3,
+      "p": 4,
       "w": 1,
-      "d": 0,
+      "d": 1,
       "l": 2,
       "gf": 3,
       "ga": 5,
-      "pts": 3,
+      "pts": 4,
       "pos": 15,
       "size": 18
      },
@@ -17741,7 +16789,7 @@
       "gf": 9,
       "ga": 6,
       "pts": 6,
-      "pos": 3,
+      "pos": 4,
       "size": 18
      }
     }
@@ -17784,8 +16832,24 @@
    "home": {
     "name": "Athletic",
     "venue": {
-     "gp": 4,
-     "gf": 1.25,
+     "gp": 5,
+     "gf": 1.8,
+     "ga": 0.8,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 40,
+     "o25": 60,
+     "cs": 60,
+     "fts": 20
+    },
+    "overall": {
+     "gp": 9,
+     "gf": 1.33,
      "ga": 1.0,
      "xg": null,
      "xga": null,
@@ -17794,33 +16858,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 50,
-     "o25": 50,
-     "cs": 50,
-     "fts": 25
-    },
-    "overall": {
-     "gp": 8,
-     "gf": 1.0,
-     "ga": 1.12,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 38,
-     "o25": 38,
-     "cs": 50,
-     "fts": 38
+     "btts": 33,
+     "o25": 44,
+     "cs": 56,
+     "fts": 33
     },
     "form": [
-     "W",
      "D",
      "D",
      "D",
-     "L"
+     "L",
+     "W"
     ],
     "table": {
      "total": {
@@ -17835,14 +16883,14 @@
       "size": 20
      },
      "home": {
-      "p": 4,
-      "w": 1,
+      "p": 5,
+      "w": 2,
       "d": 2,
       "l": 1,
-      "gf": 5,
+      "gf": 9,
       "ga": 4,
-      "pts": 5,
-      "pos": 15,
+      "pts": 8,
+      "pos": 10,
       "size": 20
      },
      "away": {
@@ -17877,9 +16925,9 @@
      "fts": 20
     },
     "overall": {
-     "gp": 9,
-     "gf": 1.89,
-     "ga": 1.89,
+     "gp": 10,
+     "gf": 1.9,
+     "ga": 1.8,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -17887,14 +16935,14 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 67,
-     "o25": 78,
-     "cs": 11,
-     "fts": 33
+     "btts": 70,
+     "o25": 80,
+     "cs": 10,
+     "fts": 30
     },
     "form": [
-     "W",
      "L",
+     "W",
      "W",
      "W",
      "W"
@@ -17912,14 +16960,14 @@
       "size": 20
      },
      "home": {
-      "p": 4,
-      "w": 2,
+      "p": 5,
+      "w": 3,
       "d": 1,
       "l": 1,
-      "gf": 5,
-      "ga": 6,
-      "pts": 7,
-      "pos": 12,
+      "gf": 7,
+      "ga": 7,
+      "pts": 10,
+      "pos": 7,
       "size": 20
      },
      "away": {
@@ -17982,9 +17030,9 @@
      "fts": 0
     },
     "overall": {
-     "gp": 8,
-     "gf": 1.12,
-     "ga": 1.25,
+     "gp": 9,
+     "gf": 1.0,
+     "ga": 1.22,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -17992,15 +17040,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 62,
-     "o25": 62,
-     "cs": 38,
-     "fts": 12
+     "btts": 56,
+     "o25": 56,
+     "cs": 33,
+     "fts": 22
     },
     "form": [
-     "L",
      "W",
      "D",
+     "L",
      "L",
      "L"
     ],
@@ -18028,14 +17076,14 @@
       "size": 18
      },
      "away": {
-      "p": 4,
+      "p": 5,
       "w": 1,
       "d": 2,
-      "l": 1,
+      "l": 2,
       "gf": 5,
-      "ga": 5,
+      "ga": 6,
       "pts": 5,
-      "pos": 12,
+      "pos": 13,
       "size": 18
      }
     }
@@ -18043,9 +17091,9 @@
    "away": {
     "name": "Famalicão",
     "venue": {
-     "gp": 4,
-     "gf": 1.75,
-     "ga": 1.0,
+     "gp": 5,
+     "gf": 2.2,
+     "ga": 0.8,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -18053,15 +17101,15 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 50,
-     "o25": 50,
-     "cs": 25,
-     "fts": 25
+     "btts": 40,
+     "o25": 60,
+     "cs": 40,
+     "fts": 20
     },
     "overall": {
-     "gp": 8,
-     "gf": 1.25,
-     "ga": 1.38,
+     "gp": 9,
+     "gf": 1.56,
+     "ga": 1.22,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -18069,17 +17117,17 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 62,
-     "o25": 50,
-     "cs": 25,
-     "fts": 25
+     "btts": 56,
+     "o25": 56,
+     "cs": 33,
+     "fts": 22
     },
     "form": [
      "D",
      "D",
-     "D",
      "W",
-     "L"
+     "L",
+     "W"
     ],
     "table": {
      "total": {
@@ -18101,18 +17149,18 @@
       "gf": 3,
       "ga": 7,
       "pts": 2,
-      "pos": 17,
+      "pos": 16,
       "size": 18
      },
      "away": {
-      "p": 4,
-      "w": 1,
+      "p": 5,
+      "w": 2,
       "d": 2,
       "l": 1,
-      "gf": 7,
+      "gf": 11,
       "ga": 4,
-      "pts": 5,
-      "pos": 10,
+      "pts": 8,
+      "pos": 5,
       "size": 18
      }
     }
@@ -18152,6 +17200,1307 @@
      "away": "Braga",
      "hg": 1,
      "ag": 2
+    }
+   ]
+  },
+  {
+   "id": "fd558541",
+   "league": "sa",
+   "kickoff": "2026-11-02T17:30:00Z",
+   "home": {
+    "name": "Sassuolo",
+    "venue": {
+     "gp": 3,
+     "gf": 2.0,
+     "ga": 1.33,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 100,
+     "o25": 67,
+     "cs": 0,
+     "fts": 0
+    },
+    "overall": {
+     "gp": 8,
+     "gf": 1.5,
+     "ga": 2.0,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 88,
+     "o25": 75,
+     "cs": 0,
+     "fts": 12
+    },
+    "form": [
+     "W",
+     "L",
+     "D",
+     "L",
+     "L"
+    ],
+    "table": {
+     "total": {
+      "pos": 14,
+      "pts": 8,
+      "p": 8,
+      "w": 2,
+      "d": 2,
+      "l": 4,
+      "gf": 12,
+      "ga": 16,
+      "size": 20
+     },
+     "home": {
+      "p": 3,
+      "w": 2,
+      "d": 1,
+      "l": 0,
+      "gf": 6,
+      "ga": 4,
+      "pts": 7,
+      "pos": 9,
+      "size": 20
+     },
+     "away": {
+      "p": 5,
+      "w": 0,
+      "d": 1,
+      "l": 4,
+      "gf": 6,
+      "ga": 12,
+      "pts": 1,
+      "pos": 15,
+      "size": 20
+     }
+    }
+   },
+   "away": {
+    "name": "Fiorentina",
+    "venue": {
+     "gp": 4,
+     "gf": 1.5,
+     "ga": 2.5,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 75,
+     "o25": 100,
+     "cs": 0,
+     "fts": 25
+    },
+    "overall": {
+     "gp": 8,
+     "gf": 1.12,
+     "ga": 2.38,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 75,
+     "o25": 88,
+     "cs": 0,
+     "fts": 25
+    },
+    "form": [
+     "W",
+     "D",
+     "L",
+     "L",
+     "L"
+    ],
+    "table": {
+     "total": {
+      "pos": 18,
+      "pts": 4,
+      "p": 8,
+      "w": 1,
+      "d": 1,
+      "l": 6,
+      "gf": 9,
+      "ga": 19,
+      "size": 20
+     },
+     "home": {
+      "p": 4,
+      "w": 0,
+      "d": 1,
+      "l": 3,
+      "gf": 3,
+      "ga": 9,
+      "pts": 1,
+      "pos": 19,
+      "size": 20
+     },
+     "away": {
+      "p": 4,
+      "w": 1,
+      "d": 0,
+      "l": 3,
+      "gf": 6,
+      "ga": 10,
+      "pts": 3,
+      "pos": 14,
+      "size": 20
+     }
+    }
+   },
+   "h2h": [
+    {
+     "date": "2026-04-26",
+     "home": "Fiorentina",
+     "away": "Sassuolo",
+     "hg": 0,
+     "ag": 0
+    },
+    {
+     "date": "2025-12-06",
+     "home": "Sassuolo",
+     "away": "Fiorentina",
+     "hg": 3,
+     "ag": 1
+    },
+    {
+     "date": "2024-04-28",
+     "home": "Fiorentina",
+     "away": "Sassuolo",
+     "hg": 5,
+     "ag": 1
+    },
+    {
+     "date": "2024-01-06",
+     "home": "Sassuolo",
+     "away": "Fiorentina",
+     "hg": 1,
+     "ag": 0
+    },
+    {
+     "date": "2023-06-02",
+     "home": "Sassuolo",
+     "away": "Fiorentina",
+     "hg": 1,
+     "ag": 3
+    }
+   ]
+  },
+  {
+   "id": "fd558545",
+   "league": "sa",
+   "kickoff": "2026-11-02T19:45:00Z",
+   "home": {
+    "name": "Atalanta",
+    "venue": {
+     "gp": 5,
+     "gf": 2.2,
+     "ga": 1.6,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 80,
+     "o25": 80,
+     "cs": 20,
+     "fts": 0
+    },
+    "overall": {
+     "gp": 8,
+     "gf": 1.75,
+     "ga": 1.88,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 75,
+     "o25": 75,
+     "cs": 12,
+     "fts": 12
+    },
+    "form": [
+     "L",
+     "L",
+     "W",
+     "L",
+     "D"
+    ],
+    "table": {
+     "total": {
+      "pos": 11,
+      "pts": 10,
+      "p": 8,
+      "w": 3,
+      "d": 1,
+      "l": 4,
+      "gf": 14,
+      "ga": 15,
+      "size": 20
+     },
+     "home": {
+      "p": 5,
+      "w": 3,
+      "d": 1,
+      "l": 1,
+      "gf": 11,
+      "ga": 8,
+      "pts": 10,
+      "pos": 4,
+      "size": 20
+     },
+     "away": {
+      "p": 3,
+      "w": 0,
+      "d": 0,
+      "l": 3,
+      "gf": 3,
+      "ga": 7,
+      "pts": 0,
+      "pos": 17,
+      "size": 20
+     }
+    }
+   },
+   "away": {
+    "name": "Parma",
+    "venue": {
+     "gp": 4,
+     "gf": 0.5,
+     "ga": 2.25,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 50,
+     "o25": 75,
+     "cs": 0,
+     "fts": 50
+    },
+    "overall": {
+     "gp": 8,
+     "gf": 0.62,
+     "ga": 1.88,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 50,
+     "o25": 62,
+     "cs": 0,
+     "fts": 50
+    },
+    "form": [
+     "L",
+     "W",
+     "L",
+     "L",
+     "L"
+    ],
+    "table": {
+     "total": {
+      "pos": 19,
+      "pts": 4,
+      "p": 8,
+      "w": 1,
+      "d": 1,
+      "l": 6,
+      "gf": 5,
+      "ga": 15,
+      "size": 20
+     },
+     "home": {
+      "p": 4,
+      "w": 1,
+      "d": 1,
+      "l": 2,
+      "gf": 3,
+      "ga": 6,
+      "pts": 4,
+      "pos": 15,
+      "size": 20
+     },
+     "away": {
+      "p": 4,
+      "w": 0,
+      "d": 0,
+      "l": 4,
+      "gf": 2,
+      "ga": 9,
+      "pts": 0,
+      "pos": 20,
+      "size": 20
+     }
+    }
+   },
+   "h2h": [
+    {
+     "date": "2026-01-25",
+     "home": "Atalanta",
+     "away": "Parma",
+     "hg": 4,
+     "ag": 0
+    },
+    {
+     "date": "2025-08-30",
+     "home": "Parma",
+     "away": "Atalanta",
+     "hg": 1,
+     "ag": 1
+    },
+    {
+     "date": "2025-05-25",
+     "home": "Atalanta",
+     "away": "Parma",
+     "hg": 2,
+     "ag": 3
+    },
+    {
+     "date": "2024-11-23",
+     "home": "Parma",
+     "away": "Atalanta",
+     "hg": 1,
+     "ag": 3
+    }
+   ]
+  },
+  {
+   "id": "fd564731",
+   "league": "ll",
+   "kickoff": "2026-11-02T20:00:00Z",
+   "home": {
+    "name": "Deportivo",
+    "venue": {
+     "gp": 5,
+     "gf": 1.2,
+     "ga": 1.0,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 80,
+     "o25": 20,
+     "cs": 0,
+     "fts": 20
+    },
+    "overall": {
+     "gp": 10,
+     "gf": 1.3,
+     "ga": 1.3,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 80,
+     "o25": 30,
+     "cs": 0,
+     "fts": 20
+    },
+    "form": [
+     "L",
+     "D",
+     "L",
+     "D",
+     "L"
+    ],
+    "table": {
+     "total": {
+      "pos": 11,
+      "pts": 11,
+      "p": 10,
+      "w": 2,
+      "d": 5,
+      "l": 3,
+      "gf": 13,
+      "ga": 13,
+      "size": 20
+     },
+     "home": {
+      "p": 5,
+      "w": 1,
+      "d": 3,
+      "l": 1,
+      "gf": 6,
+      "ga": 5,
+      "pts": 6,
+      "pos": 15,
+      "size": 20
+     },
+     "away": {
+      "p": 5,
+      "w": 1,
+      "d": 2,
+      "l": 2,
+      "gf": 7,
+      "ga": 8,
+      "pts": 5,
+      "pos": 9,
+      "size": 20
+     }
+    }
+   },
+   "away": {
+    "name": "Osasuna",
+    "venue": {
+     "gp": 5,
+     "gf": 1.2,
+     "ga": 3.4,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 60,
+     "o25": 80,
+     "cs": 0,
+     "fts": 40
+    },
+    "overall": {
+     "gp": 10,
+     "gf": 1.0,
+     "ga": 2.0,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 40,
+     "o25": 40,
+     "cs": 30,
+     "fts": 40
+    },
+    "form": [
+     "L",
+     "D",
+     "L",
+     "W",
+     "L"
+    ],
+    "table": {
+     "total": {
+      "pos": 12,
+      "pts": 11,
+      "p": 10,
+      "w": 3,
+      "d": 2,
+      "l": 5,
+      "gf": 10,
+      "ga": 20,
+      "size": 20
+     },
+     "home": {
+      "p": 5,
+      "w": 2,
+      "d": 2,
+      "l": 1,
+      "gf": 4,
+      "ga": 3,
+      "pts": 8,
+      "pos": 12,
+      "size": 20
+     },
+     "away": {
+      "p": 5,
+      "w": 1,
+      "d": 0,
+      "l": 4,
+      "gf": 6,
+      "ga": 17,
+      "pts": 3,
+      "pos": 15,
+      "size": 20
+     }
+    }
+   },
+   "h2h": []
+  },
+  {
+   "id": "fd560622",
+   "league": "pl",
+   "kickoff": "2026-11-02T20:00:00Z",
+   "home": {
+    "name": "Newcastle",
+    "venue": {
+     "gp": 4,
+     "gf": 1.5,
+     "ga": 1.5,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 75,
+     "o25": 75,
+     "cs": 0,
+     "fts": 25
+    },
+    "overall": {
+     "gp": 8,
+     "gf": 1.5,
+     "ga": 1.75,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 62,
+     "o25": 62,
+     "cs": 25,
+     "fts": 12
+    },
+    "form": [
+     "L",
+     "W",
+     "L",
+     "L",
+     "W"
+    ],
+    "table": {
+     "total": {
+      "pos": 8,
+      "pts": 11,
+      "p": 8,
+      "w": 3,
+      "d": 2,
+      "l": 3,
+      "gf": 12,
+      "ga": 14,
+      "size": 20
+     },
+     "home": {
+      "p": 4,
+      "w": 1,
+      "d": 2,
+      "l": 1,
+      "gf": 6,
+      "ga": 6,
+      "pts": 5,
+      "pos": 11,
+      "size": 20
+     },
+     "away": {
+      "p": 4,
+      "w": 2,
+      "d": 0,
+      "l": 2,
+      "gf": 6,
+      "ga": 8,
+      "pts": 6,
+      "pos": 7,
+      "size": 20
+     }
+    }
+   },
+   "away": {
+    "name": "Everton",
+    "venue": {
+     "gp": 4,
+     "gf": 0.75,
+     "ga": 1.25,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 50,
+     "o25": 25,
+     "cs": 25,
+     "fts": 50
+    },
+    "overall": {
+     "gp": 8,
+     "gf": 1.0,
+     "ga": 1.12,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 38,
+     "o25": 25,
+     "cs": 38,
+     "fts": 38
+    },
+    "form": [
+     "D",
+     "W",
+     "D",
+     "L",
+     "L"
+    ],
+    "table": {
+     "total": {
+      "pos": 11,
+      "pts": 10,
+      "p": 8,
+      "w": 2,
+      "d": 4,
+      "l": 2,
+      "gf": 8,
+      "ga": 9,
+      "size": 20
+     },
+     "home": {
+      "p": 4,
+      "w": 2,
+      "d": 1,
+      "l": 1,
+      "gf": 5,
+      "ga": 4,
+      "pts": 7,
+      "pos": 6,
+      "size": 20
+     },
+     "away": {
+      "p": 4,
+      "w": 0,
+      "d": 3,
+      "l": 1,
+      "gf": 3,
+      "ga": 5,
+      "pts": 3,
+      "pos": 17,
+      "size": 20
+     }
+    }
+   },
+   "h2h": [
+    {
+     "date": "2026-02-28",
+     "home": "Newcastle",
+     "away": "Everton",
+     "hg": 2,
+     "ag": 3
+    },
+    {
+     "date": "2025-11-29",
+     "home": "Everton",
+     "away": "Newcastle",
+     "hg": 1,
+     "ag": 4
+    },
+    {
+     "date": "2025-05-25",
+     "home": "Newcastle",
+     "away": "Everton",
+     "hg": 0,
+     "ag": 1
+    },
+    {
+     "date": "2024-10-05",
+     "home": "Everton",
+     "away": "Newcastle",
+     "hg": 0,
+     "ag": 0
+    },
+    {
+     "date": "2024-04-02",
+     "home": "Newcastle",
+     "away": "Everton",
+     "hg": 1,
+     "ag": 1
+    }
+   ]
+  },
+  {
+   "id": "fd567342",
+   "league": "pp",
+   "kickoff": "2026-11-02T20:15:00Z",
+   "home": {
+    "name": "SL Benfica",
+    "venue": {
+     "gp": 4,
+     "gf": 2.25,
+     "ga": 1.0,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 75,
+     "o25": 75,
+     "cs": 25,
+     "fts": 0
+    },
+    "overall": {
+     "gp": 9,
+     "gf": 2.89,
+     "ga": 0.89,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 56,
+     "o25": 89,
+     "cs": 44,
+     "fts": 0
+    },
+    "form": [
+     "W",
+     "W",
+     "L",
+     "W",
+     "W"
+    ],
+    "table": {
+     "total": {
+      "pos": 2,
+      "pts": 22,
+      "p": 9,
+      "w": 7,
+      "d": 1,
+      "l": 1,
+      "gf": 26,
+      "ga": 8,
+      "size": 18
+     },
+     "home": {
+      "p": 4,
+      "w": 3,
+      "d": 1,
+      "l": 0,
+      "gf": 9,
+      "ga": 4,
+      "pts": 10,
+      "pos": 2,
+      "size": 18
+     },
+     "away": {
+      "p": 5,
+      "w": 4,
+      "d": 0,
+      "l": 1,
+      "gf": 17,
+      "ga": 4,
+      "pts": 12,
+      "pos": 2,
+      "size": 18
+     }
+    }
+   },
+   "away": {
+    "name": "Alverca",
+    "venue": {
+     "gp": 4,
+     "gf": 2.0,
+     "ga": 1.75,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 75,
+     "o25": 75,
+     "cs": 0,
+     "fts": 25
+    },
+    "overall": {
+     "gp": 9,
+     "gf": 1.44,
+     "ga": 1.44,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 67,
+     "o25": 56,
+     "cs": 11,
+     "fts": 22
+    },
+    "form": [
+     "L",
+     "W",
+     "W",
+     "W",
+     "L"
+    ],
+    "table": {
+     "total": {
+      "pos": 8,
+      "pts": 11,
+      "p": 9,
+      "w": 3,
+      "d": 2,
+      "l": 4,
+      "gf": 13,
+      "ga": 13,
+      "size": 18
+     },
+     "home": {
+      "p": 5,
+      "w": 1,
+      "d": 2,
+      "l": 2,
+      "gf": 5,
+      "ga": 6,
+      "pts": 5,
+      "pos": 11,
+      "size": 18
+     },
+     "away": {
+      "p": 4,
+      "w": 2,
+      "d": 0,
+      "l": 2,
+      "gf": 8,
+      "ga": 7,
+      "pts": 6,
+      "pos": 11,
+      "size": 18
+     }
+    }
+   },
+   "h2h": [
+    {
+     "date": "2026-02-08",
+     "home": "SL Benfica",
+     "away": "Alverca",
+     "hg": 2,
+     "ag": 1
+    },
+    {
+     "date": "2025-08-31",
+     "home": "Alverca",
+     "away": "SL Benfica",
+     "hg": 1,
+     "ag": 2
+    }
+   ]
+  },
+  {
+   "id": "fd567346",
+   "league": "pp",
+   "kickoff": "2026-11-02T20:15:00Z",
+   "home": {
+    "name": "Gil Vicente",
+    "venue": {
+     "gp": 5,
+     "gf": 0.8,
+     "ga": 0.6,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 20,
+     "o25": 0,
+     "cs": 40,
+     "fts": 40
+    },
+    "overall": {
+     "gp": 9,
+     "gf": 0.89,
+     "ga": 0.78,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 33,
+     "o25": 22,
+     "cs": 44,
+     "fts": 33
+    },
+    "form": [
+     "L",
+     "D",
+     "W",
+     "W",
+     "L"
+    ],
+    "table": {
+     "total": {
+      "pos": 7,
+      "pts": 14,
+      "p": 9,
+      "w": 4,
+      "d": 2,
+      "l": 3,
+      "gf": 8,
+      "ga": 7,
+      "size": 18
+     },
+     "home": {
+      "p": 5,
+      "w": 2,
+      "d": 1,
+      "l": 2,
+      "gf": 4,
+      "ga": 3,
+      "pts": 7,
+      "pos": 7,
+      "size": 18
+     },
+     "away": {
+      "p": 4,
+      "w": 2,
+      "d": 1,
+      "l": 1,
+      "gf": 4,
+      "ga": 4,
+      "pts": 7,
+      "pos": 9,
+      "size": 18
+     }
+    }
+   },
+   "away": {
+    "name": "Vitória SC",
+    "venue": {
+     "gp": 4,
+     "gf": 0.75,
+     "ga": 2.0,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 50,
+     "o25": 50,
+     "cs": 0,
+     "fts": 50
+    },
+    "overall": {
+     "gp": 9,
+     "gf": 1.11,
+     "ga": 1.11,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 33,
+     "o25": 33,
+     "cs": 33,
+     "fts": 44
+    },
+    "form": [
+     "D",
+     "L",
+     "D",
+     "L",
+     "W"
+    ],
+    "table": {
+     "total": {
+      "pos": 13,
+      "pts": 8,
+      "p": 9,
+      "w": 2,
+      "d": 2,
+      "l": 5,
+      "gf": 10,
+      "ga": 10,
+      "size": 18
+     },
+     "home": {
+      "p": 5,
+      "w": 2,
+      "d": 2,
+      "l": 1,
+      "gf": 7,
+      "ga": 2,
+      "pts": 8,
+      "pos": 5,
+      "size": 18
+     },
+     "away": {
+      "p": 4,
+      "w": 0,
+      "d": 0,
+      "l": 4,
+      "gf": 3,
+      "ga": 8,
+      "pts": 0,
+      "pos": 17,
+      "size": 18
+     }
+    }
+   },
+   "h2h": [
+    {
+     "date": "2026-04-18",
+     "home": "Gil Vicente",
+     "away": "Vitória SC",
+     "hg": 0,
+     "ag": 1
+    },
+    {
+     "date": "2025-12-08",
+     "home": "Vitória SC",
+     "away": "Gil Vicente",
+     "hg": 0,
+     "ag": 0
+    },
+    {
+     "date": "2025-04-11",
+     "home": "Gil Vicente",
+     "away": "Vitória SC",
+     "hg": 0,
+     "ag": 1
+    },
+    {
+     "date": "2024-12-02",
+     "home": "Vitória SC",
+     "away": "Gil Vicente",
+     "hg": 4,
+     "ag": 0
+    }
+   ]
+  },
+  {
+   "id": "fd555072",
+   "league": "br",
+   "kickoff": "2026-11-02T23:00:00Z",
+   "home": {
+    "name": "Bragantino",
+    "venue": {
+     "gp": 15,
+     "gf": 1.6,
+     "ga": 1.13,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 53,
+     "o25": 47,
+     "cs": 33,
+     "fts": 20
+    },
+    "overall": {
+     "gp": 32,
+     "gf": 1.22,
+     "ga": 1.19,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 53,
+     "o25": 38,
+     "cs": 25,
+     "fts": 25
+    },
+    "form": [
+     "L",
+     "D",
+     "W",
+     "D",
+     "L"
+    ],
+    "table": {
+     "total": {
+      "pos": 10,
+      "pts": 41,
+      "p": 32,
+      "w": 11,
+      "d": 8,
+      "l": 13,
+      "gf": 39,
+      "ga": 38,
+      "size": 20
+     },
+     "home": {
+      "p": 15,
+      "w": 7,
+      "d": 3,
+      "l": 5,
+      "gf": 24,
+      "ga": 17,
+      "pts": 24,
+      "pos": 13,
+      "size": 20
+     },
+     "away": {
+      "p": 17,
+      "w": 4,
+      "d": 5,
+      "l": 8,
+      "gf": 15,
+      "ga": 21,
+      "pts": 17,
+      "pos": 8,
+      "size": 20
+     }
+    }
+   },
+   "away": {
+    "name": "Santos",
+    "venue": {
+     "gp": 16,
+     "gf": 1.62,
+     "ga": 1.62,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 81,
+     "o25": 81,
+     "cs": 19,
+     "fts": 6
+    },
+    "overall": {
+     "gp": 32,
+     "gf": 1.53,
+     "ga": 1.47,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 75,
+     "o25": 66,
+     "cs": 19,
+     "fts": 9
+    },
+    "form": [
+     "W",
+     "D",
+     "L",
+     "W",
+     "D"
+    ],
+    "table": {
+     "total": {
+      "pos": 8,
+      "pts": 46,
+      "p": 32,
+      "w": 12,
+      "d": 10,
+      "l": 10,
+      "gf": 49,
+      "ga": 47,
+      "size": 20
+     },
+     "home": {
+      "p": 16,
+      "w": 6,
+      "d": 6,
+      "l": 4,
+      "gf": 23,
+      "ga": 21,
+      "pts": 24,
+      "pos": 15,
+      "size": 20
+     },
+     "away": {
+      "p": 16,
+      "w": 6,
+      "d": 4,
+      "l": 6,
+      "gf": 26,
+      "ga": 26,
+      "pts": 22,
+      "pos": 5,
+      "size": 20
+     }
+    }
+   },
+   "h2h": [
+    {
+     "date": "2026-05-10",
+     "home": "Santos",
+     "away": "Bragantino",
+     "hg": 2,
+     "ag": 0
+    },
+    {
+     "date": "2025-09-28",
+     "home": "Bragantino",
+     "away": "Santos",
+     "hg": 2,
+     "ag": 2
+    },
+    {
+     "date": "2025-04-27",
+     "home": "Santos",
+     "away": "Bragantino",
+     "hg": 1,
+     "ag": 2
+    },
+    {
+     "date": "2023-10-19",
+     "home": "Santos",
+     "away": "Bragantino",
+     "hg": 1,
+     "ag": 3
+    },
+    {
+     "date": "2023-05-28",
+     "home": "Bragantino",
+     "away": "Santos",
+     "hg": 2,
+     "ag": 0
     }
    ]
   }
