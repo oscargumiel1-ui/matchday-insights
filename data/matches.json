@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T06:14+00:00",
+ "updated": "2026-11-13T06:11+00:00",
  "source": "football-data.org",
  "demo": false,
  "season": "2026/27",
@@ -1493,6 +1493,594 @@
      "away": "Grêmio",
      "hg": 1,
      "ag": 0
+    }
+   ]
+  },
+  {
+   "id": "fd555088",
+   "league": "br",
+   "kickoff": "2026-11-19T22:30:00Z",
+   "home": {
+    "name": "Vasco da Gama",
+    "venue": {
+     "gp": 17,
+     "gf": 1.47,
+     "ga": 1.41,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 59,
+     "o25": 65,
+     "cs": 18,
+     "fts": 29
+    },
+    "overall": {
+     "gp": 33,
+     "gf": 1.3,
+     "ga": 1.52,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 64,
+     "o25": 61,
+     "cs": 12,
+     "fts": 30
+    },
+    "form": [
+     "D",
+     "L",
+     "W",
+     "L",
+     "W"
+    ],
+    "table": {
+     "total": {
+      "pos": 13,
+      "pts": 41,
+      "p": 33,
+      "w": 11,
+      "d": 8,
+      "l": 14,
+      "gf": 43,
+      "ga": 50,
+      "size": 20
+     },
+     "home": {
+      "p": 17,
+      "w": 8,
+      "d": 3,
+      "l": 6,
+      "gf": 25,
+      "ga": 24,
+      "pts": 27,
+      "pos": 14,
+      "size": 20
+     },
+     "away": {
+      "p": 16,
+      "w": 3,
+      "d": 5,
+      "l": 8,
+      "gf": 18,
+      "ga": 26,
+      "pts": 14,
+      "pos": 14,
+      "size": 20
+     }
+    }
+   },
+   "away": {
+    "name": "Internacional",
+    "venue": {
+     "gp": 17,
+     "gf": 0.94,
+     "ga": 1.47,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 59,
+     "o25": 41,
+     "cs": 12,
+     "fts": 35
+    },
+    "overall": {
+     "gp": 34,
+     "gf": 1.12,
+     "ga": 1.24,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 56,
+     "o25": 41,
+     "cs": 24,
+     "fts": 29
+    },
+    "form": [
+     "D",
+     "L",
+     "W",
+     "L",
+     "W"
+    ],
+    "table": {
+     "total": {
+      "pos": 16,
+      "pts": 38,
+      "p": 34,
+      "w": 9,
+      "d": 11,
+      "l": 14,
+      "gf": 38,
+      "ga": 42,
+      "size": 20
+     },
+     "home": {
+      "p": 17,
+      "w": 6,
+      "d": 5,
+      "l": 6,
+      "gf": 22,
+      "ga": 17,
+      "pts": 23,
+      "pos": 16,
+      "size": 20
+     },
+     "away": {
+      "p": 17,
+      "w": 3,
+      "d": 6,
+      "l": 8,
+      "gf": 16,
+      "ga": 25,
+      "pts": 15,
+      "pos": 12,
+      "size": 20
+     }
+    }
+   },
+   "h2h": [
+    {
+     "date": "2026-05-16",
+     "home": "Internacional",
+     "away": "Vasco da Gama",
+     "hg": 4,
+     "ag": 1
+    },
+    {
+     "date": "2025-11-28",
+     "home": "Vasco da Gama",
+     "away": "Internacional",
+     "hg": 5,
+     "ag": 1
+    },
+    {
+     "date": "2025-07-27",
+     "home": "Internacional",
+     "away": "Vasco da Gama",
+     "hg": 1,
+     "ag": 1
+    },
+    {
+     "date": "2024-11-21",
+     "home": "Vasco da Gama",
+     "away": "Internacional",
+     "hg": 0,
+     "ag": 1
+    },
+    {
+     "date": "2024-07-07",
+     "home": "Internacional",
+     "away": "Vasco da Gama",
+     "hg": 1,
+     "ag": 2
+    }
+   ]
+  },
+  {
+   "id": "fd555089",
+   "league": "br",
+   "kickoff": "2026-11-19T22:30:00Z",
+   "home": {
+    "name": "Vitória",
+    "venue": {
+     "gp": 17,
+     "gf": 1.35,
+     "ga": 0.94,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 24,
+     "o25": 35,
+     "cs": 59,
+     "fts": 24
+    },
+    "overall": {
+     "gp": 34,
+     "gf": 1.03,
+     "ga": 1.5,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 41,
+     "o25": 41,
+     "cs": 32,
+     "fts": 32
+    },
+    "form": [
+     "L",
+     "D",
+     "D",
+     "L",
+     "L"
+    ],
+    "table": {
+     "total": {
+      "pos": 15,
+      "pts": 38,
+      "p": 34,
+      "w": 10,
+      "d": 8,
+      "l": 16,
+      "gf": 35,
+      "ga": 51,
+      "size": 20
+     },
+     "home": {
+      "p": 17,
+      "w": 10,
+      "d": 2,
+      "l": 5,
+      "gf": 23,
+      "ga": 16,
+      "pts": 32,
+      "pos": 8,
+      "size": 20
+     },
+     "away": {
+      "p": 17,
+      "w": 0,
+      "d": 6,
+      "l": 11,
+      "gf": 12,
+      "ga": 35,
+      "pts": 6,
+      "pos": 20,
+      "size": 20
+     }
+    }
+   },
+   "away": {
+    "name": "Bragantino",
+    "venue": {
+     "gp": 17,
+     "gf": 0.88,
+     "ga": 1.24,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 53,
+     "o25": 29,
+     "cs": 18,
+     "fts": 29
+    },
+    "overall": {
+     "gp": 34,
+     "gf": 1.29,
+     "ga": 1.15,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 53,
+     "o25": 41,
+     "cs": 26,
+     "fts": 24
+    },
+    "form": [
+     "W",
+     "D",
+     "L",
+     "W",
+     "W"
+    ],
+    "table": {
+     "total": {
+      "pos": 8,
+      "pts": 47,
+      "p": 34,
+      "w": 13,
+      "d": 8,
+      "l": 13,
+      "gf": 44,
+      "ga": 39,
+      "size": 20
+     },
+     "home": {
+      "p": 17,
+      "w": 9,
+      "d": 3,
+      "l": 5,
+      "gf": 29,
+      "ga": 18,
+      "pts": 30,
+      "pos": 9,
+      "size": 20
+     },
+     "away": {
+      "p": 17,
+      "w": 4,
+      "d": 5,
+      "l": 8,
+      "gf": 15,
+      "ga": 21,
+      "pts": 17,
+      "pos": 9,
+      "size": 20
+     }
+    }
+   },
+   "h2h": [
+    {
+     "date": "2026-05-17",
+     "home": "Bragantino",
+     "away": "Vitória",
+     "hg": 2,
+     "ag": 0
+    },
+    {
+     "date": "2025-12-03",
+     "home": "Bragantino",
+     "away": "Vitória",
+     "hg": 4,
+     "ag": 0
+    },
+    {
+     "date": "2025-07-20",
+     "home": "Vitória",
+     "away": "Bragantino",
+     "hg": 1,
+     "ag": 0
+    },
+    {
+     "date": "2024-10-19",
+     "home": "Vitória",
+     "away": "Bragantino",
+     "hg": 1,
+     "ag": 0
+    },
+    {
+     "date": "2024-06-23",
+     "home": "Bragantino",
+     "away": "Vitória",
+     "hg": 2,
+     "ag": 1
+    }
+   ]
+  },
+  {
+   "id": "fd555087",
+   "league": "br",
+   "kickoff": "2026-11-20T00:30:00Z",
+   "home": {
+    "name": "São Paulo",
+    "venue": {
+     "gp": 17,
+     "gf": 1.47,
+     "ga": 0.76,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 53,
+     "o25": 41,
+     "cs": 41,
+     "fts": 12
+    },
+    "overall": {
+     "gp": 34,
+     "gf": 1.15,
+     "ga": 1.15,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 56,
+     "o25": 38,
+     "cs": 24,
+     "fts": 24
+    },
+    "form": [
+     "W",
+     "W",
+     "D",
+     "L",
+     "D"
+    ],
+    "table": {
+     "total": {
+      "pos": 10,
+      "pts": 44,
+      "p": 34,
+      "w": 12,
+      "d": 8,
+      "l": 14,
+      "gf": 39,
+      "ga": 39,
+      "size": 20
+     },
+     "home": {
+      "p": 17,
+      "w": 10,
+      "d": 4,
+      "l": 3,
+      "gf": 25,
+      "ga": 13,
+      "pts": 34,
+      "pos": 6,
+      "size": 20
+     },
+     "away": {
+      "p": 17,
+      "w": 2,
+      "d": 4,
+      "l": 11,
+      "gf": 14,
+      "ga": 26,
+      "pts": 10,
+      "pos": 16,
+      "size": 20
+     }
+    }
+   },
+   "away": {
+    "name": "Fluminense",
+    "venue": {
+     "gp": 17,
+     "gf": 1.41,
+     "ga": 1.47,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 71,
+     "o25": 47,
+     "cs": 12,
+     "fts": 18
+    },
+    "overall": {
+     "gp": 34,
+     "gf": 1.62,
+     "ga": 1.24,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 71,
+     "o25": 59,
+     "cs": 21,
+     "fts": 12
+    },
+    "form": [
+     "L",
+     "L",
+     "L",
+     "W",
+     "W"
+    ],
+    "table": {
+     "total": {
+      "pos": 4,
+      "pts": 57,
+      "p": 34,
+      "w": 16,
+      "d": 9,
+      "l": 9,
+      "gf": 55,
+      "ga": 42,
+      "size": 20
+     },
+     "home": {
+      "p": 17,
+      "w": 12,
+      "d": 3,
+      "l": 2,
+      "gf": 31,
+      "ga": 17,
+      "pts": 39,
+      "pos": 3,
+      "size": 20
+     },
+     "away": {
+      "p": 17,
+      "w": 4,
+      "d": 6,
+      "l": 7,
+      "gf": 24,
+      "ga": 25,
+      "pts": 18,
+      "pos": 8,
+      "size": 20
+     }
+    }
+   },
+   "h2h": [
+    {
+     "date": "2026-05-16",
+     "home": "Fluminense",
+     "away": "São Paulo",
+     "hg": 2,
+     "ag": 1
+    },
+    {
+     "date": "2025-11-27",
+     "home": "Fluminense",
+     "away": "São Paulo",
+     "hg": 6,
+     "ag": 0
+    },
+    {
+     "date": "2025-07-27",
+     "home": "São Paulo",
+     "away": "Fluminense",
+     "hg": 3,
+     "ag": 1
+    },
+    {
+     "date": "2024-09-01",
+     "home": "Fluminense",
+     "away": "São Paulo",
+     "hg": 2,
+     "ag": 0
+    },
+    {
+     "date": "2024-05-13",
+     "home": "São Paulo",
+     "away": "Fluminense",
+     "hg": 2,
+     "ag": 1
     }
    ]
   }
