@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T15:17+00:00",
+ "updated": "2026-11-27T15:05+00:00",
  "source": "football-data.org",
  "demo": false,
  "season": "2026/27",
@@ -19,174 +19,6 @@
   "br": "Brasileirão"
  },
  "matches": [
-  {
-   "id": "fd555108",
-   "league": "br",
-   "kickoff": "2026-11-26T23:00:00Z",
-   "home": {
-    "name": "São Paulo",
-    "venue": {
-     "gp": 18,
-     "gf": 1.39,
-     "ga": 0.78,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 50,
-     "o25": 39,
-     "cs": 39,
-     "fts": 17
-    },
-    "overall": {
-     "gp": 36,
-     "gf": 1.11,
-     "ga": 1.14,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 56,
-     "o25": 36,
-     "cs": 22,
-     "fts": 25
-    },
-    "form": [
-     "D",
-     "L",
-     "D",
-     "L",
-     "D"
-    ],
-    "table": {
-     "total": {
-      "pos": 11,
-      "pts": 45,
-      "p": 36,
-      "w": 12,
-      "d": 9,
-      "l": 15,
-      "gf": 40,
-      "ga": 41,
-      "size": 20
-     },
-     "home": {
-      "p": 18,
-      "w": 10,
-      "d": 4,
-      "l": 4,
-      "gf": 25,
-      "ga": 14,
-      "pts": 34,
-      "pos": 8,
-      "size": 20
-     },
-     "away": {
-      "p": 18,
-      "w": 2,
-      "d": 5,
-      "l": 11,
-      "gf": 15,
-      "ga": 27,
-      "pts": 11,
-      "pos": 16,
-      "size": 20
-     }
-    }
-   },
-   "away": {
-    "name": "Clube do Remo",
-    "venue": {
-     "gp": 18,
-     "gf": 0.94,
-     "ga": 2.17,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 56,
-     "o25": 61,
-     "cs": 11,
-     "fts": 44
-    },
-    "overall": {
-     "gp": 36,
-     "gf": 1.14,
-     "ga": 1.69,
-     "xg": null,
-     "xga": null,
-     "shots": null,
-     "sot": null,
-     "corners": null,
-     "cards": null,
-     "statsGp": 0,
-     "btts": 61,
-     "o25": 50,
-     "cs": 14,
-     "fts": 31
-    },
-    "form": [
-     "L",
-     "W",
-     "L",
-     "W",
-     "L"
-    ],
-    "table": {
-     "total": {
-      "pos": 19,
-      "pts": 32,
-      "p": 36,
-      "w": 7,
-      "d": 11,
-      "l": 18,
-      "gf": 41,
-      "ga": 61,
-      "size": 20
-     },
-     "home": {
-      "p": 18,
-      "w": 5,
-      "d": 7,
-      "l": 6,
-      "gf": 24,
-      "ga": 22,
-      "pts": 22,
-      "pos": 19,
-      "size": 20
-     },
-     "away": {
-      "p": 18,
-      "w": 2,
-      "d": 4,
-      "l": 12,
-      "gf": 17,
-      "ga": 39,
-      "pts": 10,
-      "pos": 18,
-      "size": 20
-     }
-    }
-   },
-   "h2h": [
-    {
-     "date": "2026-05-31",
-     "home": "Clube do Remo",
-     "away": "São Paulo",
-     "hg": 1,
-     "ag": 0
-    }
-   ]
-  },
   {
    "id": "fd558820",
    "league": "ed",
@@ -13638,7 +13470,7 @@
       "gf": 25,
       "ga": 17,
       "pts": 35,
-      "pos": 7,
+      "pos": 8,
       "size": 20
      },
      "away": {
@@ -15052,7 +14884,7 @@
       "gf": 32,
       "ga": 20,
       "pts": 35,
-      "pos": 6,
+      "pos": 7,
       "size": 20
      },
      "away": {
@@ -15143,7 +14975,7 @@
       "gf": 28,
       "ga": 19,
       "pts": 36,
-      "pos": 5,
+      "pos": 6,
       "size": 20
      },
      "away": {
@@ -15202,7 +15034,7 @@
     ],
     "table": {
      "total": {
-      "pos": 10,
+      "pos": 11,
       "pts": 47,
       "p": 36,
       "w": 13,
@@ -18398,7 +18230,7 @@
       "gf": 32,
       "ga": 20,
       "pts": 35,
-      "pos": 6,
+      "pos": 7,
       "size": 20
      },
      "away": {
@@ -18433,8 +18265,8 @@
      "fts": 33
     },
     "overall": {
-     "gp": 36,
-     "gf": 1.11,
+     "gp": 37,
+     "gf": 1.16,
      "ga": 1.14,
      "xg": null,
      "xga": null,
@@ -18443,39 +18275,39 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 56,
-     "o25": 36,
+     "btts": 57,
+     "o25": 38,
      "cs": 22,
-     "fts": 25
+     "fts": 24
     },
     "form": [
-     "D",
      "L",
      "D",
      "L",
-     "D"
+     "D",
+     "W"
     ],
     "table": {
      "total": {
-      "pos": 11,
-      "pts": 45,
-      "p": 36,
-      "w": 12,
+      "pos": 10,
+      "pts": 48,
+      "p": 37,
+      "w": 13,
       "d": 9,
       "l": 15,
-      "gf": 40,
-      "ga": 41,
+      "gf": 43,
+      "ga": 42,
       "size": 20
      },
      "home": {
-      "p": 18,
-      "w": 10,
+      "p": 19,
+      "w": 11,
       "d": 4,
       "l": 4,
-      "gf": 25,
-      "ga": 14,
-      "pts": 34,
-      "pos": 8,
+      "gf": 28,
+      "ga": 15,
+      "pts": 37,
+      "pos": 5,
       "size": 20
      },
      "away": {
@@ -18657,7 +18489,7 @@
       "gf": 28,
       "ga": 19,
       "pts": 36,
-      "pos": 5,
+      "pos": 6,
       "size": 20
      },
      "away": {
@@ -19686,9 +19518,9 @@
      "fts": 17
     },
     "overall": {
-     "gp": 36,
+     "gp": 37,
      "gf": 1.14,
-     "ga": 1.69,
+     "ga": 1.73,
      "xg": null,
      "xga": null,
      "shots": null,
@@ -19696,28 +19528,28 @@
      "corners": null,
      "cards": null,
      "statsGp": 0,
-     "btts": 61,
-     "o25": 50,
+     "btts": 62,
+     "o25": 51,
      "cs": 14,
-     "fts": 31
+     "fts": 30
     },
     "form": [
-     "L",
      "W",
      "L",
      "W",
+     "L",
      "L"
     ],
     "table": {
      "total": {
       "pos": 19,
       "pts": 32,
-      "p": 36,
+      "p": 37,
       "w": 7,
       "d": 11,
-      "l": 18,
-      "gf": 41,
-      "ga": 61,
+      "l": 19,
+      "gf": 42,
+      "ga": 64,
       "size": 20
      },
      "home": {
@@ -19732,12 +19564,12 @@
       "size": 20
      },
      "away": {
-      "p": 18,
+      "p": 19,
       "w": 2,
       "d": 4,
-      "l": 12,
-      "gf": 17,
-      "ga": 39,
+      "l": 13,
+      "gf": 18,
+      "ga": 42,
       "pts": 10,
       "pos": 18,
       "size": 20
@@ -20074,7 +19906,7 @@
     ],
     "table": {
      "total": {
-      "pos": 10,
+      "pos": 11,
       "pts": 47,
       "p": 36,
       "w": 13,
@@ -20169,7 +20001,7 @@
       "gf": 25,
       "ga": 17,
       "pts": 35,
-      "pos": 7,
+      "pos": 8,
       "size": 20
      },
      "away": {
@@ -20206,6 +20038,202 @@
      "away": "Vasco da Gama",
      "hg": 2,
      "ag": 1
+    }
+   ]
+  },
+  {
+   "id": "fd560662",
+   "league": "pl",
+   "kickoff": "2026-12-03T20:00:00Z",
+   "home": {
+    "name": "Tottenham",
+    "venue": {
+     "gp": 6,
+     "gf": 1.5,
+     "ga": 1.0,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 33,
+     "o25": 33,
+     "cs": 50,
+     "fts": 33
+    },
+    "overall": {
+     "gp": 11,
+     "gf": 1.09,
+     "ga": 1.0,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 27,
+     "o25": 27,
+     "cs": 45,
+     "fts": 45
+    },
+    "form": [
+     "W",
+     "W",
+     "W",
+     "L",
+     "W"
+    ],
+    "table": {
+     "total": {
+      "pos": 10,
+      "pts": 15,
+      "p": 11,
+      "w": 4,
+      "d": 3,
+      "l": 4,
+      "gf": 12,
+      "ga": 11,
+      "size": 20
+     },
+     "home": {
+      "p": 6,
+      "w": 3,
+      "d": 1,
+      "l": 2,
+      "gf": 9,
+      "ga": 6,
+      "pts": 10,
+      "pos": 7,
+      "size": 20
+     },
+     "away": {
+      "p": 5,
+      "w": 1,
+      "d": 2,
+      "l": 2,
+      "gf": 3,
+      "ga": 5,
+      "pts": 5,
+      "pos": 12,
+      "size": 20
+     }
+    }
+   },
+   "away": {
+    "name": "Fulham",
+    "venue": {
+     "gp": 6,
+     "gf": 0.67,
+     "ga": 0.83,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 50,
+     "o25": 17,
+     "cs": 33,
+     "fts": 33
+    },
+    "overall": {
+     "gp": 11,
+     "gf": 1.0,
+     "ga": 1.18,
+     "xg": null,
+     "xga": null,
+     "shots": null,
+     "sot": null,
+     "corners": null,
+     "cards": null,
+     "statsGp": 0,
+     "btts": 64,
+     "o25": 27,
+     "cs": 27,
+     "fts": 18
+    },
+    "form": [
+     "W",
+     "W",
+     "D",
+     "D",
+     "D"
+    ],
+    "table": {
+     "total": {
+      "pos": 15,
+      "pts": 11,
+      "p": 11,
+      "w": 2,
+      "d": 5,
+      "l": 4,
+      "gf": 11,
+      "ga": 13,
+      "size": 20
+     },
+     "home": {
+      "p": 5,
+      "w": 1,
+      "d": 2,
+      "l": 2,
+      "gf": 7,
+      "ga": 8,
+      "pts": 5,
+      "pos": 18,
+      "size": 20
+     },
+     "away": {
+      "p": 6,
+      "w": 1,
+      "d": 3,
+      "l": 2,
+      "gf": 4,
+      "ga": 5,
+      "pts": 6,
+      "pos": 9,
+      "size": 20
+     }
+    }
+   },
+   "h2h": [
+    {
+     "date": "2026-03-01",
+     "home": "Fulham",
+     "away": "Tottenham",
+     "hg": 2,
+     "ag": 1
+    },
+    {
+     "date": "2025-11-29",
+     "home": "Tottenham",
+     "away": "Fulham",
+     "hg": 1,
+     "ag": 2
+    },
+    {
+     "date": "2025-03-16",
+     "home": "Fulham",
+     "away": "Tottenham",
+     "hg": 2,
+     "ag": 0
+    },
+    {
+     "date": "2024-12-01",
+     "home": "Tottenham",
+     "away": "Fulham",
+     "hg": 1,
+     "ag": 1
+    },
+    {
+     "date": "2024-03-16",
+     "home": "Fulham",
+     "away": "Tottenham",
+     "hg": 3,
+     "ag": 0
     }
    ]
   }
